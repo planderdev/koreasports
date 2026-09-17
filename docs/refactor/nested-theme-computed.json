@@ -1,0 +1,222 @@
+[
+  {
+    "background": "rgb(23, 107, 69)",
+    "border": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "font": "15px",
+    "height": 40,
+    "line": "22px",
+    "outline": "none",
+    "text": "기본 버튼",
+    "tracking": "0.144px"
+  },
+  {
+    "background": "rgb(23, 107, 69)",
+    "border": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "font": "13px",
+    "height": 32,
+    "line": "18px",
+    "outline": "none",
+    "text": "Small",
+    "tracking": "0.2522px"
+  },
+  {
+    "background": "rgb(23, 107, 69)",
+    "border": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "font": "16px",
+    "height": 48,
+    "line": "24px",
+    "outline": "none",
+    "text": "Large",
+    "tracking": "0.0912px"
+  },
+  {
+    "background": "rgb(17, 86, 56)",
+    "border": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "font": "15px",
+    "height": 40,
+    "line": "22px",
+    "outline": "none",
+    "text": "Hover",
+    "tracking": "0.144px"
+  },
+  {
+    "background": "rgb(11, 64, 43)",
+    "border": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "font": "15px",
+    "height": 40,
+    "line": "22px",
+    "outline": "none",
+    "text": "Active",
+    "tracking": "0.144px"
+  },
+  {
+    "background": "rgb(244, 244, 245)",
+    "border": "rgba(0, 0, 0, 0)",
+    "color": "rgba(55, 56, 60, 0.16)",
+    "font": "15px",
+    "height": 40,
+    "line": "22px",
+    "outline": "none",
+    "text": "Disabled",
+    "tracking": "0.144px"
+  },
+  {
+    "background": "rgba(0, 191, 64, 0.08)",
+    "border": "rgb(23, 107, 69)",
+    "color": "rgb(23, 107, 69)",
+    "font": "12px",
+    "height": 24,
+    "line": "16px",
+    "outline": "none",
+    "text": "Chip",
+    "tracking": "0.3024px"
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "border": "rgb(225, 226, 228)",
+    "color": "rgb(23, 23, 25)",
+    "font": "16px",
+    "height": 48,
+    "line": "24px",
+    "outline": "none",
+    "text": "이름을 입력하세요",
+    "tracking": "0.0912px"
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "border": "rgb(255, 66, 66)",
+    "color": "rgb(23, 23, 25)",
+    "font": "16px",
+    "height": 48,
+    "line": "24px",
+    "outline": "none",
+    "text": null,
+    "tracking": "0.0912px"
+  },
+  {
+    "background": "rgba(112, 115, 124, 0.08)",
+    "border": "rgb(225, 226, 228)",
+    "color": "rgba(55, 56, 60, 0.16)",
+    "font": "16px",
+    "height": 48,
+    "line": "24px",
+    "outline": "none",
+    "text": null,
+    "tracking": "0.0912px"
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "border": "rgb(225, 226, 228)",
+    "color": "rgb(23, 23, 25)",
+    "font": "16px",
+    "height": 48,
+    "line": "24px",
+    "outline": "none",
+    "text": "전체골프",
+    "tracking": "0.0912px"
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "border": "rgb(225, 226, 228)",
+    "color": "rgb(23, 23, 25)",
+    "font": "16px",
+    "height": 80,
+    "line": "26px",
+    "outline": "none",
+    "text": "두 줄 이상의 본문입니다.",
+    "tracking": "0.0912px"
+  },
+  {
+    "background": "rgb(125, 245, 165)",
+    "border": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "font": "15px",
+    "height": 40,
+    "line": "22px",
+    "outline": "none",
+    "text": "Dark button",
+    "tracking": "0.144px"
+  },
+  {
+    "background": "rgb(27, 28, 30)",
+    "border": "rgb(55, 56, 60)",
+    "color": "rgb(247, 247, 248)",
+    "font": "16px",
+    "height": 48,
+    "line": "24px",
+    "outline": "none",
+    "text": "Dark input",
+    "tracking": "0.0912px"
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "rgb(247, 247, 248)",
+    "color": "rgb(247, 247, 248)",
+    "font": "16px",
+    "height": 88,
+    "line": "24px",
+    "outline": "none",
+    "text": "카드 제목어두운 테마의 콘텐츠",
+    "tracking": "0.0912px"
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "rgba(174, 176, 182, 0.61)",
+    "color": "rgba(174, 176, 182, 0.61)",
+    "font": "16px",
+    "height": 24,
+    "line": "24px",
+    "outline": "none",
+    "text": "어두운 테마의 콘텐츠",
+    "tracking": "0.0912px"
+  },
+  {
+    "background": "rgb(23, 107, 69)",
+    "border": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "font": "15px",
+    "height": 40,
+    "line": "22px",
+    "outline": "none",
+    "text": "Nested light button",
+    "tracking": "0.144px"
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "border": "rgb(225, 226, 228)",
+    "color": "rgb(23, 23, 25)",
+    "font": "16px",
+    "height": 48,
+    "line": "24px",
+    "outline": "none",
+    "text": "Nested light input",
+    "tracking": "0.0912px"
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "rgba(55, 56, 60, 0.61)",
+    "color": "rgba(55, 56, 60, 0.61)",
+    "font": "12px",
+    "height": 16,
+    "line": "16px",
+    "outline": "none",
+    "text": "Caption 1",
+    "tracking": "0.3024px"
+  },
+  {
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "rgba(55, 56, 60, 0.61)",
+    "color": "rgba(55, 56, 60, 0.61)",
+    "font": "11px",
+    "height": 14,
+    "line": "14px",
+    "outline": "none",
+    "text": "Caption 2",
+    "tracking": "0.3421px"
+  }
+]

@@ -18,12 +18,12 @@ test('all token references resolve without cycles in both themes',()=>{
  assert.equal(byName.size,tokens.length);
  for(const t of tokens)for(const dark of [false,true])assert.ok(!resolve(t.name,dark).includes('var('));
 });
-test('legacy primary, foreground and control sizing remain compatible',()=>{
- assert.equal(resolve('--color-primary').toLowerCase(),'#176b45');
- assert.equal(resolve('--color-text').toLowerCase(),'#19241e');
- assert.equal(resolve('--control-height-md'),'48px');
+test('brand mapping, official neutral and button sizes resolve in both themes',()=>{
+ assert.equal(resolve('--semantic-primary-normal').toLowerCase(),'#176b45');
+ assert.equal(resolve('--semantic-label-normal').toLowerCase(),'#171719');
+ assert.equal(resolve('--control-height-md'),'40px');
  assert.notEqual(resolve('--control-bg'),resolve('--control-bg',true));
- assert.notEqual(resolve('--color-text'),resolve('--color-text',true));
+ assert.notEqual(resolve('--semantic-label-normal'),resolve('--semantic-label-normal',true));
 });
 test('reference catalog contains unique complete web documentation routes',()=>{
  assert.equal(components.length,53);assert.equal(utilities.length,31);

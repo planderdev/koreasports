@@ -66,8 +66,8 @@ Node는 데이터 흐름 테스트에만 필요합니다. 실행 자체에는 �
 - 두 영역은 프론트 레이아웃을 분리하며, 시연 데이터는 기존 세션 저장소를 공유합니다. 서버 인증 분리를 의미하지 않습니다.
 
 
-## 디자인시스템 v2
+## 디자인시스템 v3
 
-Montage의 웹 문서 분류를 기준으로 Foundations 9개, Components 53개, Utilities 31개를 제공합니다. 원시값 → 의미 → 컴포넌트의 360개 토큰, 문서/토큰 검색, 코드 복사, 테마 프리뷰와 동작 예제를 포함합니다. 원본은 assets/design-system/tokens.json이며 python scripts/build-design-tokens.py로 CSS와 문서 데이터를 생성합니다. 상세 사용법 및 대응 범위는 docs/design-system.md를 참조하세요.
+Montage의 웹 문서 분류를 기준으로 Foundations 9개, Components 53개, Utilities 31개를 제공합니다. Primitive → Semantic → Component 및 프로젝트 Layout으로 구분한 410개 토큰, 문서/토큰 검색, 코드 복사, 테마 프리뷰와 동작 예제를 포함합니다. 원본은 assets/design-system/tokens.json이며 python scripts/build-design-tokens.py로 CSS와 문서 데이터를 생성합니다. 상세 사용법 및 대응 범위는 docs/design-system.md를 참조하세요.
 
 

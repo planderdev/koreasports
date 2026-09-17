@@ -1,0 +1,307 @@
+{
+  "stylesheets": {
+    "admin-editor.css": {
+      "rules": 51,
+      "duplicates": {},
+      "important": [],
+      "localVariables": [],
+      "parseErrors": []
+    },
+    "admin.css": {
+      "rules": 72,
+      "duplicates": {},
+      "important": [],
+      "localVariables": [],
+      "parseErrors": []
+    },
+    "base.css": {
+      "rules": 41,
+      "duplicates": {},
+      "important": [
+        [
+          "base",
+          "[hidden]",
+          "display"
+        ],
+        [
+          "base|(prefers-reduced-motion:reduce)",
+          "*, *:before, *:after",
+          "scroll-behavior"
+        ],
+        [
+          "base|(prefers-reduced-motion:reduce)",
+          "*, *:before, *:after",
+          "animation-duration"
+        ],
+        [
+          "base|(prefers-reduced-motion:reduce)",
+          "*, *:before, *:after",
+          "transition-duration"
+        ],
+        [
+          "base|(prefers-reduced-motion:reduce)",
+          "[data-aos]",
+          "opacity"
+        ],
+        [
+          "base|(prefers-reduced-motion:reduce)",
+          "[data-aos]",
+          "transform"
+        ],
+        [
+          "base",
+          ".reduce-motion *",
+          "animation-duration"
+        ],
+        [
+          "base",
+          ".reduce-motion *",
+          "transition-duration"
+        ],
+        [
+          "base",
+          ".reduce-motion *",
+          "scroll-behavior"
+        ],
+        [
+          "base",
+          ".reduce-motion [data-aos]",
+          "opacity"
+        ],
+        [
+          "base",
+          ".reduce-motion [data-aos]",
+          "transform"
+        ]
+      ],
+      "localVariables": [],
+      "parseErrors": []
+    },
+    "components.css": {
+      "rules": 157,
+      "duplicates": {},
+      "important": [],
+      "localVariables": [],
+      "parseErrors": []
+    },
+    "controls.css": {
+      "rules": 8,
+      "duplicates": {},
+      "important": [
+        [
+          "base",
+          "[class^=\"ri-\"],[class*=\" ri-\"],[class^=\"ri-\"]::before,[class*=\" ri-\"]::before",
+          "font-weight"
+        ]
+      ],
+      "localVariables": [],
+      "parseErrors": []
+    },
+    "design-system-docs.css": {
+      "rules": 356,
+      "duplicates": {},
+      "important": [],
+      "localVariables": [],
+      "parseErrors": []
+    },
+    "design-system.css": {
+      "rules": 13,
+      "duplicates": {},
+      "important": [],
+      "localVariables": [],
+      "parseErrors": []
+    },
+    "footer.css": {
+      "rules": 32,
+      "duplicates": {},
+      "important": [],
+      "localVariables": [],
+      "parseErrors": []
+    },
+    "header.css": {
+      "rules": 84,
+      "duplicates": {},
+      "important": [],
+      "localVariables": [],
+      "parseErrors": []
+    },
+    "layout.css": {
+      "rules": 47,
+      "duplicates": {},
+      "important": [],
+      "localVariables": [],
+      "parseErrors": []
+    },
+    "moments.css": {
+      "rules": 36,
+      "duplicates": {},
+      "important": [],
+      "localVariables": [
+        [
+          ".moments-slider",
+          "--moments-gap"
+        ],
+        [
+          ".moments-slider",
+          "--moments-gap"
+        ]
+      ],
+      "parseErrors": []
+    },
+    "pages.css": {
+      "rules": 207,
+      "duplicates": {},
+      "important": [],
+      "localVariables": [],
+      "parseErrors": []
+    }
+  },
+  "inlineTemplates": [
+    {
+      "file": "assets\\js\\design-system\\components.js",
+      "line": 6
+    },
+    {
+      "file": "assets\\js\\design-system\\components.js",
+      "line": 18
+    },
+    {
+      "file": "assets\\js\\design-system\\components.js",
+      "line": 27
+    },
+    {
+      "file": "assets\\js\\design-system\\components.js",
+      "line": 78
+    },
+    {
+      "file": "assets\\js\\design-system\\components.js",
+      "line": 80
+    },
+    {
+      "file": "assets\\js\\design-system\\components.js",
+      "line": 83
+    },
+    {
+      "file": "assets\\js\\design-system\\foundations.js",
+      "line": 6
+    },
+    {
+      "file": "assets\\js\\design-system\\foundations.js",
+      "line": 10
+    },
+    {
+      "file": "assets\\js\\design-system\\foundations.js",
+      "line": 11
+    },
+    {
+      "file": "assets\\js\\design-system\\foundations.js",
+      "line": 13
+    },
+    {
+      "file": "assets\\js\\design-system\\foundations.js",
+      "line": 14
+    },
+    {
+      "file": "assets\\js\\design-system\\foundations.js",
+      "line": 15
+    },
+    {
+      "file": "assets\\js\\design-system\\specimens.js",
+      "line": 6
+    },
+    {
+      "file": "assets\\js\\pages\\admin.js",
+      "line": 15
+    },
+    {
+      "file": "assets\\js\\pages\\admin.js",
+      "line": 17
+    },
+    {
+      "file": "assets\\js\\pages\\admin.js",
+      "line": 21
+    },
+    {
+      "file": "assets\\js\\pages\\admin.js",
+      "line": 22
+    },
+    {
+      "file": "assets\\js\\pages\\admin.js",
+      "line": 23
+    },
+    {
+      "file": "assets\\js\\pages\\admin.js",
+      "line": 27
+    },
+    {
+      "file": "assets\\js\\pages\\catalog.js",
+      "line": 19
+    },
+    {
+      "file": "assets\\js\\pages\\catalog.js",
+      "line": 24
+    },
+    {
+      "file": "assets\\js\\pages\\catalog.js",
+      "line": 29
+    },
+    {
+      "file": "assets\\js\\pages\\catalog.js",
+      "line": 37
+    },
+    {
+      "file": "assets\\js\\pages\\member.js",
+      "line": 5
+    },
+    {
+      "file": "assets\\js\\pages\\member.js",
+      "line": 7
+    },
+    {
+      "file": "assets\\js\\pages\\member.js",
+      "line": 16
+    },
+    {
+      "file": "assets\\js\\pages\\member.js",
+      "line": 19
+    },
+    {
+      "file": "assets\\js\\pages\\member.js",
+      "line": 25
+    },
+    {
+      "file": "assets\\js\\pages\\member.js",
+      "line": 30
+    },
+    {
+      "file": "assets\\js\\pages\\member.js",
+      "line": 35
+    }
+  ],
+  "styleInjection": [
+    {
+      "file": "assets\\js\\animations.js",
+      "line": 8
+    },
+    {
+      "file": "assets\\js\\header-navigation.js",
+      "line": 10
+    },
+    {
+      "file": "assets\\js\\design-system\\documentation.js",
+      "line": 41
+    },
+    {
+      "file": "assets\\js\\design-system\\specimens.js",
+      "line": 14
+    },
+    {
+      "file": "assets\\js\\design-system\\utilities.js",
+      "line": 4
+    },
+    {
+      "file": "assets\\js\\pages\\admin.js",
+      "line": 31
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "css": "wds-165a5oj",
+    "fontSize": "15px",
+    "height": "32px",
+    "lineHeight": "18px",
+    "padding": "7px 14px",
+    "radius": "8px",
+    "text": "Small",
+    "tracking": "normal",
+    "weight": "600"
+  },
+  {
+    "css": "wds-1quicc1",
+    "fontSize": "15px",
+    "height": "40px",
+    "lineHeight": "22px",
+    "padding": "9px 20px",
+    "radius": "10px",
+    "text": "Medium",
+    "tracking": "normal",
+    "weight": "600"
+  },
+  {
+    "css": "wds-1p8rqy1",
+    "fontSize": "15px",
+    "height": "48px",
+    "lineHeight": "24px",
+    "padding": "12px 28px",
+    "radius": "12px",
+    "text": "Large",
+    "tracking": "normal",
+    "weight": "600"
+  }
+]

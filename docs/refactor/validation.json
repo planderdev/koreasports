@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-17",
+  "tests": {
+    "passed": 34,
+    "failed": 0
+  },
+  "javascriptSyntaxFiles": 27,
+  "phpLintFiles": 42,
+  "authoredCssParseErrors": 0,
+  "staticVariableScanFiles": 89,
+  "missingVariableReferences": 0,
+  "tokensRebuildIdempotent": true,
+  "generatedSha256": {
+    "assets/css/tokens.css": "e06f4fc1699a9be8eed7953cf7250e0499a5ef157fb8d98279517c8a0acf92bd",
+    "assets/js/design-system/tokens.js": "4f1e3a1974575123c20c0b99220aa99117bc54c9b356cee6c00b9265e62aeec8"
+  },
+  "gitDiffCheck": "passed",
+  "responsiveWidths": [
+    390,
+    834,
+    1440
+  ],
+  "publicAndDocsScreens": 12,
+  "adminScreens": 6,
+  "themeFixture": "light > dark > light; button sizes/states, error/disabled fields and caption tuples verified"
+}

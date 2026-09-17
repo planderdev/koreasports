@@ -1,0 +1,267 @@
+[
+  [
+    "base",
+    "body",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "base",
+    "dialog",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "base",
+    "dialog::backdrop",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "components",
+    ".button",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    ".button:hover",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    ".button.secondary",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    ".button.secondary:hover",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    ".button.light",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    ".button.accent",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    ".button.small",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    ".button.danger",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    "input:not([type=checkbox]):not([type=radio]), select, textarea",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    "input::placeholder, textarea::placeholder",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    "input[aria-invalid=true], textarea[aria-invalid=true]",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    ".button",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    ".button",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    ".button.small",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    "input:not([type=checkbox]):not([type=radio]), select, textarea",
+    "canonical shared implementation"
+  ],
+  [
+    "components",
+    ".badge",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "pages",
+    ".hero-ctas .more",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "admin",
+    ".phone-preview",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "admin",
+    ".admin-title h1",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "admin",
+    ".admin-main",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "admin",
+    ".admin-title",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "admin",
+    ".admin-title h1",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "admin",
+    ".admin-main .filters",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "admin",
+    ".admin-main .stat",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "admin",
+    ".admin-sidebar a",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "admin",
+    ".admin-sidebar a.active",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "admin",
+    ".admin-main .data-table td",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "design-system-docs",
+    ".ds-button",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-button:hover,.ds-button.ds-state-hover",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-button:active,.ds-button.ds-state-pressed",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-button.ds-state-focus",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-button.ds-outline",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-button.ds-text",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-button.ds-outline:hover,.ds-button.ds-text:hover",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-button[data-size=sm]",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-button[data-size=lg]",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-button:disabled",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-button i",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-input,input.ds-input,select.ds-input,textarea.ds-input",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-input::placeholder",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-input[aria-invalid=true]",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-input.ds-input-focused",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-input.ds-input-error",
+    "same production components in specimens"
+  ],
+  [
+    "design-system-docs",
+    ".ds-input:disabled",
+    "same production components in specimens"
+  ],
+  [
+    "controls",
+    ".select-shell>select",
+    "focus and select ownership moved to source"
+  ],
+  [
+    "controls",
+    "input:focus,input:focus-visible,textarea:focus,textarea:focus-visible",
+    "focus and select ownership moved to source"
+  ],
+  [
+    "controls",
+    "button:focus,button:focus-visible,.button:focus,.button:focus-visible,.ds-button:focus,.ds-button:focus-visible",
+    "focus and select ownership moved to source"
+  ],
+  [
+    "controls",
+    "#ds-root .ds-button:focus,#ds-root .ds-button:focus-visible",
+    "focus and select ownership moved to source"
+  ],
+  [
+    "header",
+    "#site-header",
+    "merged repeated selector in same responsive scope"
+  ],
+  [
+    "header",
+    "#gnb",
+    "merged repeated selector in same responsive scope"
+  ]
+]

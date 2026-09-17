@@ -16,7 +16,7 @@ export function enhanceAdminTables(){
   wrap.classList.add('admin-table-scroll');wrap.tabIndex=0;wrap.setAttribute('aria-label','관리 목록 · 가로 스크롤 가능');
   const card=document.createElement('section');card.className='admin-data-card';wrap.before(card);card.append(wrap);
   const toolbar=document.createElement('div');toolbar.className='admin-table-tools';
-  toolbar.innerHTML=`<div><strong>목록 <span>${rows.length}</span></strong><span class="admin-table-hint">현재 검색 결과에서 선택</span></div><label class="admin-local-search">${icon('search-line')}<span class="sr-only">목록 ${index+1} 내 검색</span><input type="search" placeholder="목록 내 검색" aria-label="목록 ${index+1} 내 검색"></label>`;
+  toolbar.innerHTML=`<div><strong>목록 <span>${rows.length}</span></strong><span class="admin-table-hint">현재 검색 결과에서 선택</span></div><label class="admin-local-search">${icon('search-line')}<span class="sr-only">목록 ${index+1} 내 검색</span><input class="input-plain" type="search" placeholder="목록 내 검색" aria-label="목록 ${index+1} 내 검색"></label>`;
   card.prepend(toolbar);
   const bar=document.createElement('div');bar.className='admin-bulk-bar';bar.innerHTML=`<span data-selection-count role="status" aria-live="polite">0개 선택</span><div><button class="button secondary small" data-clear disabled>선택 해제</button><button class="button secondary small" data-export disabled>${icon('download-2-line')}선택 CSV</button><button class="button small" data-bulk disabled>${icon('edit-2-line')}일괄 변경</button></div>`;wrap.before(bar);
   const footer=document.createElement('div');footer.className='admin-table-footer';footer.textContent=`${rows.length}개 항목 · 검색 결과 전체를 선택할 수 있습니다.`;card.append(footer);

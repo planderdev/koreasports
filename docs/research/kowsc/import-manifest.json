@@ -1,0 +1,167 @@
+{
+  "source": "http://www.kowsc.co.kr/",
+  "resolvedFrontend": "http://5.78.131.126:8090",
+  "importedAt": "2026-09-17",
+  "articles": 145,
+  "boards": 14,
+  "historyFacts": 258,
+  "regionalRecords": 16,
+  "assets": [
+    {
+      "source": "http://5.78.131.126:8090/uploads/05cef708-25ee-420c-b7d6-3dfc16613718.webp",
+      "local": "/assets/images/kowsc/90b89977f1e7fcd8.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/1a7b7542-6d7f-4666-8ed4-7c1977392922.webp",
+      "local": "/assets/images/kowsc/0e3d0e27e4658de3.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/1dff45b0-2cc0-4cc4-8948-e72e231dda6a.webp",
+      "local": "/assets/images/kowsc/50054eb7ffeafce0.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/2527cd0c-7334-4713-9787-5f8f676521f6.webp",
+      "local": "/assets/images/kowsc/968ae159073239fd.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/2934cad5-a98b-48f2-98c8-5d257ec040db.webp",
+      "local": "/assets/images/kowsc/e8e0b74777d67d88.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/2ddf3c91-8deb-4210-99e7-3d2c5d05fed6.webp",
+      "local": "/assets/images/kowsc/e795c14c5bd97810.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/2f959dfe-f3ac-4892-9ed6-6f7d81f67c01.webp",
+      "local": "/assets/images/kowsc/bec3afed3c08f2e3.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/3b330fe8-f53c-41a3-a54b-f15becf5ae30.webp",
+      "local": "/assets/images/kowsc/d49083383c323734.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/446795f9-3403-4e83-aa5d-ddf3e9d4bfb7.webp",
+      "local": "/assets/images/kowsc/ecfc7dddadab35a0.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/4ac1941e-40d0-4325-8450-6d95c8290dd9.webp",
+      "local": "/assets/images/kowsc/6cfcf35bf2c77376.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/54b8dd39-78a7-4c77-8dda-b6b6a72f90c4.webp",
+      "local": "/assets/images/kowsc/0d3c8f05dba6c232.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/61b010ad-4cca-4ca1-8788-37cc5851a295.webp",
+      "local": "/assets/images/kowsc/ccc73c26f436e89f.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/67fa453a-ad5d-4866-90e6-17fd83dc9f56.webp",
+      "local": "/assets/images/kowsc/98bcbe6c116d206b.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/6b02d1c6-bb91-4164-b61c-790b4f58d0d2.webp",
+      "local": "/assets/images/kowsc/7a2fadd1e2caf7cf.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/7df92c5a-c8a7-4d39-ae10-9489f9c5c495.webp",
+      "local": "/assets/images/kowsc/51d2054a69a2b4e7.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/855ea064-dad0-4944-a908-e51a113a7119.webp",
+      "local": "/assets/images/kowsc/eb7dacb6064cfb8b.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/89f00f04-ad4f-4e2f-a1ac-9ddfbdc3097e.webp",
+      "local": "/assets/images/kowsc/f9d396b8377b485f.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/8fe276b6-eb33-452e-a842-c793b29d8da3.webp",
+      "local": "/assets/images/kowsc/87428b26bd1a7010.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/95f787a0-b6cf-4479-ba71-3eaffc904d20.webp",
+      "local": "/assets/images/kowsc/1c6bec6176912a0b.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/982d78e5-221d-4997-9d67-4a4af515da76.webp",
+      "local": "/assets/images/kowsc/128d3c30ca2dffa0.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/9d156568-cd92-4d90-afaa-8e3ae563457e.webp",
+      "local": "/assets/images/kowsc/3a36086eecfd535e.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/9e0313e7-3126-4bc7-9416-2b368719f994.webp",
+      "local": "/assets/images/kowsc/6dbbb0d8cf529b04.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/ac023282-3765-4971-aba2-6a64195fd33c.webp",
+      "local": "/assets/images/kowsc/072c15361cd3e4a9.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/b67bae30-ee0a-4a4b-9a10-efc1d70f4f5b.webp",
+      "local": "/assets/images/kowsc/0336648620a71d61.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/bd5c8c06-40b6-4724-b967-09db99080afe.webp",
+      "local": "/assets/images/kowsc/e822a88c10602802.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/cd38b5b0-9673-436a-9adf-818031a0080b.webp",
+      "local": "/assets/images/kowsc/f7ea4b24620cbbac.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/ce499a34-742b-4d6c-8608-0157dd8df329.webp",
+      "local": "/assets/images/kowsc/3032b3fd67c0b3de.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/da29aebe-d2ce-4441-b980-5b25a43b3f63.webp",
+      "local": "/assets/images/kowsc/ab623eff8d5b5300.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/de3f2620-c4a8-4e67-a88e-1bd2c842f809.webp",
+      "local": "/assets/images/kowsc/f344869a8362e82b.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/dfac8ade-a555-4f7e-affc-01b2b6dfb80a.webp",
+      "local": "/assets/images/kowsc/26ada4a46f6e0ea9.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/e3c8bdc1-12d6-48be-99df-81fff789821a.webp",
+      "local": "/assets/images/kowsc/fddb1bb08c9945cf.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/e656e49f-e4c8-4307-ba78-cf63bf2a9c6f.webp",
+      "local": "/assets/images/kowsc/4b8c4bae9d232caa.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/e75c540f-5e37-488c-a6ba-78a5ac5d53ca.webp",
+      "local": "/assets/images/kowsc/cdf94ace147a9727.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/f6bcc916-0556-4c17-933f-29f1d1ae1f30.webp",
+      "local": "/assets/images/kowsc/64f01baa6ab2e329.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/f95e9e8c-a37d-4830-be3c-a030b34b513f.webp",
+      "local": "/assets/images/kowsc/4fe8da42d522ba71.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/uploads/fc9008c7-6b79-4e55-ade8-1c9f0a47b626.webp",
+      "local": "/assets/images/kowsc/81f2c85d24cf48cd.webp"
+    },
+    {
+      "source": "http://5.78.131.126:8090/assets/logo_top.png",
+      "local": "/assets/images/kowsc/logo.png"
+    }
+  ],
+  "contentPolicy": "Metadata and factual records; greeting summarized; long-form originals linked.",
+  "sourcePages": {
+    "greeting": "http://5.78.131.126:8090/public/intro/greeting",
+    "history": "http://5.78.131.126:8090/public/intro/history",
+    "organization": "http://5.78.131.126:8090/public/intro/chart",
+    "regional": "http://5.78.131.126:8090/public/intro/regional",
+    "committee": "http://5.78.131.126:8090/public/intro/officers"
+  }
+}

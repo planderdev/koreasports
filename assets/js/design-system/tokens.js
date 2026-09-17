@@ -2,937 +2,1284 @@
 export const tokenGroups = [
   {
     "id": "atomic",
-    "title": "Atomic colors",
+    "title": "Primitive · Montage official palette",
     "tokens": [
       {
-        "name": "--atomic-neutral-0",
-        "value": "#ffffff",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-neutral-5",
-        "value": "#fafbfa",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-neutral-10",
-        "value": "#f5f7f3",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-neutral-20",
-        "value": "#eaf0eb",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-neutral-30",
-        "value": "#dee5df",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-neutral-40",
-        "value": "#bdc7bf",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-neutral-50",
-        "value": "#96a199",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-neutral-60",
-        "value": "#677169",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-neutral-70",
-        "value": "#46524a",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-neutral-80",
-        "value": "#29362e",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-neutral-90",
-        "value": "#19241e",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-neutral-100",
-        "value": "#0b130f",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-0",
-        "value": "#ffffff",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-5",
-        "value": "#f5fbf7",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-10",
-        "value": "#eaf3ed",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-20",
-        "value": "#d0e7d8",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-30",
-        "value": "#a4d0b6",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-40",
-        "value": "#73b28e",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-50",
-        "value": "#449667",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-60",
-        "value": "#176b45",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-70",
-        "value": "#155437",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-80",
-        "value": "#103f2d",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-90",
-        "value": "#092a1d",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-green-100",
-        "value": "#04190f",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-blue-0",
-        "value": "#ffffff",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-blue-5",
-        "value": "#f5f9ff",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
         "name": "--atomic-blue-10",
-        "value": "#eff6ff",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#001536",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-blue-20",
-        "value": "#dbeafe",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#002966",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-blue-30",
-        "value": "#bfdbfe",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#003e9c",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-blue-40",
-        "value": "#93c5fd",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#0054d1",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-blue-45",
+        "value": "#005eeb",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-blue-50",
-        "value": "#60a5fa",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#06f",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-blue-55",
+        "value": "#1a75ff",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-blue-60",
-        "value": "#2563eb",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#3385ff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-blue-65",
+        "value": "#4f95ff",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-blue-70",
-        "value": "#175cd3",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#69a5ff",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-blue-80",
-        "value": "#1e40af",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#9ec5ff",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-blue-90",
-        "value": "#1e3a8a",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#c9defe",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-blue-100",
-        "value": "#172554",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-blue-95",
+        "value": "#eaf2fe",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-0",
-        "value": "#ffffff",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-blue-99",
+        "value": "#f7fbff",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-5",
-        "value": "#fff8f7",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-common-0",
+        "value": "#000",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-10",
-        "value": "#fff0ee",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-common-100",
+        "value": "#fff",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-20",
-        "value": "#fee4e2",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-5",
+        "value": "#0f0f10",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-30",
-        "value": "#fecdca",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-7",
+        "value": "#141415",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-40",
-        "value": "#fda29b",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-10",
+        "value": "#171719",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-50",
-        "value": "#f97066",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-15",
+        "value": "#1b1c1e",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-60",
-        "value": "#d92d20",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-17",
+        "value": "#212225",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-70",
-        "value": "#b42318",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-20",
+        "value": "#292a2d",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-80",
-        "value": "#912018",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-22",
+        "value": "#2e2f33",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-90",
-        "value": "#7a271a",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-23",
+        "value": "#333438",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-red-100",
-        "value": "#55160c",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-25",
+        "value": "#37383c",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-0",
-        "value": "#ffffff",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-30",
+        "value": "#46474c",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-5",
-        "value": "#fffcf5",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-40",
+        "value": "#5a5c63",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-10",
-        "value": "#fff7ed",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-50",
+        "value": "#70737c",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-20",
-        "value": "#ffedd5",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-60",
+        "value": "#878a93",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-30",
-        "value": "#fed7aa",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-70",
+        "value": "#989ba2",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-40",
-        "value": "#fdba74",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-80",
+        "value": "#aeb0b6",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-50",
-        "value": "#fb923c",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-90",
+        "value": "#c2c4c8",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-60",
-        "value": "#ea580c",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-95",
+        "value": "#dbdcdf",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-70",
-        "value": "#c2410c",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-96",
+        "value": "#e1e2e4",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-80",
-        "value": "#9a3412",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-97",
+        "value": "#eaebec",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-90",
-        "value": "#7c2d12",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-98",
+        "value": "#f4f4f5",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-orange-100",
-        "value": "#431407",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-0",
-        "value": "#ffffff",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-5",
-        "value": "#fffef5",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-10",
-        "value": "#fefce8",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-20",
-        "value": "#fef9c3",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-30",
-        "value": "#fef08a",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-40",
-        "value": "#fde047",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-50",
-        "value": "#facc15",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-60",
-        "value": "#ca8a04",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-70",
-        "value": "#a16207",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-80",
-        "value": "#875600",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-90",
-        "value": "#713f12",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-yellow-100",
-        "value": "#422006",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-0",
-        "value": "#ffffff",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-5",
-        "value": "#fbfdf5",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-10",
-        "value": "#f7fee7",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-20",
-        "value": "#ecfccb",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-30",
-        "value": "#d9f99d",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-40",
-        "value": "#c4d982",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-50",
-        "value": "#a3c449",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-60",
-        "value": "#6b8f24",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-70",
-        "value": "#4d681b",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-80",
-        "value": "#3f5516",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-90",
-        "value": "#30420e",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-lime-100",
-        "value": "#1a2e05",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-cyan-0",
-        "value": "#ffffff",
-        "description": "Primitive palette; use semantic aliases in components."
-      },
-      {
-        "name": "--atomic-cyan-5",
-        "value": "#f5feff",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-coolNeutral-99",
+        "value": "#f7f7f8",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-cyan-10",
-        "value": "#ecfeff",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#00252b",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-cyan-20",
-        "value": "#cffafe",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#004854",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-cyan-30",
-        "value": "#a5f3fc",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#006f82",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-cyan-40",
-        "value": "#67e8f9",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#0098b2",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-cyan-50",
-        "value": "#22d3ee",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#00bdde",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-cyan-60",
-        "value": "#0891b2",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#28d0ed",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-cyan-70",
-        "value": "#0e7490",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#57dff7",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-cyan-80",
-        "value": "#155e75",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#8aedff",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-cyan-90",
-        "value": "#164e63",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#b5f4ff",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-cyan-100",
-        "value": "#083344",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-cyan-95",
+        "value": "#defaff",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-0",
-        "value": "#ffffff",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-cyan-99",
+        "value": "#f7feff",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-5",
-        "value": "#faf8ff",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-green-10",
+        "value": "#00240c",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-10",
-        "value": "#f5f3ff",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-green-20",
+        "value": "#004517",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-20",
-        "value": "#ede9fe",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-green-30",
+        "value": "#006e25",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-30",
-        "value": "#ddd6fe",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-green-40",
+        "value": "#009632",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-40",
-        "value": "#c4b5fd",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-green-50",
+        "value": "#00bf40",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-50",
-        "value": "#a78bfa",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-green-60",
+        "value": "#1ed45a",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-60",
-        "value": "#7c3aed",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-green-70",
+        "value": "#49e57d",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-70",
-        "value": "#6d28d9",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-green-80",
+        "value": "#7df5a5",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-80",
-        "value": "#5b21b6",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-green-90",
+        "value": "#acfcc7",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-90",
-        "value": "#4c1d95",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-green-95",
+        "value": "#d9ffe6",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-violet-100",
-        "value": "#2e1065",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-green-99",
+        "value": "#f2fff6",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-pink-0",
-        "value": "#ffffff",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-lightBlue-10",
+        "value": "#002130",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-pink-5",
-        "value": "#fff7fb",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-lightBlue-20",
+        "value": "#004261",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lightBlue-30",
+        "value": "#006796",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lightBlue-40",
+        "value": "#008dcf",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lightBlue-50",
+        "value": "#00aeff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lightBlue-60",
+        "value": "#3dc2ff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lightBlue-70",
+        "value": "#70d2ff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lightBlue-80",
+        "value": "#a1e1ff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lightBlue-90",
+        "value": "#c4ecfe",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lightBlue-95",
+        "value": "#e5f6fe",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lightBlue-99",
+        "value": "#f7fdff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-10",
+        "value": "#112900",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-20",
+        "value": "#225200",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-30",
+        "value": "#347d00",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-37",
+        "value": "#429e00",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-40",
+        "value": "#48ad00",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-50",
+        "value": "#58cf04",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-60",
+        "value": "#6be016",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-70",
+        "value": "#88f03e",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-80",
+        "value": "#aef779",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-90",
+        "value": "#ccfca9",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-95",
+        "value": "#e6ffd4",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-lime-99",
+        "value": "#f8fff2",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-5",
+        "value": "#0f0f0f",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-10",
+        "value": "#171717",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-15",
+        "value": "#1c1c1c",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-20",
+        "value": "#2a2a2a",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-22",
+        "value": "#303030",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-30",
+        "value": "#474747",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-40",
+        "value": "#5c5c5c",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-50",
+        "value": "#737373",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-60",
+        "value": "#8a8a8a",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-70",
+        "value": "#9b9b9b",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-80",
+        "value": "#b0b0b0",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-90",
+        "value": "#c4c4c4",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-95",
+        "value": "#dcdcdc",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-neutral-99",
+        "value": "#f7f7f7",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-10",
+        "value": "#361e00",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-20",
+        "value": "#663a00",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-30",
+        "value": "#9c5800",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-39",
+        "value": "#d17600",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-40",
+        "value": "#d47800",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-50",
+        "value": "#ff9200",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-60",
+        "value": "#ffa938",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-70",
+        "value": "#ffc06e",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-80",
+        "value": "#ffd49c",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-90",
+        "value": "#fee6c6",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-95",
+        "value": "#fef4e6",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-orange-99",
+        "value": "#fffcf7",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-pink-10",
-        "value": "#fdf2f8",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#3d0133",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-pink-20",
-        "value": "#fce7f3",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#730560",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-pink-30",
-        "value": "#fbcfe8",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#a81690",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-pink-40",
-        "value": "#f9a8d4",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#d331b8",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-pink-46",
+        "value": "#e846cd",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-pink-50",
-        "value": "#f472b6",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#f553da",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-pink-60",
-        "value": "#db2777",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#fa73e3",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-pink-70",
-        "value": "#be185d",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#ff94ed",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-pink-80",
-        "value": "#9d174d",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#ffb8f3",
+        "source": "Montage official CSS"
       },
       {
         "name": "--atomic-pink-90",
-        "value": "#831843",
-        "description": "Primitive palette; use semantic aliases in components."
+        "value": "#fed3f7",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--atomic-pink-100",
-        "value": "#500724",
-        "description": "Primitive palette; use semantic aliases in components."
+        "name": "--atomic-pink-95",
+        "value": "#feecfb",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-pink-99",
+        "value": "#fffafe",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-purple-10",
+        "value": "#290247",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-purple-20",
+        "value": "#580a7d",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-purple-30",
+        "value": "#861cb8",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-purple-40",
+        "value": "#ad36e3",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-purple-50",
+        "value": "#cb59ff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-purple-60",
+        "value": "#d478ff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-purple-70",
+        "value": "#de96ff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-purple-80",
+        "value": "#e9baff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-purple-90",
+        "value": "#f2d6ff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-purple-95",
+        "value": "#f9edff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-purple-99",
+        "value": "#fefbff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-red-10",
+        "value": "#3b0101",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-red-20",
+        "value": "#730303",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-red-30",
+        "value": "#b00c0c",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-red-40",
+        "value": "#e52222",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-red-50",
+        "value": "#ff4242",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-red-60",
+        "value": "#ff6363",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-red-70",
+        "value": "#ff8c8c",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-red-80",
+        "value": "#ffb5b5",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-red-90",
+        "value": "#fed5d5",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-red-95",
+        "value": "#feecec",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-red-99",
+        "value": "snow",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-10",
+        "value": "#11024d",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-20",
+        "value": "#23098f",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-30",
+        "value": "#3a16c9",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-40",
+        "value": "#4f29e5",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-45",
+        "value": "#5b37ed",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-50",
+        "value": "#6541f2",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-60",
+        "value": "#7d5ef7",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-70",
+        "value": "#9e86fc",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-80",
+        "value": "#c0b0ff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-90",
+        "value": "#dbd3fe",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-95",
+        "value": "#f0ecfe",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-violet-99",
+        "value": "#fbfaff",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-10",
+        "value": "#290f00",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-20",
+        "value": "#592100",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-30",
+        "value": "#913500",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-40",
+        "value": "#c94a00",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-48",
+        "value": "#f55a00",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-50",
+        "value": "#ff5e00",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-60",
+        "value": "#ff7b2e",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-70",
+        "value": "#ff9b61",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-80",
+        "value": "#ffbd96",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-90",
+        "value": "#fed9c4",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-95",
+        "value": "#feeee5",
+        "source": "Montage official CSS"
+      },
+      {
+        "name": "--atomic-redOrange-99",
+        "value": "#fffaf7",
+        "source": "Montage official CSS"
+      }
+    ]
+  },
+  {
+    "id": "brand",
+    "title": "Primitive · Project brand",
+    "tokens": [
+      {
+        "name": "--brand-primary",
+        "value": "#176b45",
+        "description": "Fairway green explicitly requested in the original brief; exact existing mapping retained."
+      },
+      {
+        "name": "--brand-primary-strong",
+        "value": "#115638"
+      },
+      {
+        "name": "--brand-primary-heavy",
+        "value": "#0b402b"
+      },
+      {
+        "name": "--brand-accent",
+        "value": "#cce584"
+      },
+      {
+        "name": "--project-surface-light",
+        "value": "#f7f7f9",
+        "description": "Explicit project surface request; not a Montage value."
       }
     ]
   },
   {
     "id": "semantic",
-    "title": "Semantic colors",
+    "title": "Semantic · Roles and project brand mapping",
     "tokens": [
       {
-        "name": "--semantic-primary-normal",
-        "value": "var(--atomic-green-60)",
-        "description": "primary normal",
-        "dark": "var(--atomic-green-40)"
-      },
-      {
-        "name": "--semantic-primary-strong",
-        "value": "var(--atomic-green-70)",
-        "description": "primary strong",
-        "dark": "var(--atomic-green-30)"
-      },
-      {
-        "name": "--semantic-primary-heavy",
-        "value": "var(--atomic-green-80)",
-        "description": "primary heavy",
-        "dark": "var(--atomic-green-20)"
-      },
-      {
-        "name": "--semantic-label-normal",
-        "value": "var(--atomic-neutral-90)",
-        "description": "label normal",
-        "dark": "var(--atomic-neutral-10)"
-      },
-      {
-        "name": "--semantic-label-strong",
-        "value": "var(--atomic-neutral-100)",
-        "description": "label strong",
-        "dark": "var(--atomic-neutral-0)"
-      },
-      {
-        "name": "--semantic-label-neutral",
-        "value": "var(--atomic-neutral-70)",
-        "description": "label neutral",
-        "dark": "var(--atomic-neutral-30)"
-      },
-      {
-        "name": "--semantic-label-alternative",
-        "value": "var(--atomic-neutral-60)",
-        "description": "label alternative",
-        "dark": "var(--atomic-neutral-40)"
-      },
-      {
-        "name": "--semantic-label-assistive",
-        "value": "var(--atomic-neutral-50)",
-        "description": "label assistive",
-        "dark": "var(--atomic-neutral-50)"
-      },
-      {
-        "name": "--semantic-label-disable",
-        "value": "var(--atomic-neutral-40)",
-        "description": "label disable",
-        "dark": "var(--atomic-neutral-60)"
-      },
-      {
-        "name": "--semantic-background-normal",
-        "value": "var(--atomic-neutral-0)",
-        "description": "background normal",
-        "dark": "var(--atomic-neutral-100)"
-      },
-      {
-        "name": "--semantic-background-alternative",
-        "value": "var(--atomic-neutral-10)",
-        "description": "background alternative",
-        "dark": "var(--atomic-neutral-90)"
-      },
-      {
-        "name": "--semantic-background-elevated",
-        "value": "var(--atomic-neutral-0)",
-        "description": "background elevated",
-        "dark": "var(--atomic-neutral-90)"
-      },
-      {
-        "name": "--semantic-background-elevated-alternative",
-        "value": "var(--atomic-neutral-5)",
-        "description": "background elevated alternative",
-        "dark": "var(--atomic-neutral-80)"
-      },
-      {
-        "name": "--semantic-line-solid-normal",
-        "value": "var(--atomic-neutral-30)",
-        "description": "line solid normal",
-        "dark": "var(--atomic-neutral-70)"
-      },
-      {
-        "name": "--semantic-line-solid-neutral",
-        "value": "var(--atomic-neutral-20)",
-        "description": "line solid neutral",
-        "dark": "var(--atomic-neutral-80)"
-      },
-      {
-        "name": "--semantic-line-solid-alternative",
-        "value": "var(--atomic-neutral-10)",
-        "description": "line solid alternative",
-        "dark": "var(--atomic-neutral-90)"
-      },
-      {
-        "name": "--semantic-inverse-primary",
-        "value": "var(--atomic-green-30)",
-        "description": "inverse primary",
-        "dark": "var(--atomic-green-70)"
-      },
-      {
-        "name": "--semantic-inverse-background",
-        "value": "var(--atomic-neutral-90)",
-        "description": "inverse background",
-        "dark": "var(--atomic-neutral-10)"
-      },
-      {
-        "name": "--semantic-inverse-label",
-        "value": "var(--atomic-neutral-0)",
-        "description": "inverse label",
-        "dark": "var(--atomic-neutral-90)"
-      },
-      {
-        "name": "--semantic-status-positive",
-        "value": "var(--atomic-green-60)",
-        "description": "status positive",
-        "dark": "var(--atomic-green-40)"
-      },
-      {
-        "name": "--semantic-status-cautionary",
-        "value": "var(--atomic-yellow-80)",
-        "description": "status cautionary",
-        "dark": "var(--atomic-yellow-40)"
-      },
-      {
-        "name": "--semantic-status-negative",
-        "value": "var(--atomic-red-70)",
-        "description": "status negative",
-        "dark": "var(--atomic-red-40)"
-      },
-      {
-        "name": "--semantic-status-info",
-        "value": "var(--atomic-blue-70)",
-        "description": "status info",
-        "dark": "var(--atomic-blue-40)"
-      },
-      {
-        "name": "--semantic-interaction-inactive",
-        "value": "var(--atomic-neutral-60)",
-        "description": "interaction inactive",
-        "dark": "var(--atomic-neutral-50)"
-      },
-      {
-        "name": "--semantic-interaction-disable",
-        "value": "var(--atomic-neutral-20)",
-        "description": "interaction disable",
-        "dark": "var(--atomic-neutral-80)"
-      },
-      {
-        "name": "--semantic-fill-normal",
-        "value": "#19241e08",
-        "description": "fill-normal",
-        "dark": "#ffffff0f"
-      },
-      {
-        "name": "--semantic-fill-strong",
-        "value": "#19241e14",
-        "description": "fill-strong",
-        "dark": "#ffffff1f"
-      },
-      {
-        "name": "--semantic-fill-alternative",
-        "value": "#19241e05",
-        "description": "fill-alternative",
-        "dark": "#ffffff08"
-      },
-      {
-        "name": "--semantic-line-normal",
-        "value": "#19241e24",
-        "description": "line-normal",
-        "dark": "#ffffff2e"
-      },
-      {
-        "name": "--semantic-line-neutral",
-        "value": "#19241e14",
-        "description": "line-neutral",
-        "dark": "#ffffff1f"
-      },
-      {
-        "name": "--semantic-line-alternative",
-        "value": "#19241e0d",
-        "description": "line-alternative",
-        "dark": "#ffffff14"
-      },
-      {
-        "name": "--semantic-background-transparent",
-        "value": "#ffffffeb",
-        "description": "background-transparent",
-        "dark": "#0b130feb"
-      },
-      {
-        "name": "--semantic-material-dimmer",
-        "value": "#0e2019a8",
-        "description": "material-dimmer",
-        "dark": "#000000b8"
-      },
-      {
         "name": "--semantic-static-white",
-        "value": "#ffffff",
-        "description": "static-white",
-        "dark": "#ffffff"
+        "value": "#fff",
+        "source": "Montage official CSS"
       },
       {
         "name": "--semantic-static-black",
-        "value": "#000000",
-        "description": "static-black",
-        "dark": "#000000"
+        "value": "#000",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--semantic-accent-red",
-        "value": "var(--atomic-red-70)",
-        "description": "Foreground accent",
-        "dark": "var(--atomic-red-40)"
+        "name": "--semantic-primary-normal",
+        "value": "var(--brand-primary)",
+        "source": "Project brand mapping",
+        "dark": "var(--atomic-green-80)"
       },
       {
-        "name": "--semantic-accent-red-subtle",
-        "value": "var(--atomic-red-10)",
-        "description": "Subtle background",
-        "dark": "var(--atomic-red-100)"
+        "name": "--semantic-primary-strong",
+        "value": "var(--brand-primary-strong)",
+        "source": "Project brand mapping",
+        "dark": "var(--atomic-green-70)"
       },
       {
-        "name": "--semantic-accent-orange",
-        "value": "var(--atomic-orange-70)",
-        "description": "Foreground accent",
-        "dark": "var(--atomic-orange-40)"
+        "name": "--semantic-primary-heavy",
+        "value": "var(--brand-primary-heavy)",
+        "source": "Project brand mapping",
+        "dark": "var(--atomic-green-60)"
       },
       {
-        "name": "--semantic-accent-orange-subtle",
-        "value": "var(--atomic-orange-10)",
-        "description": "Subtle background",
-        "dark": "var(--atomic-orange-100)"
+        "name": "--semantic-label-normal",
+        "value": "#171719",
+        "source": "Montage official CSS",
+        "dark": "#f7f7f8"
       },
       {
-        "name": "--semantic-accent-yellow",
-        "value": "var(--atomic-yellow-70)",
-        "description": "Foreground accent",
-        "dark": "var(--atomic-yellow-40)"
+        "name": "--semantic-label-strong",
+        "value": "#000",
+        "source": "Montage official CSS",
+        "dark": "#fff"
       },
       {
-        "name": "--semantic-accent-yellow-subtle",
-        "value": "var(--atomic-yellow-10)",
-        "description": "Subtle background",
-        "dark": "var(--atomic-yellow-100)"
+        "name": "--semantic-label-neutral",
+        "value": "#2e2f33e0",
+        "source": "Montage official CSS",
+        "dark": "#c2c4c8e0"
       },
       {
-        "name": "--semantic-accent-lime",
-        "value": "var(--atomic-lime-70)",
-        "description": "Foreground accent",
-        "dark": "var(--atomic-lime-40)"
+        "name": "--semantic-label-alternative",
+        "value": "#37383c9c",
+        "source": "Montage official CSS",
+        "dark": "#aeb0b69c"
       },
       {
-        "name": "--semantic-accent-lime-subtle",
-        "value": "var(--atomic-lime-10)",
-        "description": "Subtle background",
-        "dark": "var(--atomic-lime-100)"
+        "name": "--semantic-label-assistive",
+        "value": "#37383c47",
+        "source": "Montage official CSS",
+        "dark": "#aeb0b647"
       },
       {
-        "name": "--semantic-accent-green",
-        "value": "var(--atomic-green-70)",
-        "description": "Foreground accent",
-        "dark": "var(--atomic-green-40)"
+        "name": "--semantic-label-disable",
+        "value": "#37383c29",
+        "source": "Montage official CSS",
+        "dark": "#989ba229"
       },
       {
-        "name": "--semantic-accent-green-subtle",
-        "value": "var(--atomic-green-10)",
-        "description": "Subtle background",
-        "dark": "var(--atomic-green-100)"
+        "name": "--semantic-background-normal-normal",
+        "value": "#fff",
+        "source": "Montage official CSS",
+        "dark": "#1b1c1e"
       },
       {
-        "name": "--semantic-accent-cyan",
-        "value": "var(--atomic-cyan-70)",
-        "description": "Foreground accent",
-        "dark": "var(--atomic-cyan-40)"
+        "name": "--semantic-background-normal-alternative",
+        "value": "var(--project-surface-light)",
+        "source": "Montage official CSS",
+        "dark": "#0f0f10"
       },
       {
-        "name": "--semantic-accent-cyan-subtle",
-        "value": "var(--atomic-cyan-10)",
-        "description": "Subtle background",
-        "dark": "var(--atomic-cyan-100)"
+        "name": "--semantic-background-elevated-normal",
+        "value": "#fff",
+        "source": "Montage official CSS",
+        "dark": "#212225"
       },
       {
-        "name": "--semantic-accent-blue",
-        "value": "var(--atomic-blue-70)",
-        "description": "Foreground accent",
-        "dark": "var(--atomic-blue-40)"
+        "name": "--semantic-background-elevated-alternative",
+        "value": "#f7f7f8",
+        "source": "Montage official CSS",
+        "dark": "#141415"
       },
       {
-        "name": "--semantic-accent-blue-subtle",
-        "value": "var(--atomic-blue-10)",
-        "description": "Subtle background",
-        "dark": "var(--atomic-blue-100)"
+        "name": "--semantic-background-transparent-normal",
+        "value": "#ffffff14",
+        "source": "Montage official CSS",
+        "dark": "#2122259c"
       },
       {
-        "name": "--semantic-accent-violet",
-        "value": "var(--atomic-violet-70)",
-        "description": "Foreground accent",
-        "dark": "var(--atomic-violet-40)"
+        "name": "--semantic-background-transparent-alternative",
+        "value": "#ffffff47",
+        "source": "Montage official CSS",
+        "dark": "#2122259c"
       },
       {
-        "name": "--semantic-accent-violet-subtle",
-        "value": "var(--atomic-violet-10)",
-        "description": "Subtle background",
-        "dark": "var(--atomic-violet-100)"
+        "name": "--semantic-background-status-negative",
+        "value": "#ff424214",
+        "source": "Montage official CSS",
+        "dark": "#ff636314"
       },
       {
-        "name": "--semantic-accent-pink",
-        "value": "var(--atomic-pink-70)",
-        "description": "Foreground accent",
-        "dark": "var(--atomic-pink-40)"
+        "name": "--semantic-background-status-cautionary",
+        "value": "#ff920014",
+        "source": "Montage official CSS",
+        "dark": "#ffa93814"
       },
       {
-        "name": "--semantic-accent-pink-subtle",
-        "value": "var(--atomic-pink-10)",
-        "description": "Subtle background",
-        "dark": "var(--atomic-pink-100)"
+        "name": "--semantic-background-status-positive",
+        "value": "#00bf4014",
+        "source": "Montage official CSS",
+        "dark": "#1ed45a14"
+      },
+      {
+        "name": "--semantic-interaction-inactive",
+        "value": "#989ba2",
+        "source": "Montage official CSS",
+        "dark": "#5a5c63"
+      },
+      {
+        "name": "--semantic-interaction-disable",
+        "value": "#f4f4f5",
+        "source": "Montage official CSS",
+        "dark": "#2e2f33"
+      },
+      {
+        "name": "--semantic-line-normal-normal",
+        "value": "#70737c38",
+        "source": "Montage official CSS",
+        "dark": "#70737c52"
+      },
+      {
+        "name": "--semantic-line-normal-neutral",
+        "value": "#70737c29",
+        "source": "Montage official CSS",
+        "dark": "#70737c47"
+      },
+      {
+        "name": "--semantic-line-normal-alternative",
+        "value": "#70737c14",
+        "source": "Montage official CSS",
+        "dark": "#70737c38"
+      },
+      {
+        "name": "--semantic-line-solid-normal",
+        "value": "#e1e2e4",
+        "source": "Montage official CSS",
+        "dark": "#37383c"
+      },
+      {
+        "name": "--semantic-line-solid-neutral",
+        "value": "#eaebec",
+        "source": "Montage official CSS",
+        "dark": "#333438"
+      },
+      {
+        "name": "--semantic-line-solid-alternative",
+        "value": "#f4f4f5",
+        "source": "Montage official CSS",
+        "dark": "#2e2f33"
+      },
+      {
+        "name": "--semantic-line-primary-normal",
+        "value": "#0066ff47",
+        "source": "Montage official CSS",
+        "dark": "#3385ff47"
+      },
+      {
+        "name": "--semantic-line-primary-strong",
+        "value": "#0066ff6e",
+        "source": "Montage official CSS",
+        "dark": "#3385ff6e"
+      },
+      {
+        "name": "--semantic-line-status-negative-normal",
+        "value": "#ff42426e",
+        "source": "Montage official CSS",
+        "dark": "#ff63636e"
+      },
+      {
+        "name": "--semantic-line-status-negative-strong",
+        "value": "#ff424285",
+        "source": "Montage official CSS",
+        "dark": "#ff636385"
+      },
+      {
+        "name": "--semantic-line-status-cautionary-normal",
+        "value": "#ff92006e",
+        "source": "Montage official CSS",
+        "dark": "#ffa9386e"
+      },
+      {
+        "name": "--semantic-line-status-positive-normal",
+        "value": "#00bf406e",
+        "source": "Montage official CSS",
+        "dark": "#1ed45a6e"
+      },
+      {
+        "name": "--semantic-status-positive",
+        "value": "#00bf40",
+        "source": "Montage official CSS",
+        "dark": "#1ed45a"
+      },
+      {
+        "name": "--semantic-status-cautionary",
+        "value": "#ff9200",
+        "source": "Montage official CSS",
+        "dark": "#ffa938"
+      },
+      {
+        "name": "--semantic-status-negative",
+        "value": "#ff4242",
+        "source": "Montage official CSS",
+        "dark": "#ff6363"
+      },
+      {
+        "name": "--semantic-accent-background-redOrange",
+        "value": "#ff5e00",
+        "source": "Montage official CSS",
+        "dark": "#ff7b2e"
+      },
+      {
+        "name": "--semantic-accent-background-lime",
+        "value": "#58cf04",
+        "source": "Montage official CSS",
+        "dark": "#6be016"
+      },
+      {
+        "name": "--semantic-accent-background-cyan",
+        "value": "#00bdde",
+        "source": "Montage official CSS",
+        "dark": "#28d0ed"
+      },
+      {
+        "name": "--semantic-accent-background-lightBlue",
+        "value": "#00aeff",
+        "source": "Montage official CSS",
+        "dark": "#3dc2ff"
+      },
+      {
+        "name": "--semantic-accent-background-violet",
+        "value": "#6541f2",
+        "source": "Montage official CSS",
+        "dark": "#7d5ef7"
+      },
+      {
+        "name": "--semantic-accent-background-purple",
+        "value": "#cb59ff",
+        "source": "Montage official CSS",
+        "dark": "#d478ff"
+      },
+      {
+        "name": "--semantic-accent-background-pink",
+        "value": "#f553da",
+        "source": "Montage official CSS",
+        "dark": "#fa73e3"
+      },
+      {
+        "name": "--semantic-accent-foreground-red",
+        "value": "#e52222",
+        "source": "Montage official CSS",
+        "dark": "#ff6363"
+      },
+      {
+        "name": "--semantic-accent-foreground-redOrange",
+        "value": "#f55a00",
+        "source": "Montage official CSS",
+        "dark": "#ff7b2e"
+      },
+      {
+        "name": "--semantic-accent-foreground-orange",
+        "value": "#d17600",
+        "source": "Montage official CSS",
+        "dark": "#ff9200"
+      },
+      {
+        "name": "--semantic-accent-foreground-lime",
+        "value": "#429e00",
+        "source": "Montage official CSS",
+        "dark": "#58cf04"
+      },
+      {
+        "name": "--semantic-accent-foreground-green",
+        "value": "#009632",
+        "source": "Montage official CSS",
+        "dark": "#1ed45a"
+      },
+      {
+        "name": "--semantic-accent-foreground-cyan",
+        "value": "#0098b2",
+        "source": "Montage official CSS",
+        "dark": "#00bdde"
+      },
+      {
+        "name": "--semantic-accent-foreground-lightBlue",
+        "value": "#008dcf",
+        "source": "Montage official CSS",
+        "dark": "#00aeff"
+      },
+      {
+        "name": "--semantic-accent-foreground-blue",
+        "value": "#005eeb",
+        "source": "Montage official CSS",
+        "dark": "#4f95ff"
+      },
+      {
+        "name": "--semantic-accent-foreground-violet",
+        "value": "#5b37ed",
+        "source": "Montage official CSS",
+        "dark": "#9e86fc"
+      },
+      {
+        "name": "--semantic-accent-foreground-purple",
+        "value": "#ad36e3",
+        "source": "Montage official CSS",
+        "dark": "#d478ff"
+      },
+      {
+        "name": "--semantic-accent-foreground-pink",
+        "value": "#e846cd",
+        "source": "Montage official CSS",
+        "dark": "#fa73e3"
+      },
+      {
+        "name": "--semantic-inverse-primary",
+        "value": "#3385ff",
+        "source": "Montage official CSS",
+        "dark": "#06f"
+      },
+      {
+        "name": "--semantic-inverse-background",
+        "value": "#1b1c1e",
+        "source": "Montage official CSS",
+        "dark": "#fff"
+      },
+      {
+        "name": "--semantic-inverse-label",
+        "value": "#f7f7f8",
+        "source": "Montage official CSS",
+        "dark": "#171719"
+      },
+      {
+        "name": "--semantic-fill-normal",
+        "value": "#70737c14",
+        "source": "Montage official CSS",
+        "dark": "#70737c38"
+      },
+      {
+        "name": "--semantic-fill-strong",
+        "value": "#70737c29",
+        "source": "Montage official CSS",
+        "dark": "#70737c47"
+      },
+      {
+        "name": "--semantic-fill-alternative",
+        "value": "#70737c0d",
+        "source": "Montage official CSS",
+        "dark": "#70737c1f"
+      },
+      {
+        "name": "--semantic-material-dimmer",
+        "value": "#17171985",
+        "source": "Montage official CSS",
+        "dark": "#171719bd"
+      },
+      {
+        "name": "--semantic-brand-subtle",
+        "value": "color-mix(in srgb, var(--semantic-primary-normal) 8%, var(--semantic-background-normal-normal))"
+      },
+      {
+        "name": "--semantic-brand-accent",
+        "value": "var(--brand-accent)"
+      },
+      {
+        "name": "--semantic-status-info",
+        "value": "var(--semantic-accent-foreground-blue)"
+      },
+      {
+        "name": "--semantic-surface-lime",
+        "value": "color-mix(in srgb, var(--semantic-accent-foreground-lime) 8%, var(--semantic-background-normal-normal))",
+        "description": "Project subtle status surface, derived from official foreground."
+      },
+      {
+        "name": "--semantic-surface-cyan",
+        "value": "color-mix(in srgb, var(--semantic-accent-foreground-cyan) 8%, var(--semantic-background-normal-normal))",
+        "description": "Project subtle status surface, derived from official foreground."
+      },
+      {
+        "name": "--semantic-surface-blue",
+        "value": "color-mix(in srgb, var(--semantic-accent-foreground-blue) 8%, var(--semantic-background-normal-normal))",
+        "description": "Project subtle status surface, derived from official foreground."
+      },
+      {
+        "name": "--semantic-surface-violet",
+        "value": "color-mix(in srgb, var(--semantic-accent-foreground-violet) 8%, var(--semantic-background-normal-normal))",
+        "description": "Project subtle status surface, derived from official foreground."
+      },
+      {
+        "name": "--semantic-surface-pink",
+        "value": "color-mix(in srgb, var(--semantic-accent-foreground-pink) 8%, var(--semantic-background-normal-normal))",
+        "description": "Project subtle status surface, derived from official foreground."
       }
     ]
   },
   {
     "id": "typography",
-    "title": "Typography",
+    "title": "Primitive · Project typography (minimum 13px)",
     "tokens": [
       {
         "name": "--font-family",
@@ -961,294 +1308,413 @@ export const tokenGroups = [
       },
       {
         "name": "--type-display-1-size",
-        "value": "56px",
-        "description": ""
+        "value": "58px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "56px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-display-1-line",
-        "value": "72px",
-        "description": ""
+        "value": "76px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "72px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-display-1-tracking",
         "value": "-0.0319em",
-        "description": ""
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "-0.0319em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-display-2-size",
-        "value": "40px",
-        "description": ""
+        "value": "42px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "40px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-display-2-line",
-        "value": "52px",
-        "description": ""
+        "value": "56px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "52px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-display-2-tracking",
-        "value": "-0.0282em",
-        "description": ""
+        "value": "-0.02866em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "-0.0282em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-display-3-size",
-        "value": "36px",
-        "description": ""
+        "value": "38px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "36px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-display-3-line",
-        "value": "48px",
-        "description": ""
+        "value": "52px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "48px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-display-3-tracking",
-        "value": "-0.027em",
-        "description": ""
+        "value": "-0.0276em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "-0.027em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-title-1-size",
-        "value": "32px",
-        "description": ""
+        "value": "34px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "32px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-title-1-line",
-        "value": "44px",
-        "description": ""
+        "value": "48px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "44px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-title-1-tracking",
-        "value": "-0.0253em",
-        "description": ""
+        "value": "-0.02615em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "-0.0253em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-title-2-size",
-        "value": "28px",
-        "description": ""
+        "value": "30px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "28px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-title-2-line",
-        "value": "38px",
-        "description": ""
+        "value": "42px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "38px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-title-2-tracking",
-        "value": "-0.0236em",
-        "description": ""
+        "value": "-0.02445em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "-0.0236em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-title-3-size",
-        "value": "24px",
-        "description": ""
+        "value": "26px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "24px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-title-3-line",
-        "value": "32px",
-        "description": ""
+        "value": "36px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "32px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-title-3-tracking",
-        "value": "-0.023em",
-        "description": ""
+        "value": "-0.0233em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "-0.023em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-heading-1-size",
-        "value": "22px",
-        "description": ""
+        "value": "24px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "22px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-heading-1-line",
-        "value": "30px",
-        "description": ""
+        "value": "34px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "30px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-heading-1-tracking",
-        "value": "-0.0194em",
-        "description": ""
+        "value": "-0.023em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "-0.0194em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-heading-2-size",
-        "value": "20px",
-        "description": ""
+        "value": "22px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "20px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-heading-2-line",
-        "value": "28px",
-        "description": ""
+        "value": "32px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "28px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-heading-2-tracking",
-        "value": "-0.012em",
-        "description": ""
+        "value": "-0.0194em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "-0.012em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-headline-1-size",
-        "value": "18px",
-        "description": ""
+        "value": "20px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "18px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-headline-1-line",
-        "value": "26px",
-        "description": ""
+        "value": "30px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "26px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-headline-1-tracking",
-        "value": "-0.002em",
-        "description": ""
+        "value": "-0.012em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "-0.002em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-headline-2-size",
-        "value": "17px",
-        "description": ""
+        "value": "19px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "17px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-headline-2-line",
-        "value": "26px",
-        "description": ""
+        "value": "30px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "26px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-headline-2-tracking",
-        "value": "0em",
-        "description": ""
+        "value": "-0.007em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "0em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-1-size",
-        "value": "16px",
-        "description": ""
+        "value": "18px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "16px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-1-line",
-        "value": "24px",
-        "description": ""
+        "value": "28px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "24px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-1-tracking",
-        "value": "0.0057em",
-        "description": ""
+        "value": "-0.002em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "0.0057em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-1-reading-size",
-        "value": "16px",
-        "description": ""
+        "value": "18px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "16px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-1-reading-line",
-        "value": "26px",
-        "description": ""
+        "value": "30px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "26px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-1-reading-tracking",
-        "value": "0.0057em",
-        "description": ""
+        "value": "-0.002em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "0.0057em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-2-size",
-        "value": "15px",
-        "description": ""
+        "value": "17px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "15px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-2-line",
-        "value": "22px",
-        "description": ""
+        "value": "26px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "22px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-2-tracking",
-        "value": "0.0096em",
-        "description": ""
+        "value": "0em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "0.0096em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-2-reading-size",
-        "value": "15px",
-        "description": ""
+        "value": "17px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "15px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-2-reading-line",
-        "value": "24px",
-        "description": ""
+        "value": "28px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "24px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-body-2-reading-tracking",
-        "value": "0.0096em",
-        "description": ""
+        "value": "0em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "0.0096em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-label-1-size",
-        "value": "14px",
-        "description": ""
+        "value": "16px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "14px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-label-1-line",
-        "value": "20px",
-        "description": ""
+        "value": "24px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "20px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-label-1-tracking",
-        "value": "0.0145em",
-        "description": ""
+        "value": "0.0057em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "0.0145em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-label-1-reading-size",
-        "value": "14px",
-        "description": ""
+        "value": "16px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "14px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-label-1-reading-line",
-        "value": "22px",
-        "description": ""
+        "value": "26px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "22px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-label-1-reading-tracking",
-        "value": "0.0145em",
-        "description": ""
+        "value": "0.0057em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "0.0145em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-label-2-size",
-        "value": "13px",
-        "description": ""
+        "value": "15px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "13px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-label-2-line",
-        "value": "18px",
-        "description": ""
+        "value": "22px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "18px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-label-2-tracking",
-        "value": "0.0194em",
-        "description": ""
+        "value": "0.0096em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "0.0194em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-caption-1-size",
-        "value": "13px",
-        "description": "최소 글자 크기 13px. 기존 캡션 이름은 호환성을 위해 유지합니다."
+        "value": "14px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "12px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-caption-1-line",
-        "value": "18px",
-        "description": ""
+        "value": "20px",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "16px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-caption-1-tracking",
-        "value": "0.0194em",
-        "description": ""
+        "value": "0.0145em",
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "0.0252em",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-caption-2-size",
         "value": "13px",
-        "description": "최소 글자 크기 13px. 기존 캡션 이름은 호환성을 위해 유지합니다."
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "11px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-caption-2-line",
         "value": "18px",
-        "description": ""
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "14px",
+        "source": "Project minimum 13px scale; adapted from Montage"
       },
       {
         "name": "--type-caption-2-tracking",
         "value": "0.0194em",
-        "description": ""
+        "description": "Project scale: size +2px, line +4px; tracking interpolated at the new size from the reference scale.",
+        "referenceValue": "0.0311em",
+        "source": "Project minimum 13px scale; adapted from Montage"
+      },
+      {
+        "name": "--font-family-mono",
+        "value": "Consolas, monospace",
+        "description": "Project code specimens."
       }
     ]
   },
   {
     "id": "geometry",
-    "title": "Spacing and geometry",
+    "title": "Primitive · Project spacing / radius / border",
     "tokens": [
       {
         "name": "--space-0",
@@ -1414,113 +1880,58 @@ export const tokenGroups = [
         "name": "--border-focus",
         "value": "3px",
         "description": ""
+      },
+      {
+        "name": "--radius-10",
+        "value": "10px",
+        "source": "Montage medium Button"
       }
     ]
   },
   {
     "id": "elevation",
-    "title": "Elevation and layers",
+    "title": "Semantic · Montage elevation",
     "tokens": [
       {
-        "name": "--elevation-normal-none",
-        "value": "none",
-        "description": ""
+        "name": "--semantic-elevation-shadow-normal-xsmall",
+        "value": "0px 1px 2px -1px #1717171a",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--elevation-spread-none",
-        "value": "none",
-        "description": ""
+        "name": "--semantic-elevation-shadow-normal-small",
+        "value": "0px 2px 4px -2px #1717170f, 0px 4px 6px -1px #1717170f",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--elevation-normal-xs",
-        "value": "0 1px 2px #19241e0a, 0 1px 3px #19241e0a",
-        "description": ""
+        "name": "--semantic-elevation-shadow-normal-medium",
+        "value": "0px 4px 6px -2px #17171712, 0px 10px 15px -3px #17171712",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--elevation-spread-xs",
-        "value": "0 0 4px #19241e1f",
-        "description": ""
+        "name": "--semantic-elevation-shadow-normal-large",
+        "value": "0px 6px 10px -4px #17171714, 0px 16px 24px -6px #17171714",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--elevation-normal-sm",
-        "value": "0 2px 4px #19241e0a, 0 4px 8px #19241e0a",
-        "description": ""
+        "name": "--semantic-elevation-shadow-normal-xlarge",
+        "value": "0px 10px 15px -5px #1717171a, 0px 24px 38px -10px #1717171f",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--elevation-spread-sm",
-        "value": "0 0 8px #19241e1f",
-        "description": ""
+        "name": "--semantic-elevation-shadow-spread-small",
+        "value": "0px 0px 60px 0px #1717171a",
+        "source": "Montage official CSS"
       },
       {
-        "name": "--elevation-normal-md",
-        "value": "0 4px 8px #19241e0a, 0 8px 20px #19241e0f",
-        "description": ""
-      },
-      {
-        "name": "--elevation-spread-md",
-        "value": "0 0 20px #19241e1f",
-        "description": ""
-      },
-      {
-        "name": "--elevation-normal-lg",
-        "value": "0 8px 16px #19241e0a, 0 16px 40px #19241e14",
-        "description": ""
-      },
-      {
-        "name": "--elevation-spread-lg",
-        "value": "0 0 40px #19241e1f",
-        "description": ""
-      },
-      {
-        "name": "--elevation-normal-xl",
-        "value": "0 16px 24px #19241e14, 0 24px 64px #19241e1f",
-        "description": ""
-      },
-      {
-        "name": "--elevation-spread-xl",
-        "value": "0 0 64px #19241e1f",
-        "description": ""
-      },
-      {
-        "name": "--z-base",
-        "value": "0",
-        "description": ""
-      },
-      {
-        "name": "--z-sticky",
-        "value": "100",
-        "description": ""
-      },
-      {
-        "name": "--z-dropdown",
-        "value": "200",
-        "description": ""
-      },
-      {
-        "name": "--z-overlay",
-        "value": "300",
-        "description": ""
-      },
-      {
-        "name": "--z-modal",
-        "value": "400",
-        "description": ""
-      },
-      {
-        "name": "--z-toast",
-        "value": "500",
-        "description": ""
-      },
-      {
-        "name": "--z-tooltip",
-        "value": "600",
-        "description": ""
+        "name": "--semantic-elevation-shadow-spread-medium",
+        "value": "0px 15px 75px 0px #17171729",
+        "source": "Montage official CSS"
       }
     ]
   },
   {
     "id": "motion",
-    "title": "Motion and interaction",
+    "title": "Primitive · Project motion",
     "tokens": [
       {
         "name": "--duration-instant",
@@ -1586,17 +1997,12 @@ export const tokenGroups = [
   },
   {
     "id": "layout",
-    "title": "Layout and sizing",
+    "title": "Layout · Project containers and stacking",
     "tokens": [
       {
         "name": "--container",
         "value": "1420px",
         "description": "Reference-aligned main content maximum width."
-      },
-      {
-        "name": "--header-height",
-        "value": "142px",
-        "description": ""
       },
       {
         "name": "--layout-sidebar",
@@ -1616,21 +2022,6 @@ export const tokenGroups = [
       {
         "name": "--layout-gutter-desktop",
         "value": "48px",
-        "description": ""
-      },
-      {
-        "name": "--breakpoint-mobile",
-        "value": "600px",
-        "description": ""
-      },
-      {
-        "name": "--breakpoint-tablet",
-        "value": "800px",
-        "description": ""
-      },
-      {
-        "name": "--breakpoint-desktop",
-        "value": "1200px",
         "description": ""
       },
       {
@@ -1657,36 +2048,83 @@ export const tokenGroups = [
         "name": "--icon-xl",
         "value": "40px",
         "description": ""
+      },
+      {
+        "name": "--container-wide",
+        "value": "1620px"
+      },
+      {
+        "name": "--layout-header-desktop",
+        "value": "169px"
+      },
+      {
+        "name": "--layout-header-mobile",
+        "value": "78px"
+      },
+      {
+        "name": "--z-base",
+        "value": "0",
+        "description": ""
+      },
+      {
+        "name": "--z-sticky",
+        "value": "100",
+        "description": ""
+      },
+      {
+        "name": "--z-dropdown",
+        "value": "200",
+        "description": ""
+      },
+      {
+        "name": "--z-overlay",
+        "value": "300",
+        "description": ""
+      },
+      {
+        "name": "--z-modal",
+        "value": "400",
+        "description": ""
+      },
+      {
+        "name": "--z-toast",
+        "value": "500",
+        "description": ""
+      },
+      {
+        "name": "--z-tooltip",
+        "value": "600",
+        "description": ""
       }
     ]
   },
   {
     "id": "component",
-    "title": "Component tokens",
+    "title": "Component · Shared control contracts",
     "tokens": [
       {
         "name": "--control-height-sm",
-        "value": "44px",
+        "value": "32px",
         "description": ""
       },
       {
         "name": "--control-height-md",
-        "value": "48px",
+        "value": "40px",
         "description": ""
       },
       {
         "name": "--control-height-lg",
-        "value": "56px",
+        "value": "48px",
         "description": ""
       },
       {
         "name": "--control-radius",
-        "value": "var(--radius-8)",
+        "value": "var(--radius-10)",
         "description": ""
       },
       {
         "name": "--control-padding-x",
-        "value": "var(--space-24)",
+        "value": "var(--space-20)",
         "description": ""
       },
       {
@@ -1696,7 +2134,7 @@ export const tokenGroups = [
       },
       {
         "name": "--control-font",
-        "value": "var(--type-label-1-size)",
+        "value": "var(--type-body-2-size)",
         "description": ""
       },
       {
@@ -1708,7 +2146,7 @@ export const tokenGroups = [
         "name": "--control-fg",
         "value": "var(--semantic-static-white)",
         "description": "",
-        "dark": "var(--atomic-neutral-100)"
+        "dark": "var(--semantic-static-black)"
       },
       {
         "name": "--control-hover",
@@ -1722,7 +2160,7 @@ export const tokenGroups = [
       },
       {
         "name": "--input-bg",
-        "value": "var(--semantic-background-normal)",
+        "value": "var(--semantic-background-normal-normal)",
         "description": ""
       },
       {
@@ -1752,7 +2190,7 @@ export const tokenGroups = [
       },
       {
         "name": "--card-bg",
-        "value": "var(--semantic-background-elevated)",
+        "value": "var(--semantic-background-elevated-normal)",
         "description": ""
       },
       {
@@ -1762,12 +2200,12 @@ export const tokenGroups = [
       },
       {
         "name": "--dialog-padding",
-        "value": "var(--space-28)",
+        "value": "var(--space-24)",
         "description": ""
       },
       {
         "name": "--dialog-width",
-        "value": "620px",
+        "value": "480px",
         "description": ""
       },
       {
@@ -1814,1442 +2252,18 @@ export const tokenGroups = [
         "name": "--avatar-lg",
         "value": "56px",
         "description": ""
-      }
-    ]
-  },
-  {
-    "id": "compatibility",
-    "title": "Existing site aliases",
-    "tokens": [
-      {
-        "name": "--color-primary",
-        "value": "var(--semantic-primary-normal)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--color-primary-dark",
-        "value": "var(--semantic-primary-heavy)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--color-primary-light",
-        "value": "var(--semantic-accent-green-subtle)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--color-text",
-        "value": "var(--semantic-label-normal)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--color-text-secondary",
-        "value": "var(--semantic-label-alternative)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--color-border",
-        "value": "var(--semantic-line-solid-normal)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--color-background",
-        "value": "var(--semantic-background-normal)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--color-surface",
-        "value": "#f7f7f9",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--color-error",
-        "value": "var(--semantic-status-negative)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--color-warning",
-        "value": "var(--semantic-status-cautionary)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--color-info",
-        "value": "var(--semantic-status-info)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--shadow-sm",
-        "value": "var(--elevation-normal-sm)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--shadow-md",
-        "value": "var(--elevation-normal-md)",
-        "description": "Compatibility alias; use semantic tokens for new code."
-      },
-      {
-        "name": "--color-accent",
-        "value": "var(--atomic-lime-40)",
-        "description": ""
-      },
-      {
-        "name": "--font-size-14",
-        "value": "14px",
-        "description": ""
-      },
-      {
-        "name": "--font-size-16",
-        "value": "16px",
-        "description": ""
-      },
-      {
-        "name": "--font-size-20",
-        "value": "20px",
-        "description": ""
-      }
-    ]
-  },
-  {
-    "id": "frontend-color",
-    "title": "Frontend Color",
-    "tokens": [
-      {
-        "name": "--color-f7f8f6",
-        "value": "#f7f8f6",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-f1f3ef",
-        "value": "#f1f3ef",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-e2e7df",
-        "value": "#e2e7df",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-00000000",
-        "value": "#00000000",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-0e2019a8",
-        "value": "#0e2019a8",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-e5b2ad",
-        "value": "#e5b2ad",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-f0f1ee",
-        "value": "#f0f1ee",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-616a62",
-        "value": "#616a62",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-fff4d8",
-        "value": "#fff4d8",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-8a938b",
-        "value": "#8a938b",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-fff7e6",
-        "value": "#fff7e6",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-edf0ec",
-        "value": "#edf0ec",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-f0f2ef",
-        "value": "#f0f2ef",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-edf0ed",
-        "value": "#edf0ed",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-f8f9f7",
-        "value": "#f8f9f7",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-eef0ec",
-        "value": "#eef0ec",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-596159",
-        "value": "#596159",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-acb7a9",
-        "value": "#acb7a9",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-0a2218c7",
-        "value": "#0a2218c7",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-0a221885",
-        "value": "#0a221885",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-0a221808",
-        "value": "#0a221808",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-e2eacf",
-        "value": "#e2eacf",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-e1e8de",
-        "value": "#e1e8de",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-ffffff21",
-        "value": "#ffffff21",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-ffffff50",
-        "value": "#ffffff50",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-dfebd4",
-        "value": "#dfebd4",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-90998f",
-        "value": "#90998f",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-051c12c9",
-        "value": "#051c12c9",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-e4ebdf",
-        "value": "#e4ebdf",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-c4d6c8",
-        "value": "#c4d6c8",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-ffffff35",
-        "value": "#ffffff35",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-c5d4c4",
-        "value": "#c5d4c4",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-092617b8",
-        "value": "#092617b8",
-        "description": "Shared frontend color value."
-      },
-      {
-        "name": "--color-09261738",
-        "value": "#09261738",
-        "description": "Shared frontend color value."
-      }
-    ]
-  },
-  {
-    "id": "frontend-layout",
-    "title": "Frontend Layout",
-    "tokens": [
-      {
-        "name": "--size-230px",
-        "value": "230px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-30px",
-        "value": "30px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-1px",
-        "value": "1px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-36px",
-        "value": "36px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-110px",
-        "value": "110px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-44px",
-        "value": "44px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-180px",
-        "value": "180px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-280px",
-        "value": "280px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-160px",
-        "value": "160px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-1px",
-        "value": "1px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-minus-100px",
-        "value": "-100px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-620px",
-        "value": "620px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-32px",
-        "value": "32px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-22px",
-        "value": "22px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-48px",
-        "value": "48px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-23px",
-        "value": "23px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-17px",
-        "value": "17px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-5px",
-        "value": "5px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-9px",
-        "value": "9px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-22px",
-        "value": "22px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-26px",
-        "value": "26px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-18px",
-        "value": "18px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-14px",
-        "value": "14px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-120px",
-        "value": "120px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-18px",
-        "value": "18px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-7px",
-        "value": "7px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-42px",
-        "value": "42px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-480px",
-        "value": "480px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-28px",
-        "value": "28px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-20px",
-        "value": "20px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-100px",
-        "value": "100px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-6px",
-        "value": "6px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-12px",
-        "value": "12px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-24px",
-        "value": "24px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-90px",
-        "value": "90px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-1300px",
-        "value": "1300px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-210px",
-        "value": "210px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-72px",
-        "value": "72px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-40px",
-        "value": "40px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-200px",
-        "value": "200px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-1700px",
-        "value": "1700px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-73px",
-        "value": "73px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-73px",
-        "value": "73px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-36px",
-        "value": "36px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-750px",
-        "value": "750px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-170px",
-        "value": "170px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-56px",
-        "value": "56px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-3px",
-        "value": "3px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-60px",
-        "value": "60px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-52px",
-        "value": "52px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-150px",
-        "value": "150px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-130px",
-        "value": "130px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-16px",
-        "value": "16px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-84px",
-        "value": "84px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-100px",
-        "value": "100px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-450px",
-        "value": "450px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-26px",
-        "value": "26px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-140px",
-        "value": "140px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-minus-10px",
-        "value": "-10px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-360px",
-        "value": "360px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-500px",
-        "value": "500px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-minus-3px",
-        "value": "-3px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-160px",
-        "value": "160px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-8px",
-        "value": "8px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-300px",
-        "value": "300px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-220px",
-        "value": "220px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-260px",
-        "value": "260px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-135px",
-        "value": "135px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-80px",
-        "value": "80px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-250px",
-        "value": "250px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-75px",
-        "value": "75px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-76px",
-        "value": "76px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-240px",
-        "value": "240px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-1500px",
-        "value": "1500px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-60px",
-        "value": "60px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-680px",
-        "value": "680px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-4px",
-        "value": "4px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-5px",
-        "value": "5px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-44px",
-        "value": "44px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-96px",
-        "value": "96px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-minus-8px",
-        "value": "-8px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-46px",
-        "value": "46px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-169px",
-        "value": "169px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-185px",
-        "value": "185px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-193px",
-        "value": "193px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-78px",
-        "value": "78px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-88px",
-        "value": "88px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-7px",
-        "value": "7px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-minus-7px",
-        "value": "-7px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-minus-4px",
-        "value": "-4px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-57px",
-        "value": "57px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-54px",
-        "value": "54px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-3px",
-        "value": "3px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-25px",
-        "value": "25px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-15px",
-        "value": "15px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-74px",
-        "value": "74px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-37px",
-        "value": "37px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-46px",
-        "value": "46px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-90px",
-        "value": "90px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-720px",
-        "value": "720px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-64px",
-        "value": "64px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-74px",
-        "value": "74px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-35px",
-        "value": "35px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-38px",
-        "value": "38px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-540px",
-        "value": "540px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-86px",
-        "value": "86px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-25px",
-        "value": "25px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-50px",
-        "value": "50px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-34px",
-        "value": "34px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-2px",
-        "value": "2px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-54px",
-        "value": "54px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-58px",
-        "value": "58px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-55px",
-        "value": "55px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-320px",
-        "value": "320px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-62px",
-        "value": "62px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-350px",
-        "value": "350px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-166px",
-        "value": "166px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-70px",
-        "value": "70px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-650px",
-        "value": "650px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-700px",
-        "value": "700px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-440px",
-        "value": "440px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-minus-12px",
-        "value": "-12px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--space-minus-35px",
-        "value": "-35px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-68px",
-        "value": "68px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-72px",
-        "value": "72px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-490px",
-        "value": "490px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--space-66px",
-        "value": "66px",
-        "description": "Shared frontend space value."
-      },
-      {
-        "name": "--size-275px",
-        "value": "275px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-270px",
-        "value": "270px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--size-290px",
-        "value": "290px",
-        "description": "Shared frontend size value."
-      },
-      {
-        "name": "--container-wide",
-        "value": "1620px",
-        "description": "Wide moment gallery layout."
-      },
-      {
-        "name": "--gallery-card-width",
-        "value": "460px",
-        "description": "Wide moment gallery layout."
-      },
-      {
-        "name": "--gallery-portrait",
-        "value": "112px",
-        "description": "Wide moment gallery layout."
-      }
-    ]
-  },
-  {
-    "id": "frontend-typography",
-    "title": "Frontend Typography",
-    "tokens": [
-      {
-        "name": "--font-weight-650",
-        "value": "650",
-        "description": "Shared frontend font-weight value."
-      },
-      {
-        "name": "--font-size-19px",
-        "value": "19px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--font-size-30px",
-        "value": "30px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--font-size-26px",
-        "value": "26px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--font-family-pretendard-noto-sans-kr-systemminus-ui-sansminus-serif",
-        "value": "Pretendard,\"Noto Sans KR\",system-ui,sans-serif",
-        "description": "Shared frontend font-family value."
-      },
-      {
-        "name": "--line-height-1p6",
-        "value": "1.6",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--line-height-1p35",
-        "value": "1.35",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--tracking-minus-p035em",
-        "value": "-.035em",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--font-size-48px",
-        "value": "48px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--font-weight-750",
-        "value": "750",
-        "description": "Shared frontend font-weight value."
-      },
-      {
-        "name": "--line-height-1p4",
-        "value": "1.4",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--line-height-1p5",
-        "value": "1.5",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--font-size-21px",
-        "value": "21px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--tracking-1p5px",
-        "value": "1.5px",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--line-height-52px",
-        "value": "52px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--tracking-minus-p0282em",
-        "value": "-.0282em",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--line-height-26px",
-        "value": "26px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--line-height-32px",
-        "value": "32px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--tracking-minus-p023em",
-        "value": "-.023em",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--line-height-24px",
-        "value": "24px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--line-height-48px",
-        "value": "48px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--line-height-21px",
-        "value": "21px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--line-height-23px",
-        "value": "23px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--font-family-consolas-monospace",
-        "value": "Consolas,monospace",
-        "description": "Shared frontend font-family value."
-      },
-      {
-        "name": "--line-height-1p8",
-        "value": "1.8",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--line-height-16px",
-        "value": "16px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--line-height-22px",
-        "value": "22px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--line-height-20px",
-        "value": "20px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--line-height-18px",
-        "value": "18px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--line-height-42px",
-        "value": "42px",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--tracking-2px",
-        "value": "2px",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--font-size-44px",
-        "value": "44px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--line-height-1p3",
-        "value": "1.3",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--tracking-1p6px",
-        "value": "1.6px",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--line-height-1p45",
-        "value": "1.45",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--tracking-minus-p04em",
-        "value": "-.04em",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--font-size-25px",
-        "value": "25px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--line-height-1p85",
-        "value": "1.85",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--font-size-34px",
-        "value": "34px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--line-height-1p55",
-        "value": "1.55",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--font-size-27px",
-        "value": "27px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--tracking-p35px",
-        "value": ".35px",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--font-size-23px",
-        "value": "23px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--tracking-p15em",
-        "value": ".15em",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--tracking-minus-3px",
-        "value": "-3px",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--font-weight-900",
-        "value": "900",
-        "description": "Shared frontend font-weight value."
-      },
-      {
-        "name": "--line-height-1p15",
-        "value": "1.15",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--tracking-minus-p045em",
-        "value": "-.045em",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--tracking-1p1px",
-        "value": "1.1px",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--tracking-1px",
-        "value": "1px",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--tracking-p6px",
-        "value": ".6px",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--tracking-p18em",
-        "value": ".18em",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--font-weight-550",
-        "value": "550",
-        "description": "Shared frontend font-weight value."
-      },
-      {
-        "name": "--font-size-38px",
-        "value": "38px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--font-size-60px",
-        "value": "60px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--line-height-1p22",
-        "value": "1.22",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--tracking-minus-p048em",
-        "value": "-.048em",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--tracking-p04em",
-        "value": ".04em",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--font-size-29px",
-        "value": "29px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--tracking-p07em",
-        "value": ".07em",
-        "description": "Shared frontend tracking value."
-      },
-      {
-        "name": "--line-height-1p9",
-        "value": "1.9",
-        "description": "Shared frontend line-height value."
-      },
-      {
-        "name": "--font-size-100px",
-        "value": "100px",
-        "description": "Shared frontend font-size value."
-      },
-      {
-        "name": "--font-size-37px",
-        "value": "37px",
-        "description": "Shared frontend font-size value."
-      }
-    ]
-  },
-  {
-    "id": "frontend-effect",
-    "title": "Frontend Effect",
-    "tokens": [
-      {
-        "name": "--stroke-1px",
-        "value": "1px",
-        "description": "Shared frontend stroke value."
-      },
-      {
-        "name": "--stroke-8px",
-        "value": "8px",
-        "description": "Shared frontend stroke value."
-      },
-      {
-        "name": "--radius-26px",
-        "value": "26px",
-        "description": "Shared frontend radius value."
-      },
-      {
-        "name": "--opacity-p45",
-        "value": ".45",
-        "description": "Shared frontend opacity value."
-      },
-      {
-        "name": "--stroke-3px",
-        "value": "3px",
-        "description": "Shared frontend stroke value."
-      },
-      {
-        "name": "--stroke-4px",
-        "value": "4px",
-        "description": "Shared frontend stroke value."
-      },
-      {
-        "name": "--layer-1000",
-        "value": "1000",
-        "description": "Shared frontend layer value."
-      },
-      {
-        "name": "--radius-9px",
-        "value": "9px",
-        "description": "Shared frontend radius value."
-      },
-      {
-        "name": "--layer-200",
-        "value": "200",
-        "description": "Shared frontend layer value."
-      },
-      {
-        "name": "--stroke-2px",
-        "value": "2px",
-        "description": "Shared frontend stroke value."
-      },
-      {
-        "name": "--radius-10px",
-        "value": "10px",
-        "description": "Shared frontend radius value."
-      },
-      {
-        "name": "--shadow-0-1px-3px-black",
-        "value": "0 1px 3px black",
-        "description": "Shared frontend shadow value."
-      },
-      {
-        "name": "--opacity-p4",
-        "value": ".4",
-        "description": "Shared frontend opacity value."
-      },
-      {
-        "name": "--radius-18px",
-        "value": "18px",
-        "description": "Shared frontend radius value."
-      },
-      {
-        "name": "--radius-14px",
-        "value": "14px",
-        "description": "Shared frontend radius value."
-      },
-      {
-        "name": "--layer-50",
-        "value": "50",
-        "description": "Shared frontend layer value."
-      },
-      {
-        "name": "--layer-5",
-        "value": "5",
-        "description": "Shared frontend layer value."
-      },
-      {
-        "name": "--shadow-0-20px-25px-0001",
-        "value": "0 20px 25px #0001",
-        "description": "Shared frontend shadow value."
-      },
-      {
-        "name": "--radius-3px",
-        "value": "3px",
-        "description": "Shared frontend radius value."
-      },
-      {
-        "name": "--layer-20",
-        "value": "20",
-        "description": "Shared frontend layer value."
-      },
-      {
-        "name": "--layer-2",
-        "value": "2",
-        "description": "Shared frontend layer value."
-      },
-      {
-        "name": "--opacity-p6",
-        "value": ".6",
-        "description": "Shared frontend opacity value."
-      },
-      {
-        "name": "--opacity-p8",
-        "value": ".8",
-        "description": "Shared frontend opacity value."
-      },
-      {
-        "name": "--opacity-p06",
-        "value": ".06",
-        "description": "Shared frontend opacity value."
-      }
-    ]
-  },
-  {
-    "id": "frontend-motion",
-    "title": "Frontend Motion",
-    "tokens": [
-      {
-        "name": "--duration-p2s",
-        "value": ".2s",
-        "description": "Shared frontend duration value."
-      },
-      {
-        "name": "--duration-p01ms",
-        "value": ".01ms",
-        "description": "Shared frontend duration value."
-      },
-      {
-        "name": "--duration-p45s",
-        "value": ".45s",
-        "description": "Shared frontend duration value."
-      },
-      {
-        "name": "--duration-p8s",
-        "value": ".8s",
-        "description": "Shared frontend duration value."
-      },
-      {
-        "name": "--angle-120deg",
-        "value": "120deg",
-        "description": "Shared frontend angle value."
-      },
-      {
-        "name": "--angle-360deg",
-        "value": "360deg",
-        "description": "Shared frontend angle value."
       },
       {
-        "name": "--angle-180deg",
-        "value": "180deg",
-        "description": "Shared frontend angle value."
+        "name": "--input-height",
+        "value": "48px"
       },
       {
-        "name": "--angle-90deg",
-        "value": "90deg",
-        "description": "Shared frontend angle value."
+        "name": "--input-radius",
+        "value": "var(--radius-12)"
       },
       {
-        "name": "--duration-p4s",
-        "value": ".4s",
-        "description": "Shared frontend duration value."
+        "name": "--input-padding-x",
+        "value": "var(--space-16)"
       }
     ]
   }

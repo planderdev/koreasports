@@ -1,0 +1,122 @@
+[
+  {
+    "route": "admin/events.php",
+    "width": 390,
+    "error": false,
+    "fields": [
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "route": "admin/edit.php?key=events&id=event-1",
+    "width": 390,
+    "error": false,
+    "fields": [
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "route": "admin/events.php",
+    "width": 834,
+    "error": false,
+    "fields": [
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "route": "admin/edit.php?key=events&id=event-1",
+    "width": 834,
+    "error": false,
+    "fields": [
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "route": "admin/events.php",
+    "width": 1440,
+    "error": false,
+    "fields": [
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "route": "admin/edit.php?key=events&id=event-1",
+    "width": 1440,
+    "error": false,
+    "fields": [
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      },
+      {
+        "font": "16px / 24px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "48px"
+      }
+    ],
+    "overflow": false
+  }
+]

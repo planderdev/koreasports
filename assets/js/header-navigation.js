@@ -1,6 +1,27 @@
 import {icon,esc} from './renderers.js';
 export function setupHeaderNavigation(nav){
  const header=document.getElementById('site-header'),gnb=document.getElementById('gnb');
+ const topRow=header.querySelector('.header-top'),desktop=matchMedia('(min-width:801px)');
+ let lastScroll=Math.max(0,window.scrollY),framePending=false;
+ const revealHeader=()=>header.classList.remove('is-nav-only');
+ const syncHeaderSize=()=>{header.style.setProperty('--header-top-height',topRow.getBoundingClientRect().height+'px');revealHeader();lastScroll=Math.max(0,window.scrollY);};
+ new ResizeObserver(syncHeaderSize).observe(topRow);
+ window.addEventListener('scroll',()=>{
+  if(framePending)return;
+  framePending=true;
+  requestAnimationFrame(()=>{
+   const current=Math.max(0,window.scrollY),delta=current-lastScroll;
+   if(!desktop.matches||current<=topRow.offsetHeight)revealHeader();
+   else if(Math.abs(delta)>=6){
+    header.classList.toggle('is-nav-only',delta>0);
+    if(delta>0){topRow.querySelector('[aria-expanded="true"]')?.click();}
+   }
+   if(Math.abs(delta)>=6||current===0)lastScroll=current;
+   framePending=false;
+  });
+ },{passive:true});
+ header.addEventListener('focusin',revealHeader);
+ desktop.addEventListener('change',syncHeaderSize);
  gnb.innerHTML=nav.map((n,i)=>`<div class="gnb-item"><button data-nav="${i}" aria-expanded="false" aria-controls="nav-panel-${i}">${esc(n.title)}</button><div class="gnb-panel" id="nav-panel-${i}" hidden><nav aria-label="${esc(n.title)} 하위 메뉴">${n.items.map((item,j)=>item.children?.length?`<div class="nav-branch"><div class="nav-branch-row"><a href="${item.url}">${esc(item.title)}</a><button class="nav-expand" data-subnav aria-expanded="false" aria-controls="nav-third-${i}-${j}" aria-label="${esc(item.title)} 3차 메뉴">${icon('arrow-right-s-line')}</button></div><div class="nav-third" id="nav-third-${i}-${j}" hidden>${item.children.map(child=>`<a href="${child.url}">${esc(child.title)}</a>`).join('')}</div></div>`:`<a href="${item.url}">${esc(item.title)}</a>`).join('')}</nav></div></div>`).join('');
  const subTriggers=[...gnb.querySelectorAll('[data-subnav]')];
  const setSub=(button,expanded)=>{if(expanded)subTriggers.filter(b=>b!==button).forEach(b=>setSub(b,false));button.setAttribute('aria-expanded',String(expanded));document.getElementById(button.getAttribute('aria-controls')).hidden=!expanded;};

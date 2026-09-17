@@ -1,0 +1,262 @@
+[
+  {
+    "route": "selection-and-input/text-field",
+    "styles": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(23, 23, 25)",
+        "font": "16px / 24px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "24px",
+        "padding": "0px 4px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "route": "selection-and-input/select",
+    "styles": [
+      {
+        "bg": "rgb(255, 255, 255)",
+        "border": "rgb(118, 118, 118)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "1px 2px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(84, 84, 84)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "route": "selection-and-input/text-area",
+    "styles": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(23, 23, 25)",
+        "font": "16px / 26px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "52px",
+        "padding": "0px 4px",
+        "radius": "0px",
+        "tag": "TEXTAREA",
+        "text": ""
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "border": "rgb(118, 118, 118)",
+        "font": "16px / 26px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "4px",
+        "padding": "0px 2px 2px",
+        "radius": "0px",
+        "tag": "TEXTAREA",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "route": "actions/chip",
+    "styles": [
+      {
+        "bg": "rgba(112, 115, 124, 0.05)",
+        "border": "rgb(23, 23, 25)",
+        "font": "500 15px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "24px",
+        "padding": "4px 7px",
+        "radius": "6px",
+        "tag": "BUTTON",
+        "text": "Chip"
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "font": "13.3333px \"Pretendard Variable\", \"Pretendard JP Variable\", Pretendard, \"Pretendard JP\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+        "height": "auto",
+        "padding": "0px",
+        "radius": "0px",
+        "tag": "INPUT",
+        "text": ""
+      }
+    ]
+  }
+]

@@ -21,7 +21,7 @@ export const getPost=id=>listPosts().find(p=>p.id===id);
 export function listClubs(f={}){return collection('clubs').filter(c=>(!f.q||c.title.includes(f.q))&&(!f.sport||c.sport===f.sport)&&(!f.region||c.region===f.region)&&(!f.recruiting||c.recruiting===true)&&(!f.featured||c.featured));}
 export function searchAll(q){if(!q.trim())return [];return [...listEvents().map(x=>({...x,type:'대회·행사',url:`/event.php?id=${x.id}`})),...listPosts().map(x=>({...x,type:x.category,url:`/post.php?id=${x.id}`})),...listClubs().map(x=>({...x,type:'동호회',url:`/club.php?id=${x.id}`})),...collection('courses').map(x=>({...x,type:'교육',url:`/course.php?id=${x.id}`}))].filter(x=>`${x.title} ${x.summary}`.includes(q.trim()));}
 export function submitApplication(payload){
- const member=getCurrentMember();if(!member)throw Error('데모 회원 로그인이 필요합니다.');
+ const member=getCurrentMember();if(!member)throw Error('회원 로그인이 필요합니다.');
  const s=state();const {kind,targetId}=payload;const keys={event:'events',club:'clubs',course:'courses',qualification:'qualificationPrograms',volunteer:'volunteerPrograms'};
  const target=collection(keys[kind]).find(x=>x.id===targetId);if(!target)throw Error('신청 대상을 찾을 수 없습니다.');
  if(s.applications.some(a=>a.memberId===member.id&&a.kind===kind&&a.targetId===targetId&&!['취소','반려','미선발'].includes(a.status)))throw Error('이미 신청한 항목입니다. 마이페이지에서 확인하세요.');
@@ -33,17 +33,17 @@ export function submitApplication(payload){
 }
 export function cancelApplication(id){const s=state();const a=s.applications.find(x=>x.id===id&&x.memberId===getCurrentMember()?.id);if(!a)throw Error('신청 내역이 없습니다.');a.status='취소';write(s);}
 export function getMemberDashboard(memberId){const s=state();return {member:collection('members').find(x=>x.id===memberId),applications:copy(s.applications.filter(x=>x.memberId===memberId)),registrations:copy(s.registrations),progress:copy(s.progress.filter(x=>x.memberId===memberId)),certificates:copy(s.certificates.filter(x=>x.memberId===memberId)),notifications:copy(s.notifications),preferences:copy(s.preferences),inquiries:copy(s.inquiries)};}
-export function register(type,payload){const s=state();if(type==='member'){s.role='member';s.notifications.push({id:crypto.randomUUID(),templateId:'welcome',body:data.notificationTemplates[0].body,status:'미리보기',createdAt:new Date().toISOString()});}else{s.registrations.push({id:`registration-${crypto.randomUUID()}`,type,title:type==='club'?'신규 동호회 (데모)':'신규 기업 (데모)',status:'승인대기',region:data.regions.includes(payload.region)?payload.region:'서울',sport:data.sports.includes(payload.sport)?payload.sport:'골프',organizationId:payload.organizationId==='org-1'?'org-1':null,createdAt:new Date().toISOString(),isDemo:true});s.role='manager';}write(s);}
+export function register(type,payload){const s=state();if(type==='member'){s.role='member';s.notifications.push({id:crypto.randomUUID(),templateId:'welcome',body:data.notificationTemplates[0].body,status:'미리보기',createdAt:new Date().toISOString()});}else{s.registrations.push({id:`registration-${crypto.randomUUID()}`,type,title:type==='club'?'신규 동호회':'신규 기업',status:'승인대기',region:data.regions.includes(payload.region)?payload.region:'서울',sport:data.sports.includes(payload.sport)?payload.sport:'골프',organizationId:payload.organizationId==='org-1'?'org-1':null,createdAt:new Date().toISOString(),isDemo:true});s.role='manager';}write(s);}
 export function allowedAdminStatuses(row){return row.kind==='volunteer'?['접수','선발','미선발','취소']:row.kind==='qualification'?['접수','합격','불합격','반려']:['접수','승인대기','승인','반려','취소'];}
 export function adminBulkStatus(ids,status,reason=''){
- if(getRole()!=='admin')throw Error('관리자 데모 역할을 선택해주세요.');
+ if(getRole()!=='admin')throw Error('관리자 역할을 선택해주세요.');
  const s=copy(state()),unique=[...new Set(ids)];if(!unique.length)throw Error('대상을 선택해주세요.');
  const rows=unique.map(id=>[...s.applications,...s.registrations].find(x=>x.id===id));
  if(rows.some(x=>!x))throw Error('내역이 없습니다. 목록을 새로고침해주세요.');
  if(rows.some(x=>!allowedAdminStatuses(x).includes(status)))throw Error('선택 항목에 허용되지 않는 상태입니다.');
  if(['반려','미선발','불합격'].includes(status)&&!reason.trim())throw Error('사유를 입력해주세요.');
  for(const row of rows){row.status=status;row.reason=reason.trim().slice(0,200);
- if(row.kind==='qualification'&&status==='합격'&&!s.certificates.some(c=>c.programId===row.targetId&&c.memberId===row.memberId))s.certificates.push({id:`cert-${crypto.randomUUID()}`,memberId:row.memberId,programId:row.targetId,title:row.title,status:'합격',number:'DEMO-CERT-'+String(s.certificates.length+1).padStart(4,'0'),isDemo:true});}
+ if(row.kind==='qualification'&&status==='합격'&&!s.certificates.some(c=>c.programId===row.targetId&&c.memberId===row.memberId))s.certificates.push({id:`cert-${crypto.randomUUID()}`,memberId:row.memberId,programId:row.targetId,title:row.title,status:'합격',number:'KOWSC-CERT-'+String(s.certificates.length+1).padStart(4,'0'),isDemo:true});}
  write(s);return rows.length;
 }
 export function adminStatus(id,status,reason=''){return adminBulkStatus([id],status,reason);}
@@ -70,12 +70,12 @@ export function adminSaveProgress(memberId,status,note){
  if(!['미시작','진행중','완료'].includes(status)||!note.trim())throw Error('이수 상태와 정정 근거를 입력해주세요.');
  const s=copy(state());let p=s.progress.find(x=>x.memberId===memberId&&x.courseId==='course-5');if(!p){p={memberId,courseId:'course-5',steps:[]};s.progress.push(p);}p.status=status;p.adminNote=note.trim();p.reviewedAt=new Date().toISOString();write(s);
 }
-export function progressStep(courseId,step){const s=state();const member=getCurrentMember();if(!member)throw Error('데모 로그인이 필요합니다.');if(!s.applications.some(a=>a.kind==='course'&&a.targetId===courseId&&a.memberId===member.id&&a.status!=='취소'))throw Error('교육 신청 후 학습할 수 있습니다.');let p=s.progress.find(x=>x.memberId===member.id&&x.courseId===courseId);if(!p){p={memberId:member.id,courseId,steps:[],status:'진행중'};s.progress.push(p);}if([0,1,2].includes(step)&&!p.steps.includes(step))p.steps.push(step);write(s);return p;}
+export function progressStep(courseId,step){const s=state();const member=getCurrentMember();if(!member)throw Error('로그인이 필요합니다.');if(!s.applications.some(a=>a.kind==='course'&&a.targetId===courseId&&a.memberId===member.id&&a.status!=='취소'))throw Error('교육 신청 후 학습할 수 있습니다.');let p=s.progress.find(x=>x.memberId===member.id&&x.courseId===courseId);if(!p){p={memberId:member.id,courseId,steps:[],status:'진행중'};s.progress.push(p);}if([0,1,2].includes(step)&&!p.steps.includes(step))p.steps.push(step);write(s);return p;}
 export function markVideoComplete(courseId){const s=state();const p=s.progress.find(x=>x.memberId===getCurrentMember()?.id&&x.courseId===courseId);if(!p)throw Error('학습단계를 먼저 열어주세요.');p.videoWatched=true;write(s);}
 export function completeCourse(courseId,{read,answer}){const s=state();const p=s.progress.find(x=>x.memberId===getCurrentMember()?.id&&x.courseId===courseId);if(!p||p.steps.length<3||!read||answer!=='stop')throw Error('모든 단계 열람, 자료 필독 확인, 정답 선택이 필요합니다.');if(['course-1','course-5'].includes(courseId)&&!p.videoWatched)throw Error('필수 현장 관찰 영상을 끝까지 시청해주세요.');p.status='완료';p.completedAt=new Date().toISOString();write(s);}
 export function issueCertificate(id,reissue=false){const s=state();const c=s.certificates.find(x=>x.id===id&&x.memberId===getCurrentMember()?.id);if(!c)throw Error('합격 내역을 찾을 수 없습니다.');if(reissue&&!c.issuedAt)throw Error('최초 발급 후 재발급을 신청해주세요.');c.issuedAt=new Date().toISOString();c.status=reissue?'재발급 완료':'발급 완료';write(s);return copy(c);}
 export function savePreferences(p){const s=state();s.preferences={sms:!!p.sms,email:!!p.email};write(s);}
-export function saveInquiry(category){const s=state();s.inquiries.push({id:crypto.randomUUID(),title:`${category} 데모 문의`,status:'접수',createdAt:new Date().toISOString()});write(s);}
+export function saveInquiry(category){const s=state();s.inquiries.push({id:crypto.randomUUID(),title:`${category} 문의`,status:'접수',createdAt:new Date().toISOString()});write(s);}
 export function logNotification(record){if(getRole()!=='admin')throw Error('관리자 역할이 필요합니다.');const s=state();s.notifications.push({...record,id:crypto.randomUUID(),status:'발송 시뮬레이션 완료',createdAt:new Date().toISOString()});write(s);}
 
 export function setReducedMotion(value){const s=state();s.reducedMotion=!!value;write(s);}

@@ -1,0 +1,158 @@
+[
+  {
+    "page": "home",
+    "width": 1440,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  },
+  {
+    "page": "events",
+    "width": 1440,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  },
+  {
+    "page": "login",
+    "width": 1440,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  },
+  {
+    "page": "button",
+    "width": 1440,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  },
+  {
+    "page": "home",
+    "width": 834,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  },
+  {
+    "page": "events",
+    "width": 834,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  },
+  {
+    "page": "login",
+    "width": 834,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  },
+  {
+    "page": "button",
+    "width": 834,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  },
+  {
+    "page": "home",
+    "width": 390,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  },
+  {
+    "page": "events",
+    "width": 390,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  },
+  {
+    "page": "login",
+    "width": 390,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  },
+  {
+    "page": "button",
+    "width": 390,
+    "button": [
+      {
+        "font": "600 15px / 22px Pretendard, \"Noto Sans KR\", system-ui, sans-serif",
+        "height": "40px"
+      }
+    ],
+    "errors": false,
+    "font": true,
+    "overflow": false
+  }
+]

@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shared component and nested theme regression fixture</title>
+<link rel="stylesheet" href="/assets/vendor/remixicon.css">
+<link rel="stylesheet" href="/assets/css/tokens.css"><link rel="stylesheet" href="/assets/css/base.css"><link rel="stylesheet" href="/assets/css/components.css"><link rel="stylesheet" href="/assets/css/controls.css">
+<main>
+<section class="panel" data-ds-theme="light" id="outer-light"><h1 class="type-title-2">Light</h1><button class="button">기본 버튼</button><button class="button small">Small</button><button class="button large">Large</button><button class="button ds-state-hover">Hover</button><button class="button ds-state-pressed">Active</button><button class="button" disabled>Disabled</button><button class="ds-chip" aria-pressed="true">Chip</button>
+<label>이름<input placeholder="이름을 입력하세요"></label><label>오류<input aria-invalid="true" value="오류 상태"></label><label>비활성<input disabled value="Disabled"></label><label>선택<span class="select-shell"><select><option>전체</option><option>골프</option></select><i class="ri-arrow-down-s-line select-arrow" aria-hidden="true"></i></span></label><label>내용<textarea rows="2">두 줄 이상의 본문입니다.</textarea></label>
+<section class="panel" data-ds-theme="dark" id="nested-dark"><h2 class="type-title-3">Dark</h2><button class="button">Dark button</button><input aria-label="Dark input" placeholder="Dark input"><article class="image-card"><div class="card-body"><h3>카드 제목</h3><p>어두운 테마의 콘텐츠</p></div></article>
+<section class="panel" data-ds-theme="light" id="nested-light"><h2 class="type-title-3">Nested light</h2><button class="button">Nested light button</button><input aria-label="Nested light input" placeholder="Nested light input"><p class="type-caption-1">Caption 1</p><p class="type-caption-2">Caption 2</p></section>
+</section></section>
+</main></html>

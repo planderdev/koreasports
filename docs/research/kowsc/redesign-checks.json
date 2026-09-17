@@ -1,0 +1,53 @@
+{
+  "desktop": [
+    {
+      "page": "greeting",
+      "unchanged": true,
+      "overflow": false
+    },
+    {
+      "page": "history",
+      "unchanged": true,
+      "overflow": false
+    },
+    {
+      "page": "organization",
+      "unchanged": true,
+      "overflow": false
+    },
+    {
+      "page": "regional",
+      "unchanged": true,
+      "overflow": false
+    },
+    {
+      "page": "committee",
+      "unchanged": true,
+      "overflow": false
+    }
+  ],
+  "mobile": [
+    {
+      "overflow": false,
+      "page": "?id=greeting"
+    },
+    {
+      "overflow": false,
+      "page": "?id=organization"
+    },
+    {
+      "overflow": false,
+      "page": "?id=regional"
+    },
+    {
+      "overflow": false,
+      "page": "?id=committee"
+    }
+  ],
+  "history": {
+    "firstYear": "2026",
+    "lastYear": "2007",
+    "endProgress": 1,
+    "preservedOriginalOrder": true
+  }
+}
