@@ -8,9 +8,8 @@
 
 .moments-backdrop {
   position: absolute;
-  inset: 0 max(var(--space-24), calc((100% - var(--container-wide))/2));
+  inset: 0;
   background: var(--brand-primary-heavy);
-  border-radius: var(--radius-24);
   z-index: -1;
 }
 
@@ -187,11 +186,6 @@
   .moments-section {
     padding-block: var(--space-40);
     margin-bottom: var(--space-40);
-  }
-
-  .moments-backdrop {
-    inset: 0;
-    border-radius: 0;
   }
 
   .moments-controls {

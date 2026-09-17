@@ -346,7 +346,7 @@ select {
   white-space: nowrap;
   min-height: 44px;
   padding: var(--space-10) 22px;
-  border-radius: var(--radius-24);
+  border-radius: var(--radius-32);
   color: var(--semantic-label-alternative);
   font-size: var(--type-headline-1-size);
   border: var(--border-thin) solid transparent;
@@ -361,7 +361,6 @@ select {
 }
 
 .tabs button:not([aria-selected=true]):hover {
-  border-bottom: var(--border-strong) solid var(--semantic-primary-normal);
   color: var(--semantic-primary-normal);
   font-weight: var(--font-weight-semibold);
 }
@@ -380,6 +379,10 @@ select {
   transition: .3s;
 }
 
+.tabs.underline button:hover, .tabs.underline a:hover {
+  border-bottom: var(--border-strong) solid var(--semantic-primary-normal);
+  color: var(--semantic-primary-normal);
+}
 .tabs.underline [aria-selected=true], .tabs.underline a.active {
   border-bottom: var(--border-strong) solid var(--semantic-primary-normal);
   color: var(--semantic-primary-normal);
@@ -916,9 +919,9 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
   display: block;
   padding: var(--space-8) 0;
   color: var(--semantic-label-alternative);
-  font-size: var(--type-label-1-size);
-  line-height: var(--type-label-1-line);
-  letter-spacing: var(--type-label-1-tracking);
+  font-size: var(--type-body-1-size);
+  line-height: var(--type-body-1-line);
+  letter-spacing: var(--type-body-1-tracking);
 }
 
 .all-menu a:hover {

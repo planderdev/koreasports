@@ -122,8 +122,9 @@
 }
 
 .association-toggle {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+    align-items: center;
   width: 28px;
   height: 28px;
   background: var(--semantic-background-normal-alternative);
