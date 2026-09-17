@@ -52,6 +52,10 @@
   color: var(--brand-primary-heavy);
 }
 
+.button.light:hover:not(:disabled) {
+  color:var(--semantic-static-white)
+}
+
 .button.accent {
   background: var(--semantic-brand-accent);
   color: var(--brand-primary-heavy);
