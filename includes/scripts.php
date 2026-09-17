@@ -1,0 +1,1 @@
+<script src="/assets/vendor/swiper.js" defer></script><script src="/assets/vendor/aos.js" defer></script><script src="/assets/vendor/gsap.js" defer></script><script src="/assets/vendor/ScrollTrigger.js" defer></script><script src="/assets/vendor/lenis.js" defer></script><script type="module" src="/assets/js/app.js"></script>

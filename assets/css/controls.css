@@ -1,0 +1,14 @@
+.select-shell{position:relative;display:inline-grid;vertical-align:middle;width:100%;max-width:100%;min-width:0;}
+.select-shell>select{appearance:none;-webkit-appearance:none;background-image:none;padding-right:var(--space-40)!important;}
+.select-shell>.select-arrow{position:absolute;right:var(--space-12);top:50%;transform:translateY(-50%);font-size:var(--type-heading-2-size);line-height:1;color:var(--color-text-secondary);pointer-events:none;}
+.select-shell:has(>select:disabled)>.select-arrow{opacity:var(--opacity-disabled);}
+.demo-toolbar>.select-shell,.result-bar>.select-shell{width:auto;}
+.footer-top>.select-shell{width:var(--size-210px);}
+.ds-demo label:has(+.select-shell){display:block;margin-bottom:var(--space-8);}
+@media(forced-colors:active){.select-shell>.select-arrow{color:ButtonText;}}
+@media(max-width:600px){.ds-playground-controls label{min-width:var(--size-120px);}}
+input:focus,input:focus-visible,textarea:focus,textarea:focus-visible{outline:none;box-shadow:none;}
+
+button:focus,button:focus-visible,.button:focus,.button:focus-visible,.ds-button:focus,.ds-button:focus-visible{outline:none;}
+#ds-root .ds-button:focus,#ds-root .ds-button:focus-visible{outline:none;}
+[class^="ri-"],[class*=" ri-"],[class^="ri-"]::before,[class*=" ri-"]::before{font-weight:normal!important;}

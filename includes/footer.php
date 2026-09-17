@@ -1,0 +1,3 @@
+<footer id="site-footer"></footer>
+<aside class="demo-toolbar" aria-label="데모 시연 도구"><span><b>DEMO</b> 프론트 프로토타입</span><label class="sr-only" for="demo-role">데모 역할 전환</label><select id="demo-role"><option value="guest">비회원</option><option value="member">개인회원</option><option value="manager">기업·동호회 담당자</option><option value="admin">관리자</option></select><a href="/admin/index.php">관리자 화면 <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a><a href="/design-system.php">디자인시스템</a><button id="motion-toggle" aria-pressed="false">모션 끄기</button><button id="demo-reset">초기화</button></aside>
+<button class="back-top icon-button" aria-label="맨 위로 이동"><i class="ri-arrow-up-line" aria-hidden="true"></i></button>

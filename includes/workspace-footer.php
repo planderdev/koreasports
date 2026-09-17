@@ -1,0 +1,1 @@
+<footer class="workspace-footer"><span>KWSA · <?=$pageType === 'admin' ? '관리자 전용 프론트 시연' : '디자인 가이드 v2.0'?></span><div><span id="workspace-role"></span><button id="workspace-logout" hidden>데모 로그아웃</button><button id="demo-reset">시연 데이터 초기화</button></div></footer>

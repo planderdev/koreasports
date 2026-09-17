@@ -1,0 +1,67 @@
+[
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/index.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/members.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/organizations.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/clubs.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/events.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/applications.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/education.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/qualifications.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/volunteers.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/safety.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/content.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/sponsors.php"
+  },
+  {
+    "error": false,
+    "overflow": false,
+    "url": "/admin/notifications.php"
+  }
+]

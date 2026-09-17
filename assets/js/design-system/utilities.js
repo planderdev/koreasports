@@ -1,0 +1,6 @@
+const typeNames=['display-1','display-2','display-3','title-1','title-2','title-3','heading-1','heading-2','headline-1','headline-2','body-1','body-1-reading','body-2','body-2-reading','label-1','label-1-reading','label-2','caption-1','caption-2'];
+export function addOpacity(hex,alpha){if(!/^#[\da-f]{6}$/i.test(hex)||!Number.isFinite(alpha)||alpha<0||alpha>1)throw new TypeError('Expected #RRGGBB and alpha between 0 and 1');const rgb=[1,3,5].map(i=>parseInt(hex.slice(i,i+2),16));return `rgba(${rgb.join(', ')}, ${alpha})`;}
+export function getTypographyStyle(name){if(!typeNames.includes(name))throw new TypeError('Unknown typography style');return `font-size:var(--type-${name}-size);line-height:var(--type-${name}-line);letter-spacing:var(--type-${name}-tracking)`;}
+export function positionLayer(anchor,layer){const a=anchor.getBoundingClientRect(),l=layer.getBoundingClientRect(),gap=8;layer.style.left=Math.max(gap,Math.min(a.left,innerWidth-l.width-gap))+'px';layer.style.top=Math.max(gap,a.bottom+l.height+gap<=innerHeight?a.bottom+gap:a.top-l.height-gap)+'px';}
+export function formatRegion(locale,date=new Date('2026-10-10T09:00:00+09:00')){return {date:new Intl.DateTimeFormat(locale,{dateStyle:'long',timeZone:'Asia/Seoul'}).format(date),number:new Intl.NumberFormat(locale).format(1234567)};}
+export {typeNames};
