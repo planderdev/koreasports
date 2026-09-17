@@ -6,10 +6,17 @@ export function setupShell(){if(['admin','design-system'].includes(document.body
  document.getElementById('site-footer').innerHTML=`<div class="container footer-shell">
  <div class="footer-content"><div class="footer-information">
  <a class="footer-logo" href="/index.php"><img src="/assets/images/kowsc/logo-w.svg" alt="대한직장인체육회" width="374.73" height="120.87" loading="lazy"></a>
- <nav class="footer-policy" aria-label="하단 정책 및 안내"><a href="/page.php?id=privacy">개인정보처리방침</a><a href="/page.php?id=terms">이용약관</a><a href="/page.php?id=directions">오시는길</a><a href="/page.php?id=qna">문의하기</a><a href="/page.php?id=qna">기획취재 및 기사제보</a><a href="/support.php?tab=partnership">광고/제휴 문의</a></nav>
+ <nav class="footer-policy" aria-label="하단 정책 및 안내"><a href="/page.php?id=privacy">개인정보처리방침</a><a href="/page.php?id=terms">이용약관</a><a href="/page.php?id=directions">오시는길</a><a href="/page.php?id=qna">문의하기</a><a href="/page.php?id=press-tip">기획취재 및 기사제보</a><a href="/support.php?tab=partnership">광고/제휴 문의</a></nav>
  <div class="footer-details"><strong>대한직장인체육회</strong><p>${esc(r.config().address)} · ${esc(r.config().email)}</p><p class="footer-copyright">© 2026 KOWSC. All rights reserved.</p></div>
  </div><div class="footer-related"><label class="sr-only" for="family-site">패밀리사이트</label><select id="family-site"><option value="">Family Site</option>${r.content('familySites').map(site=>`<option value="${esc(site.url)}">${esc(site.title)} (새 창)</option>`).join('')}${r.content('associations').map(a=>`<option value="${esc(a.sport)}">${esc(a.name)}</option>`).join('')}</select><a class="footer-association-link" href="/page.php?id=associations">산하 종목협회 소개 ${icon('arrow-right-up-line')}</a>${r.collection('sponsors').length?`<div class="footer-partners">${r.collection('sponsors').map(s=>`<span>${esc(s.title)}</span>`).join('')}</div>`:''}</div></div>
  </div>`;
+ const currentUrl=new URL(location.href);
+ document.querySelectorAll('.footer-policy a').forEach(link=>{
+  const target=new URL(link.href);
+  const active=target.pathname===currentUrl.pathname&&[...target.searchParams].every(([key,value])=>currentUrl.searchParams.get(key)===value);
+  link.classList.toggle('active',active);
+  if(active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');
+ });
  document.documentElement.classList.toggle('reduce-motion',!!r.state().reducedMotion);if(r.getCurrentMember()){const l=document.getElementById('login-link');l.innerHTML=icon('user-line')+'<span class="sr-only">마이페이지</span>';l.setAttribute('aria-label','마이페이지');l.href='/mypage.php';const logout=document.createElement('button');logout.textContent='로그아웃';logout.className='logout-button';logout.onclick=()=>{r.setRole('guest');location.href='/index.php';};l.after(logout);}
  document.getElementById('family-site').onchange=e=>{const value=e.target.value;if(!value)return;if(r.content('familySites').some(site=>site.url===value)){window.open(value,'_blank','noopener,noreferrer');e.target.value='';}else{location.href='/events.php?sport='+encodeURIComponent(value);}};
 

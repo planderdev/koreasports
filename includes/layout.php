@@ -2,7 +2,7 @@
 declare(strict_types=1);
 $allowed = ['home','page','board','post','events','event','apply','clubs','club','education','course','qualification','support','search','login','join','mypage','volunteers','volunteer','learn','admin','design-system'];
 if (!isset($pageType) || !in_array($pageType, $allowed, true)) { http_response_code(404); $pageType = 'page'; }
-$pageIds = ['greeting','vision','vision-1','vision-2','purpose','organization','committee','history','ci','articles','directions','business','reform','operations','talent','safety','culture','welfare','faq','qna','safety-proposal','members-only','terms','privacy','associations'];
+$pageIds = ['greeting','vision','vision-1','vision-2','purpose','organization','committee','history','ci','articles','directions','business','reform','operations','talent','safety','culture','welfare','faq','qna','press-tip','safety-proposal','members-only','terms','privacy','associations'];
 if ($pageType === 'page' && (!is_string($_GET['id'] ?? null) || !in_array($_GET['id'], $pageIds, true))) { http_response_code(404); }
 header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');

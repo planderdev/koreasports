@@ -45,7 +45,8 @@
   letter-spacing: var(--type-label-1-tracking);
 }
 
-.footer-policy a:first-child {
+.footer-policy a[aria-current=page] {
+  color: var(--semantic-primary-normal);
   text-decoration: underline;
   text-underline-offset: 4px;
 }

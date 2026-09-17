@@ -8,7 +8,7 @@ export const badge=s=>`<span class="badge status-${statusTone(s)}">${esc(s)}</sp
 export const button=(title,url,cls='',ico='arrow-right-line')=>`<a class="button ${cls}" href="${esc(url)}">${esc(title)}${ico?icon(ico):''}</a>`;
 export const more=(title,url,ico='arrow-right-line')=>`<a class="more" href="${esc(url)}">${esc(title)}${ico?` ${icon(ico)}`:''}</a>`;
 export function backToList(fallback){try{const key=fallback.split('?')[0];const v=sessionStorage.getItem('kwsa-list:'+key);if(v&&v.startsWith(key+'?'))return v;}catch{}return fallback;}
-export const empty=(title='검색 결과가 없습니다',text='검색어 또는 필터를 변경해 다시 확인해주세요.',url='')=>`<div class="empty">${icon('search-eye-line')}<h2>${esc(title)}</h2><p>${esc(text)}</p>${url?button('목록으로 돌아가기',url,'secondary'):''}</div>`;
+export const empty=(title='검색 결과가 없습니다',text='검색어 또는 필터를 변경해 다시 확인해주세요.',url='')=>`<div class="empty">${icon('search-line')}<h2>${esc(title)}</h2><p>${esc(text)}</p>${url?button('목록으로 돌아가기',url,'secondary'):''}</div>`;
 export const notFound=()=>`<div class="container content-section">${empty('콘텐츠를 찾을 수 없습니다','주소가 잘못되었거나 더 이상 제공되지 않는 콘텐츠입니다.','/index.php')}</div>`;
 export const heading=(title,subtitle='',group='체육회 서비스')=>`<div class="page-heading"><div class="container"><div class="breadcrumb"><a href="/index.php" aria-label="홈">${icon('home-5-line')}</a>${icon('arrow-right-s-line')}<span>${esc(group)}</span>${icon('arrow-right-s-line')}<span>${esc(title)}</span></div><h1>${esc(title)}</h1>${subtitle?`<p>${esc(subtitle)}</p>`:''}</div></div>`;
 export const sectionHead=(en,title,desc,url='',label='전체보기',ico='arrow-right-line')=>`<div class="section-head"><div><div class="eyebrow">${en}</div><h2>${title}</h2>${desc?`<p>${desc}</p>`:''}</div>${url?more(label,url,ico):''}</div>`;
