@@ -4,7 +4,7 @@ const copy=x=>structuredClone(x);
 const initial=()=>({role:'guest',applications:copy([...data.applications,...data.volunteerApplications]),registrations:[],progress:[],notifications:[],edits:{},certificates:copy(data.certificates),preferences:{sms:false,email:false},inquiries:[]});
 let memory=initial();
 export function state(){try{const v=JSON.parse(sessionStorage.getItem(KEY));return v&&Array.isArray(v.applications)?v:memory;}catch{return memory;}}
-function write(s){memory=s;try{sessionStorage.setItem(KEY,JSON.stringify(s));}catch{}return copy(s);}
+function write(s){try{if(typeof window!=='undefined'||typeof sessionStorage!=='undefined')sessionStorage.setItem(KEY,JSON.stringify(s));}catch(error){throw Error('저장 공간에 기록하지 못했습니다. 입력 내용을 유지한 채 다시 시도해주세요.');}memory=s;return copy(s);}
 export function resetDemo(){write(initial());}
 export function setRole(role){if(!['guest','member','manager','admin'].includes(role))throw Error('잘못된 역할입니다.');const s=state();s.role=role;write(s);}
 export const getRole=()=>state().role;
@@ -16,7 +16,7 @@ export function eventStatus(event,now=new Date()){if(new Date(event.registration
 export function effectiveEvent(e){const count=state().applications.filter(a=>a.kind==='event'&&a.targetId===e.id&&!['취소','반려'].includes(a.status)).reduce((n,a)=>n+(Number(a.teamSize)||1),0);return {...e,participantCount:e.participantCount+count};}
 export function listEvents(f={}){return collection('events').map(effectiveEvent).filter(e=>(!f.q||`${e.title} ${e.venue}`.includes(f.q))&&(!f.sport||e.sport===f.sport)&&(!f.region||e.region===f.region)&&(!f.associationId||e.associationId===f.associationId)&&(!f.status||eventStatus(e)===f.status)).sort((a,b)=>f.sort==='date'?a.startsAt.localeCompare(b.startsAt):a.id.localeCompare(b.id,undefined,{numeric:true}));}
 export const getEvent=id=>listEvents().find(e=>e.id===id);
-export function listPosts(f={}){return collection('posts').filter(p=>(!f.category||p.category===f.category)&&(!f.q||`${p.title} ${p.summary}`.includes(f.q))).sort((a,b)=>b.createdAt.localeCompare(a.createdAt));}
+export function listPosts(f={}){return collection('posts').filter(p=>(p.category!=='회원전용'||getCurrentMember())&&(!f.category||p.category===f.category)&&(!f.q||`${p.title} ${p.summary}`.includes(f.q))).sort((a,b)=>b.createdAt.localeCompare(a.createdAt));}
 export const getPost=id=>listPosts().find(p=>p.id===id);
 export function listClubs(f={}){return collection('clubs').filter(c=>(!f.q||c.title.includes(f.q))&&(!f.sport||c.sport===f.sport)&&(!f.region||c.region===f.region)&&(!f.recruiting||c.recruiting===true)&&(!f.featured||c.featured));}
 export function searchAll(q){if(!q.trim())return [];return [...listEvents().map(x=>({...x,type:'대회·행사',url:`/event.php?id=${x.id}`})),...listPosts().map(x=>({...x,type:x.category,url:`/post.php?id=${x.id}`})),...listClubs().map(x=>({...x,type:'동호회',url:`/club.php?id=${x.id}`})),...collection('courses').map(x=>({...x,type:'교육',url:`/course.php?id=${x.id}`}))].filter(x=>`${x.title} ${x.summary}`.includes(q.trim()));}
@@ -42,7 +42,7 @@ export function adminBulkStatus(ids,status,reason=''){
  if(rows.some(x=>!x))throw Error('내역이 없습니다. 목록을 새로고침해주세요.');
  if(rows.some(x=>!allowedAdminStatuses(x).includes(status)))throw Error('선택 항목에 허용되지 않는 상태입니다.');
  if(['반려','미선발','불합격'].includes(status)&&!reason.trim())throw Error('사유를 입력해주세요.');
- for(const row of rows){row.status=status;row.reason=reason.trim().slice(0,200);
+ for(const row of rows){row.updatedAt=new Date().toISOString();row.history=[...(row.history||[]),{from:row.status,to:status,reason,at:row.updatedAt}];row.status=status;row.reason=reason.trim().slice(0,200);
  if(row.kind==='qualification'&&status==='합격'&&!s.certificates.some(c=>c.programId===row.targetId&&c.memberId===row.memberId))s.certificates.push({id:`cert-${crypto.randomUUID()}`,memberId:row.memberId,programId:row.targetId,title:row.title,status:'합격',number:'KOWSC-CERT-'+String(s.certificates.length+1).padStart(4,'0'),isDemo:true});}
  write(s);return rows.length;
 }
@@ -60,8 +60,8 @@ export function adminBulkRecords(key,ids,field,value,reason=''){
 export function saveRecord(key,id,patch){
  if(getRole()!=='admin')throw Error('관리자 역할이 필요합니다.');
  if(!Array.isArray(data[key]))throw Error('지원하지 않는 콘텐츠입니다.');
- const s=copy(state());if(id){const original=collection(key,{includeDeleted:true}).find(x=>x.id===id);if(!original)throw Error('항목을 찾을 수 없습니다.');const fresh=s.edits[`new:${key}`]?.find(x=>x.id===id);if(fresh)Object.assign(fresh,copy(patch));else s.edits[`${key}:${id}`]={...s.edits[`${key}:${id}`],...copy(patch)};write(s);return {...original,...copy(patch)};}
- const ref=collection(key)[0]||{},record={...ref,...copy(patch),id:`${key}-${crypto.randomUUID()}`,isDemo:true};s.edits[`new:${key}`]=[...(s.edits[`new:${key}`]||[]),record];write(s);return copy(record);
+ patch={...patch,updatedAt:new Date().toISOString()};const s=copy(state());if(id){const original=collection(key,{includeDeleted:true}).find(x=>x.id===id);if(!original)throw Error('항목을 찾을 수 없습니다.');const fresh=s.edits[`new:${key}`]?.find(x=>x.id===id);if(fresh)Object.assign(fresh,copy(patch));else s.edits[`${key}:${id}`]={...s.edits[`${key}:${id}`],...copy(patch)};write(s);return {...original,...copy(patch)};}
+ const record={createdAt:new Date().toISOString(),...(key==='posts'?{body:[],author:'대한직장인체육회',views:0}:{}),...copy(patch),id:`${key}-${crypto.randomUUID()}`,isDemo:true};s.edits[`new:${key}`]=[...(s.edits[`new:${key}`]||[]),record];write(s);return copy(record);
 }
 export function adminTrashRecord(key,id,restore=false){return saveRecord(key,id,{deletedAt:restore?null:new Date().toISOString()});}
 export function adminSaveProgress(memberId,status,note){
@@ -76,6 +76,11 @@ export function completeCourse(courseId,{read,answer}){const s=state();const p=s
 export function issueCertificate(id,reissue=false){const s=state();const c=s.certificates.find(x=>x.id===id&&x.memberId===getCurrentMember()?.id);if(!c)throw Error('합격 내역을 찾을 수 없습니다.');if(reissue&&!c.issuedAt)throw Error('최초 발급 후 재발급을 신청해주세요.');c.issuedAt=new Date().toISOString();c.status=reissue?'재발급 완료':'발급 완료';write(s);return copy(c);}
 export function savePreferences(p){const s=state();s.preferences={sms:!!p.sms,email:!!p.email};write(s);}
 export function saveInquiry(category,payload={}){const s=state();s.inquiries.push({id:crypto.randomUUID(),title:payload.title||`${category} 문의`,body:payload.body||'',attachments:payload.attachments||[],category,status:'접수',createdAt:new Date().toISOString()});write(s);}
-export function logNotification(record){if(getRole()!=='admin')throw Error('관리자 역할이 필요합니다.');const s=state();s.notifications.push({...record,id:crypto.randomUUID(),status:'발송 시뮬레이션 완료',createdAt:new Date().toISOString()});write(s);}
+export function logNotification(record){if(getRole()!=='admin')throw Error('관리자 역할이 필요합니다.');const s=state();s.notifications.push({...record,id:crypto.randomUUID(),status:'발송 대기',createdAt:new Date().toISOString()});write(s);}
 
 export function setReducedMotion(value){const s=state();s.reducedMotion=!!value;write(s);}
+
+// Per-record outcomes are returned by the adapter, including storage failures.
+export function processAdminBatch(key,ids,action,reason=''){
+ const result={success:[],failed:[]};for(const id of new Set(ids)){try{if(action==='trash'||action==='restore')adminTrashRecord(key,id,action==='restore');else if(key==='requests')adminStatus(id,action,reason);else adminBulkRecords(key,[id],key==='clubs'?'recruiting':'status',key==='clubs'?action==='true':action,reason);result.success.push(id);}catch(error){result.failed.push({id,message:error.message});}}return result;
+}

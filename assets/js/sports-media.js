@@ -1,0 +1,104 @@
+// Curated illustrative photos; original event records are preserved separately.
+export const sportsMedia = [
+  {
+    "id": "running",
+    "image": "/assets/images/unsplash/running.webp",
+    "alt": "마라톤 출발선에 모인 참가자들",
+    "author": "Jesse Solomon",
+    "source": "https://unsplash.com/photos/0tHvCiXGFnI",
+    "download": "https://images.unsplash.com/photo-1648932480459-50737852f1bb?auto=format&fit=max&w=1800&q=85",
+    "width": 1800,
+    "height": 1200
+  },
+  {
+    "id": "tennis",
+    "image": "/assets/images/unsplash/tennis.webp",
+    "alt": "테니스 코트에서 라켓을 휘두르는 선수",
+    "author": "Moises Alex",
+    "source": "https://unsplash.com/photos/WqI-PbYugn4",
+    "download": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=max&w=1800&q=85",
+    "width": 1800,
+    "height": 1200
+  },
+  {
+    "id": "golf-swing",
+    "image": "/assets/images/unsplash/golf-swing.webp",
+    "alt": "골프 코스에서 스윙하는 골퍼",
+    "author": "Courtney Cook",
+    "source": "https://unsplash.com/photos/h7aVq-7FfPw",
+    "download": "https://images.unsplash.com/photo-1535132011086-b8818f016104?auto=format&fit=max&w=1800&q=85",
+    "width": 1800,
+    "height": 1200
+  },
+  {
+    "id": "swimming",
+    "image": "/assets/images/unsplash/swimming.webp",
+    "alt": "수영장에서 접영하는 선수",
+    "author": "Taiki Ishikawa",
+    "source": "https://unsplash.com/photos/L3otF-TXtvo",
+    "download": "https://images.unsplash.com/photo-1762392050936-cf787f78e812?auto=format&fit=max&w=1800&q=85",
+    "width": 1800,
+    "height": 1200
+  },
+  {
+    "id": "cycling",
+    "image": "/assets/images/unsplash/cycling.webp",
+    "alt": "공원 길에서 자전거를 타는 사람들",
+    "author": "Thomas Sabelino",
+    "source": "https://unsplash.com/photos/0HP8u90kn5s",
+    "download": "https://images.unsplash.com/photo-1756368357751-4764cf19a1d1?auto=format&fit=max&w=1800&q=85",
+    "width": 1800,
+    "height": 1013
+  },
+  {
+    "id": "basketball-court",
+    "image": "/assets/images/unsplash/basketball-court.webp",
+    "alt": "바다가 내려다보이는 야외 농구 코트",
+    "author": "JC Dela Cuesta",
+    "source": "https://unsplash.com/photos/itqkcMEix64",
+    "download": "https://images.unsplash.com/photo-1502736393269-6ca11b688701?auto=format&fit=max&w=1800&q=85",
+    "width": 1800,
+    "height": 1013
+  },
+  {
+    "id": "golf-player",
+    "image": "/assets/images/unsplash/golf-player.webp",
+    "alt": "잔디 위에서 골프를 즐기는 골퍼",
+    "author": "Courtney Cook",
+    "source": "https://unsplash.com/photos/O_UZcIm2yqI",
+    "download": "https://images.unsplash.com/photo-1591491680738-eae9159fced6?auto=format&fit=max&w=1800&q=85",
+    "width": 1800,
+    "height": 1200
+  },
+  {
+    "id": "football",
+    "image": "/assets/images/unsplash/football.webp",
+    "alt": "축구장에서 공을 다투는 선수들",
+    "author": "Kuan Fang",
+    "source": "https://unsplash.com/photos/WaQ5xQq2E6g",
+    "download": "https://images.unsplash.com/photo-1494778696781-8f23fd5553c4?auto=format&fit=max&w=1800&q=85",
+    "width": 1800,
+    "height": 1448
+  },
+  {
+    "id": "riding",
+    "image": "/assets/images/unsplash/riding.webp",
+    "alt": "노을 아래 말을 타는 승마인",
+    "author": "Louise Pilgaard",
+    "source": "https://unsplash.com/photos/wQVKjnnQQQc",
+    "download": "https://images.unsplash.com/photo-1539808490052-afc4275592d4?auto=format&fit=max&w=1800&q=85",
+    "width": 1800,
+    "height": 1210
+  },
+  {
+    "id": "fencing-training",
+    "image": "/assets/images/unsplash/fencing-training.webp",
+    "alt": "펜싱 자세를 연습하는 선수",
+    "author": "Nathanaël Desmeules",
+    "source": "https://unsplash.com/photos/QDFnLJ5DzaU",
+    "download": "https://images.unsplash.com/photo-1648484859924-2ed487a66fbd?auto=format&fit=max&w=1800&q=85",
+    "width": 1200,
+    "height": 1800
+  }
+];
+export const sportsPhoto = id => sportsMedia.find(photo => photo.id === id);

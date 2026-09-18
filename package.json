@@ -1,1 +1,26 @@
-{"name":"kwsa-php-prototype","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.js"}}
+{
+  "name": "kwsa-php-prototype",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "node scripts/build-editor.mjs",
+    "dev:editor": "node scripts/build-editor.mjs --watch"
+  },
+  "dependencies": {
+    "@tiptap/core": "3.31.3",
+    "@tiptap/extension-highlight": "3.31.3",
+    "@tiptap/extension-image": "3.31.3",
+    "@tiptap/extension-table": "3.31.3",
+    "@tiptap/extension-text-align": "3.31.3",
+    "@tiptap/extension-text-style": "3.31.3",
+    "@tiptap/pm": "3.31.3",
+    "@tiptap/starter-kit": "3.31.3",
+    "dompurify": "3.4.15"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "jsdom": "29.1.1",
+    "prettier": "3.9.8"
+  }
+}

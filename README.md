@@ -1,73 +1,38 @@
 # 대한직장인체육회 홈페이지
 
-PHP 멀티페이지 + CSS 디자인 토큰 + Vanilla JavaScript ES Modules로 만든 전체 프론트 프로토타입입니다. 메인·전체 메뉴·회원·신청·학습·관리자 화면을 연결했습니다. 운영 서버 인증/DB/결제/발송이 연결된 서비스는 아닙니다.
+PHP 멀티페이지와 Vanilla JavaScript ES modules로 구성한 홈페이지·관리자 프로젝트입니다. 원본 콘텐츠와 현재 공개 페이지 디자인을 유지하며 관리자 편집과 목록 업무를 별도 구성합니다.
 
-## 실행
-
-PHP 8.1 이상 권장. 이 환경에서는 PHP 8.5.5로 확인했습니다.
+## 실행과 빌드
 
 ```powershell
-cd 'C:\Users\pc\Desktop\코덱스작업\sports'
+npm ci
+npm run build
 php -S 127.0.0.1:8080 -t .
 ```
 
-http://127.0.0.1:8080/index.php 를 Chrome에서 여세요. Node 빌드 서버, npm install, DB가 필요 없습니다. 파일 더블클릭으로 실행하면 PHP/ES Modules가 동작하지 않습니다.
+- 홈페이지: http://127.0.0.1:8080/index.php
+- 관리자: http://127.0.0.1:8080/admin/index.php
+- 디자인시스템: http://127.0.0.1:8080/design-system.php
+- 테스트: `npm test`
+- 에디터 변경 자동 빌드: `npm run dev:editor`
+- 디자인 토큰 생성: `python scripts/build-design-tokens.py`
 
-## 데모 사용
-
-- 하단 **DEMO 시연 도구** 또는 로그인 페이지에서 비회원/개인회원/기업·동호회 담당자/관리자를 선택합니다. 실제 인증이 아닙니다.
-- 대회 상세 → 참가신청 → 필수 동의 → 내용 확인 → 신청 확정 → 마이페이지에서 내역을 확인합니다.
-- 같은 탭에서 관리자 → 참가 신청 관리 → 상태 변경을 하면 마이페이지에도 반영됩니다.
-- 기업/동호회 등록은 별도 흐름이며 승인대기 내역을 관리자 해당 메뉴에서 처리합니다.
-- 교육 신청 후 3단계 학습, 필수 안전 과정의 영상 시청, 자료 필독 체크와 정답 제출을 완료하면 데모 이수됩니다.
-- 자격검증 신청은 관리자 합격 처리 후 발급·재발급을 체험할 수 있습니다. 기본 회원에는 발급 검증용 합성 합격 이력 1건이 있습니다.
-- 자원봉사 신청 → 관리자 선발 → 안전교육 → 알림 화면에서 대상·기수·대회 필터 → 미리보기 → 확인 → **발송 시뮬레이션 완료**를 체험합니다.
-- 하단 **초기화**에서 현재 세션의 신청·학습·관리 변경을 지웁니다.
-
-sessionStorage를 사용하므로 같은 탭 내 페이지 이동에서 유지됩니다. 다른 탭/브라우저·사용자와 상태를 공유하지 않습니다. 실제 개인정보, 비밀번호 또는 증빙 파일을 저장하지 않습니다. 가입·문의 입력값은 폐기하고 합성 회원/내역을 사용합니다.
-
-## 콘텐츠 수정
-
-`assets/js/data.js`에 모든 반복 콘텐츠를 정의했습니다. 대회·게시글·동호회를 바꾸면 메인, 목록, 상세, 검색에서 동일한 데이터를 사용합니다. 상태 판정·검색·필터는 `assets/js/services/mock-repository.js`, 공통 UI는 `renderers.js`, 페이지별 구성은 `assets/js/pages/`를 수정합니다. 관리자에서 변경한 내용은 세션 오버레이일 뿐 원본 파일을 변경하지 않습니다.
-
-대회 날짜는 2026년 가을 시연용입니다. 시간이 지나면 실제 날짜 계산에 따라 마감으로 바뀝니다. 시연 일정을 바꾸려면 data.js의 접수/개최 시각을 함께 수정하세요.
+PHP 8.1 이상. 의존성과 lockfile, `assets/js/generated/`를 함께 관리합니다. 생성 번들을 포함하면 PHP 서버에서 Node 런타임 없이 실행할 수 있습니다.
 
 ## 구조
 
-- 루트 PHP 21개: 명시적 진입점. 사용자 입력을 include 경로에 연결하지 않습니다.
-- includes/: 공통 head/header/footer/scripts/layout.
-- admin/: 대시보드 및 12개 운영 화면.
-- assets/css/: 토큰, 기본, 레이아웃, 컴포넌트, 페이지, 관리자.
-- assets/js/: data, repository, 렌더러, 페이지, 인터랙션, 모션.
-- assets/vendor/: 검증한 고정 버전 라이브러리와 폰트.
-- docs/: 레퍼런스, 메뉴 매핑, 모델, 연동, 자산, QA 기록.
+- `includes/`, 루트 PHP: 공개 페이지와 공통 템플릿
+- `admin/`: 관리자 PHP 진입점
+- `assets/js/admin-*.js`: 관리자 셸, 검색/선택, 목록, 편집, 대화상자
+- `assets/js/editor/`: 실제 Tiptap과 본문 변환/공개 렌더링
+- `assets/js/services/`: repository 및 브라우저 저장 어댑터
+- `assets/design-system/tokens.json`: 공개 디자인 토큰 원본
+- `assets/css/admin-tokens.css`: 관리자 전용 설계값
 
-## 확인 및 제한
+## 데이터와 연동 범위
 
-Montage Foundations/Components/Utilities, K-클럽, BFC를 Chrome에서 직접 확인했습니다. **BFC는 이번 환경에서 정상 접속에 성공했으며 인증서 우회를 하지 않았습니다.** 세부 확인 범위는 docs/reference-review.md에 기록했습니다.
+현재 데이터 변경은 브라우저 세션 저장소의 오버레이입니다. 실제 서버 인증·권한·DB·결제·메시지 발송은 연결되어 있지 않습니다. 관리자 역할 전환은 운영 인증이 아닙니다. 미디어와 문서별 임시저장은 해당 브라우저에 저장됩니다.
 
-HWPX 원본과 C시안 이미지, A/B/D 템플릿, 공식 CI·명단·원고·주소·전화번호·정관·후원자료는 제공되지 않았습니다. 첨부 지시서의 메뉴/기능 명세를 기준으로 작성했으며 미제공 내용을 공식 확정 정보로 만들지 않았습니다. 소개 페이지의 원고·조직·법적 문서는 검토/교체용입니다.
+원본 KOWSC 콘텐츠의 문구·순서·줄바꿈·이미지를 보존합니다. 출처와 원본은 `docs/research/kowsc`에 기록되며 수집 도구는 `scripts/import-kowsc-content.py`입니다. 공개 화면에 개발/이관 안내 문구를 삽입하지 않습니다.
 
-공개 운영에는 서버 인증·권한, DB, 파일 검증, 결제, 메시지 공급자, 회원증 검증, 서버 교육 이수 검증, 법률 및 운영 정책 확정이 필요합니다. 스톡 영상은 공인 교육을 대체하지 않습니다. 상세 내용은 docs/integration-plan.md를 참조하세요.
-
-## 검증
-
-```powershell
-node --test tests/repository.test.js
-Get-ChildItem -Recurse -Filter *.php | ForEach-Object { php -l $_.FullName }
-```
-
-Node는 데이터 흐름 테스트에만 필요합니다. 실행 자체에는 필요하지 않습니다. 브라우저 검증 기록은 docs/qa.md 및 docs/screenshots/에 있습니다.
-
-## 디자인시스템 및 관리자 분리
-
-- /design-system.php: 실제 색상 토큰, 타이포그래피, 간격, 버튼·폼·배지·카드 및 모달/토스트 동작 확인.
-- /admin/index.php: 홈페이지 헤더·푸터와 분리된 관리자 전용 레이아웃. 운영 메뉴 13개는 같은 전용 상단바를 사용합니다.
-- 두 영역은 프론트 레이아웃을 분리하며, 시연 데이터는 기존 세션 저장소를 공유합니다. 서버 인증 분리를 의미하지 않습니다.
-
-
-## 디자인시스템 v3
-
-Montage의 웹 문서 분류를 기준으로 Foundations 9개, Components 53개, Utilities 31개를 제공합니다. Primitive → Semantic → Component 및 프로젝트 Layout으로 구분한 410개 토큰, 문서/토큰 검색, 코드 복사, 테마 프리뷰와 동작 예제를 포함합니다. 원본은 assets/design-system/tokens.json이며 python scripts/build-design-tokens.py로 CSS와 문서 데이터를 생성합니다. 상세 사용법 및 대응 범위는 docs/design-system.md를 참조하세요.
-
-
+[관리자 변경·본문 정책·검증 기록](docs/admin-upgrade/README.md), [디자인시스템](docs/design-system.md), [서버 연동 계획](docs/integration-plan.md)을 참고하세요.

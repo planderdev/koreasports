@@ -102,7 +102,7 @@
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-28);
+  gap: var(--space-40);
 }
 
 .grid-4 {

@@ -1,0 +1,228 @@
+--- before/assets/js/pages/catalog.js
++++ after/assets/js/pages/catalog.js
+@@ -1,3 +1,4 @@
++import {aboutPage} from './about.js';
+ import {readRichBody} from '../generated/public-body.js';
+ import {attachmentMarkup} from '../inquiry-attachments.js';
+ import * as r from '../services/repository.js';
+@@ -47,7 +48,7 @@
+  partnership:{title:'함께 만드는 새로운 가능성',description:'기업·단체의 자원과 스포츠를 연결할 협력 제안을 기다립니다.',label:'기업·단체명',body:'파트너십 제안',hint:'기업·단체 소개, 희망 협력 분야와 제안 내용을 작성해주세요.',submit:'파트너십 문의',category:'기업파트너십',symbol:'shake-hands-line'}
+ };
+ function inquiryLayout(kind){const c=inquiryTypes[kind];return `<div class="inquiry-layout"><section class="inquiry-guide" aria-labelledby="inquiry-guide-title"><span class="inquiry-symbol">${icon(c.symbol)}</span><h2 id="inquiry-guide-title">${c.title}</h2><p>${c.description}</p><div class="inquiry-contact"><h3>사무국 문의</h3><a href="tel:027837700">${icon('phone-line')}02-783-7700</a><a href="mailto:${esc(r.config().email)}">${icon('mail-line')}${esc(r.config().email)}</a></div></section><form id="inquiry-form" class="inquiry-form" data-category="${c.category}" novalidate><header class="inquiry-form-heading"><h2>${kind==='talent'?'참여 정보':kind==='press-tip'?'제보 작성':'내용 작성'}</h2><span>필수 표시 항목을 입력해주세요.</span></header><div id="inquiry-error" class="error-text" role="alert" tabindex="-1"></div><div class="field compact"><label for="inquiry-title">${c.label} <span class="field-required">필수</span></label><input id="inquiry-title" name="title" required maxlength="80" placeholder="${c.label}을 입력해주세요" aria-describedby="inquiry-title-error"><span class="error-text" id="inquiry-title-error"></span></div><div class="field compact"><label for="inquiry-body">${c.body} <span class="field-required">필수</span></label><p class="inquiry-help" id="inquiry-body-help">${c.hint}</p><textarea id="inquiry-body" name="body" required rows="8" maxlength="1000" placeholder="내용을 입력해주세요" aria-describedby="inquiry-body-help inquiry-body-error inquiry-count"></textarea><div class="inquiry-field-meta"><span class="error-text" id="inquiry-body-error"></span><span id="inquiry-count">0 / 1,000</span></div></div>${['qna','press-tip','partnership'].includes(kind)?attachmentMarkup():''}<div class="inquiry-confirm"><label class="check-label"><input id="inquiry-confirm" name="confirmed" type="checkbox" required aria-describedby="inquiry-confirm-error">작성한 내용을 확인했습니다. <span class="field-required">필수</span></label><span class="error-text" id="inquiry-confirm-error"></span></div><footer class="inquiry-actions"><p>작성한 내용을 확인한 후 접수해주세요.</p><button class="button large" type="submit">${c.submit}</button></footer></form></div>`;}
+-export function contentPage(){const id=params().id,p=r.content('pageContents')[id];if(!p)return notFound();if(p.sourceUrl)return sourcePage(p);const parent=r.content('navigation').find(n=>n.items.some(x=>x.id===id||x.children?.some(child=>child.id===id)));let special='';if(id==='faq')special=`<div class="accordion">${r.content('faqs').map(f=>`<details><summary>${f.q}</summary><p>${f.a}</p></details>`).join('')}</div>`;
++export function contentPage(){const id=params().id,p=r.content('pageContents')[id];if(!p)return notFound();if(['vision','vision-1','vision-2','purpose'].includes(id))return aboutPage(id,p);if(p.sourceUrl)return sourcePage(p);const parent=r.content('navigation').find(n=>n.items.some(x=>x.id===id||x.children?.some(child=>child.id===id)));let special='';if(id==='faq')special=`<div class="accordion">${r.content('faqs').map(f=>`<details><summary>${f.q}</summary><p>${f.a}</p></details>`).join('')}</div>`;
+  else if(['qna','safety-proposal','talent','press-tip'].includes(id))return `${heading(p.title,'',parent?.title||'체육회 안내')}<div class="container content-section">${inquiryLayout(id)}</div>`;
+  else if(id==='members-only')special=r.getCurrentMember()?`<div class="panel"><h3>회원 전용 자료</h3>${button('자료실 바로가기','/board.php?category=자료실','secondary')}</div>`:empty('로그인이 필요합니다','회원으로 로그인하면 회원 전용 자료를 볼 수 있습니다.','/login.php');
+  else if(id==='associations')special=`<div class="grid-3">${r.content('associations').map(a=>`<div class="panel"><h3>${a.name}</h3><p>공통 회원, 대회와 교육을 연결합니다.</p>${button('종목 대회 보기',`/events.php?sport=${a.sport}`,'secondary small')}</div>`).join('')}</div>`;
+--- before/assets/js/data.js
++++ after/assets/js/data.js
+@@ -1,3 +1,5 @@
++import {aboutContent} from './about-content.js';
++export {aboutContent};
+ import {sourcePosts,sourceMedia,sourcePages} from './source-content.js';
+ export {sourceMedia};
+ // Public KOWSC content snapshots and synthetic interaction demo records are separated by source metadata.
+@@ -59,10 +61,10 @@
+ export const notificationLogs = [];
+ const copy = {
+  greeting:['스포츠가 일상이 되는 세상.','일하는 사람들의 건강한 일상과 즐거운 도전을 응원합니다.','회장 인사말 원고와 성명은 공식 자료 수령 후 교체합니다.'],
+- vision:['일과 삶 사이, 스포츠라는 연결.','누구나 쉽게 참여하고 함께 성장하는 생활체육 환경을 지향합니다.','Vision 1과 Vision 2의 상세 문구는 검토용 제안입니다.'],
+- 'vision-1':['더 가까운 스포츠','일터와 지역에서 자연스럽게 만나는 생활체육.','접근성 · 참여 기회 · 일상의 균형'],
+- 'vision-2':['함께 성장하는 스포츠','개인과 동호회, 기업이 함께하는 연결.','교류 · 안전 · 지속 가능한 활동'],
+- purpose:['건강한 일상, 함께하는 가치','직장인의 스포츠 참여와 교류를 지원하는 홈페이지 구성입니다.','정관에 따른 법적 설립목적은 공식 원고로 교체합니다.'],
++ 'vision':[aboutContent.vision.headline,'',aboutContent.vision.body],
++ 'vision-1':[aboutContent.vision.areas[0].title,'',aboutContent.vision.areas[0].body],
++ 'vision-2':[aboutContent.vision.areas[1].title,'',aboutContent.vision.areas[1].body],
++ 'purpose':[aboutContent.purpose.headline,'',aboutContent.purpose.body],
+  organization:['함께 움직이는 체육회','총회 → 이사회 → 사무국 → 종목협회','아래 조직 구조는 교체 가능한 예시이며 확정 조직도가 아닙니다.'],
+  committee:['전문성과 현장의 경험을 연결합니다','임원 및 위원회 소개','성명, 직위, 임기는 공식 명단 수령 후 등록합니다.'],
+  history:['함께 쌓아갈 스포츠의 기록','주요 연혁','확정 연혁을 등록하면 연도별 타임라인으로 표시됩니다.'],
+--- before/assets/css/pages.css
++++ after/assets/css/pages.css
+@@ -1055,6 +1055,50 @@
+ .history-year ul { list-style: none; padding: 0; margin: 0; }
+ .history-year li { display: grid; grid-template-columns: 64px minmax(0,1fr); gap: var(--space-16); padding: var(--space-12) 0; }
+ .history-year time { color: var(--semantic-label-alternative); }
++/* Vision and purpose: scoped editorial content, sharing the public type scale. */
++.about-page .about-intro { max-width: 880px; }
++.about-page h2 { font-size: var(--type-title-2-size); line-height: var(--type-title-2-line); letter-spacing: var(--type-title-2-tracking); font-weight: 700; word-break: keep-all; overflow-wrap: anywhere; }
++.about-page .about-intro h2 { margin: var(--space-16) 0 var(--space-24); font-size: var(--type-title-1-size); line-height: var(--type-title-1-line); letter-spacing: var(--type-title-1-tracking); }
++.about-page p { color: var(--semantic-label-alternative); font-size: var(--type-body-1-reading-size); line-height: var(--type-body-1-reading-line); letter-spacing: var(--type-body-1-reading-tracking); word-break: keep-all; overflow-wrap: anywhere; }
++.about-page h3 { font-size: var(--type-headline-1-size); line-height: var(--type-headline-1-line); letter-spacing: var(--type-headline-1-tracking); font-weight: 600; word-break: keep-all; overflow-wrap: anywhere; }
++.about-page .about-section { margin-top: var(--space-64); }
++.about-page .about-section > h2 { margin-bottom: var(--space-32); }
++.about-page .about-number { color: var(--semantic-primary-normal); font-size: var(--type-label-1-size); line-height: var(--type-label-1-line); letter-spacing: var(--type-label-1-tracking); font-weight: 600; }
++.about-page .about-paths { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-24); }
++.about-page .about-paths a { display: grid; gap: var(--space-16); padding: var(--space-32); background: var(--semantic-background-normal-alternative); border-radius: var(--radius-16); }
++.about-page .about-paths a:hover { background: var(--semantic-brand-subtle); }
++.about-page .about-path-label { display: flex; justify-content: space-between; align-items: center; color: var(--semantic-primary-normal); font-size: var(--type-label-1-size); line-height: var(--type-label-1-line); }
++.about-page .about-path-label i { font-size: var(--type-headline-1-size); font-weight: normal; }
++.about-page :is(.about-directions,.about-values,.about-activities,.about-keywords) { margin: 0; padding: 0; list-style: none; }
++.about-page .about-directions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: var(--space-48); }
++.about-page :is(.about-directions,.about-values) li { display: flex; align-items: baseline; gap: var(--space-20); padding: var(--space-28) 0; border-top: var(--border-thin) solid var(--semantic-line-solid-normal); }
++.about-page li p { margin-top: var(--space-12); }
++.about-page .about-values { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: var(--space-32); }
++.about-page .about-values li { flex-direction: column; gap: var(--space-16); }
++.about-page .about-practice { display: grid; grid-template-columns: 1fr 1.5fr; gap: var(--space-64); }
++.about-page .about-practice > div > p { margin-top: var(--space-16); }
++.about-page .about-activities li { padding: var(--space-24) 0; border-top: var(--border-thin) solid var(--semantic-line-solid-normal); }
++.about-page .about-photos { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-32); max-width: 1181px; }
++.about-page figure { margin: 0; min-width: 0; }
++.about-page figure img { display: block; width: auto; max-width: 100%; height: auto; border-radius: var(--radius-16); }
++.about-page figcaption { margin-top: var(--space-16); font-size: var(--type-label-1-size); line-height: var(--type-label-1-line); letter-spacing: var(--type-label-1-tracking); color: var(--semantic-label-alternative); }
++.about-page .about-closing { margin-top: var(--space-64); padding-top: var(--space-32); border-top: var(--border-thin) solid var(--semantic-line-solid-normal); font-size: var(--type-title-3-size); line-height: var(--type-title-3-line); letter-spacing: var(--type-title-3-tracking); color: var(--semantic-primary-normal); font-weight: 600; }
++.about-page .about-keywords { display: flex; flex-wrap: wrap; gap: var(--space-12) var(--space-24); margin-top: var(--space-32); color: var(--semantic-primary-normal); }
++.about-page .about-keywords li { border-bottom: var(--border-thin) solid var(--semantic-line-solid-normal); padding-bottom: var(--space-8); }
++.about-page .about-area-photo { margin-top: var(--space-48); max-width: 600px; }
++@media (max-width: 1024px) {
++ .about-page .about-values { grid-template-columns: repeat(2,minmax(0,1fr)); }
++ .about-page .about-practice { grid-template-columns: 1fr; gap: var(--space-32); }
++}
++@media (max-width: 640px) {
++ .about-page .about-intro h2 { font-size: var(--type-title-2-size); line-height: var(--type-title-2-line); letter-spacing: var(--type-title-2-tracking); }
++ .about-page :is(.about-paths,.about-directions,.about-values,.about-photos) { grid-template-columns: 1fr; }
++ .about-page .about-values { gap: 0; }
++ .about-page .about-values li { flex-direction: row; gap: var(--space-20); }
++ .about-page .about-paths a { padding: var(--space-24); }
++ .about-page .about-section,.about-page .about-closing { margin-top: var(--space-48); }
++}
++
+ .ci-section-heading { display: flex; justify-content: space-between; align-items: end; gap: var(--space-24); margin-bottom: var(--space-32); }
+ .ci-section-heading h2,.ci-file-guide h2 { font-size: var(--type-title-2-size); line-height: var(--type-title-2-line); letter-spacing: var(--type-title-2-tracking); margin-top: var(--space-8); }
+ .ci-section-heading > p,.ci-file-guide p,.ci-logo-information p { color: var(--semantic-label-alternative); }
+--- before/assets/js/about-content.js
++++ after/assets/js/about-content.js
+@@ -0,0 +1,107 @@
++// Approved web copy from vision-purpose-codex-instructions (1).md.
++export const aboutContent = {
++  "vision": {
++    "label": "VISION",
++    "headline": "일상에서 즐기는 스포츠, 세계로 이어지는 교류",
++    "body": "대한직장인체육회는 더 많은 직장인이 스포츠를 일상에서 즐길 수 있도록 생활체육의 기반을 넓혀갑니다. 국내 대회와 다양한 종목 활동을 국제교류로 연결하며, 직장인 스포츠의 새로운 가능성을 만들어갑니다.",
++    "directions": [
++      {
++        "title": "참여의 기반을 넓힙니다",
++        "body": "직장인들이 관심과 여건에 맞는 종목을 즐길 수 있도록 다양한 스포츠 활동과 대회 참여의 기회를 확대합니다."
++      },
++      {
++        "title": "세계와의 협력을 이어갑니다",
++        "body": "CSIT를 비롯한 국제 스포츠 네트워크와의 협력을 통해 직장인 스포츠교류의 폭을 넓혀갑니다."
++      },
++      {
++        "title": "국제대회를 향한 기회를 만듭니다",
++        "body": "국제교류 경험과 국내 협력 기반을 바탕으로 국제 스포츠대회 유치를 추진합니다."
++      },
++      {
++        "title": "운영의 전문성을 높입니다",
++        "body": "대회 운영과 교류 경험을 축적해 직장인 생활체육을 뒷받침하는 전문 역량을 강화합니다."
++      }
++    ],
++    "closing": "더 많은 참여가 일상이 되고, 더 넓은 교류가 가능성이 되도록.",
++    "photoTitle": "현장에서 이어가는 우리의 비전",
++    "areas": [
++      {
++        "title": "일터와 지역에서 가까워지는 스포츠",
++        "body": "스포츠가 특별한 날의 경험에 머물지 않도록, 다양한 종목과 대회를 통해 참여의 기회를 넓혀갑니다. 직장인들이 일터와 지역에서 함께 운동하고 교류하며, 생활 속에서 스포츠를 이어갈 수 있는 환경을 지향합니다.",
++        "keywords": [
++          "생활체육 참여",
++          "다양한 종목",
++          "일터와 지역의 교류"
++        ]
++      },
++      {
++        "title": "국경을 넘어 함께하는 스포츠",
++        "body": "CSIT와의 협력과 World Sports Games(WSG) 참가 경험을 바탕으로 세계의 직장인·아마추어 스포츠인들과 교류합니다. 스포츠로 서로의 문화를 이해하고, 국제대회 참가와 유치 협력으로 만남의 기회를 넓혀갑니다.",
++        "keywords": [
++          "CSIT 협력",
++          "WSG 참가",
++          "국제대회 유치 협력"
++        ]
++      }
++    ],
++    "photos": [
++      {
++        "src": "/assets/images/about/domestic-sports.jpeg",
++        "width": 600,
++        "height": 400,
++        "alt": "대한직장인체육회 풋살대회 경기 모습",
++        "caption": "함께 뛰고 교류하는 국내 직장인 스포츠대회"
++      },
++      {
++        "src": "/assets/images/about/international-exchange.jpeg",
++        "width": 549,
++        "height": 349,
++        "alt": "2019 스페인 World Sports Games(WSG) 참가 단체 사진",
++        "caption": "스포츠로 세계와 만나는 국제교류 활동"
++      }
++    ]
++  },
++  "purpose": {
++    "label": "PURPOSE",
++    "headline": "직장인의 건강한 삶에 스포츠가 함께하도록",
++    "body": "대한직장인체육회는 직장인의 스포츠 활동을 활성화하고, 생활체육을 통한 건강과 복지 증진에 기여하고자 합니다. 함께 운동하며 나누는 교류가 일터와 지역에 활력을 더하고, 국내외 스포츠인들을 잇는 계기가 되도록 활동합니다.",
++    "values": [
++      {
++        "title": "건강한 일상",
++        "body": "스포츠를 통해 몸과 마음을 돌보고, 일상에 활력을 더할 수 있도록 직장인의 생활체육 참여를 돕습니다."
++      },
++      {
++        "title": "함께하는 직장 문화",
++        "body": "함께 운동하고 도전하는 경험을 통해 직장인 사이의 소통과 유대를 넓히고, 활기찬 직장 문화에 기여합니다."
++      },
++      {
++        "title": "지역과의 동행",
++        "body": "지역과 연계한 대회와 스포츠 활동으로 사람들의 만남을 넓히고, 생활체육과 지역의 활력이 함께 이어지도록 합니다."
++      },
++      {
++        "title": "세계와의 교류",
++        "body": "스포츠를 공통의 언어로 삼아 국내외 직장인·아마추어 스포츠인들이 만나고, 서로의 경험과 문화를 나눌 수 있도록 교류를 확대합니다."
++      }
++    ],
++    "activityIntro": "대회와 교육, 교류와 협력을 통해 직장인 스포츠의 참여 기반을 넓혀갑니다.",
++    "activities": [
++      {
++        "title": "국내 대회 협력",
++        "body": "지방자치단체·기업 등과 함께 직장인 스포츠대회를 개최하고, 생활체육과 지역 스포츠관광, 직장인 복지를 연결하는 협력을 추진합니다."
++      },
++      {
++        "title": "국제교류와 대회 유치 협력",
++        "body": "CSIT·WSG 네트워크를 바탕으로 국제 스포츠교류에 참여하고, 국제대회 유치를 위한 협력을 이어갑니다."
++      },
++      {
++        "title": "교육과 전문인력 양성",
++        "body": "지도자·심판 양성과 종목별 교육, 자격 검정 등을 통해 스포츠 활동을 뒷받침하는 전문성을 높이고자 합니다."
++      },
++      {
++        "title": "홍보와 후원 협력",
++        "body": "스포츠피플과 디지털 채널을 통해 직장인 스포츠의 활동을 알리고, 기업·기관과의 후원 협력 기회를 넓혀갑니다."
++      }
++    ],
++    "closing": "함께 즐기는 스포츠가 건강한 일상과 활기찬 일터로 이어집니다."
++  }
++};
+--- before/assets/js/pages/about.js
++++ after/assets/js/pages/about.js
+@@ -0,0 +1,23 @@
++import * as r from '../services/repository.js';
++import {esc, heading, icon} from '../renderers.js';
++
++const numbered = (items, className) => `<ol class="${className}">${items.map((item, i) => `<li><span class="about-number" aria-hidden="true">0${i + 1}</span><div><h3>${esc(item.title)}</h3><p>${esc(item.body)}</p></div></li>`).join('')}</ol>`;
++const photo = item => `<figure><img src="${esc(item.src)}" alt="${esc(item.alt)}" width="${item.width}" height="${item.height}" loading="lazy" decoding="async"><figcaption>${esc(item.caption)}</figcaption></figure>`;
++
++export function aboutPage(id, page) {
++  const data = r.content('aboutContent');
++  const isPurpose = id === 'purpose';
++  const content = isPurpose ? data.purpose : data.vision;
++  const areaIndex = id === 'vision-1' ? 0 : id === 'vision-2' ? 1 : -1;
++  const area = content.areas?.[areaIndex];
++  const lead = area ? {headline: area.title, body: area.body} : content;
++  let body;
++  if (area) {
++    body = `<ul class="about-keywords">${area.keywords.map(text => `<li>${esc(text)}</li>`).join('')}</ul><section class="about-area-photo" aria-label="활동 사진">${photo(content.photos[areaIndex])}</section>`;
++  } else if (isPurpose) {
++    body = `<section class="about-section" aria-labelledby="about-values"><h2 id="about-values">우리가 지향하는 가치</h2>${numbered(content.values, 'about-values')}</section><section class="about-section about-practice" aria-labelledby="about-activities"><div><h2 id="about-activities">가치를 실천하는 활동</h2><p>${esc(content.activityIntro)}</p></div><ul class="about-activities">${content.activities.map(item => `<li><h3>${esc(item.title)}</h3><p>${esc(item.body)}</p></li>`).join('')}</ul></section>`;
++  } else {
++    body = `<section class="about-section" aria-labelledby="about-future"><h2 id="about-future">우리가 그리는 미래</h2><div class="about-paths">${content.areas.map((item, i) => `<a href="/page.php?id=vision-${i + 1}"><span class="about-number" aria-hidden="true">0${i + 1}</span><h3>${esc(item.title)}</h3><span class="about-path-label">Vision ${i + 1} ${icon('arrow-right-up-line')}</span></a>`).join('')}</div></section><section class="about-section" aria-labelledby="about-directions"><h2 id="about-directions">비전을 실현하는 네 가지 방향</h2>${numbered(content.directions, 'about-directions')}</section><section class="about-section" aria-labelledby="about-photos"><h2 id="about-photos">${esc(content.photoTitle)}</h2><div class="about-photos">${content.photos.map(photo).join('')}</div></section>`;
++  }
++  return `${heading(page.title, '', '체육회소개')}<article class="container content-section about-page"><header class="about-intro"><span class="eyebrow">${content.label}</span><h2>${esc(lead.headline)}</h2><p>${esc(lead.body)}</p></header>${body}${area ? '' : `<p class="about-closing">${esc(content.closing)}</p>`}</article>`;
++}

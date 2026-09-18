@@ -4,7 +4,7 @@
 }
 
 .footer-shell {
-  padding-block: var(--space-64) var(--space-24);
+  padding-block: var(--space-40) ;
 }
 
 .footer-content {
@@ -16,9 +16,8 @@
 
 .footer-logo {
   display: block;
-  width: 160px;
+  width: 240px;
   max-width: 100%;
-  margin-bottom: var(--space-24);
 }
 
 .footer-logo img {

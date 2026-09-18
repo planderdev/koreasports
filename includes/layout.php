@@ -6,7 +6,7 @@ $pageIds = ['greeting','vision','vision-1','vision-2','purpose','organization','
 if ($pageType === 'page' && (!is_string($_GET['id'] ?? null) || !in_array($_GET['id'], $pageIds, true))) { http_response_code(404); }
 header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: strict-origin-when-cross-origin');
-header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; frame-src https://www.google.com/maps/embed; object-src 'none'; base-uri 'self'; frame-ancestors 'self'");
+header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self'; frame-src https://www.google.com/maps/embed; object-src 'none'; base-uri 'self'; frame-ancestors 'self'");
 ?><!doctype html>
 <html lang="ko">
 <?php require __DIR__.'/head.php'; ?>

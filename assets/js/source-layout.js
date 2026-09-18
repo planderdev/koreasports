@@ -1,7 +1,10 @@
+import {hydrateAdminMedia,hydrateAdminAttachments} from './services/repository.js';
 // Present the imported original nodes without rewriting their wording or order.
 export function bindSourceLayouts(){
+ hydrateAdminAttachments(document).then(cleanup=>window.addEventListener('pagehide',cleanup,{once:true}));
  const root=document.querySelector('.source-original');
  if(!root)return;
+ hydrateAdminMedia(root).then(cleanup=>window.addEventListener('pagehide',cleanup,{once:true}));
  const id=new URLSearchParams(location.search).get('id');
  const kind=document.body.dataset.page==='post'?'article':id;
  root.dataset.layout=kind;

@@ -427,11 +427,16 @@ select {
 }
 
 .image-card .card-meta {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: var(--space-8);
+  max-width: 100%;
+  padding: var(--space-4) var(--space-12);
+  border-radius: var(--radius-full);
+  background: var(--semantic-background-normal-alternative);
   font-size: var(--type-label-2-size);
-  color: var(--semantic-primary-normal);
+  font-weight: var(--font-weight-medium);
+  color: var(--semantic-label-neutral);
   margin-bottom: var(--space-10);
   line-height: var(--type-label-2-line);
   letter-spacing: var(--type-label-2-tracking);
@@ -475,6 +480,10 @@ select {
   color: var(--semantic-label-alternative);
   line-height: var(--type-body-1-line);
   letter-spacing: var(--type-body-1-tracking);
+}
+
+.card-bottom-label {
+  font-weight: var(--font-weight-semibold);
 }
 
 .card-bottom i {
@@ -657,7 +666,6 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
   gap: var(--space-12);
   justify-content: end;
   margin-top: 30px;
-  border-top: var(--border-thin) solid var(--semantic-line-solid-normal);
   padding-top: var(--space-24);
 }
 
