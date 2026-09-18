@@ -1,0 +1,10 @@
+docs
+tests
+scripts
+start.ps1
+README.md
+AGENTS.md
+package.json
+package-lock.json
+assets/download-assets.py
+php-server*.log

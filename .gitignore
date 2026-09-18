@@ -6,3 +6,6 @@ __pycache__/
 
 # Local working snapshots and image previews
 /tmp/
+
+# Vercel CLI project link
+.vercel
