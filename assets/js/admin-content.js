@@ -39,7 +39,7 @@ export const contentSchemas = {
           f("organizationId", "소속 직장", "select", {
             source: "organizations",
           }),
-          f("interests", "관심 종목", "checks", { source: "sports" }),
+          f("interests", "참여 종목", "checks", { source: "memberSports" }),
         ],
       ),
       group("활동 관리", "회원의 활동 상태를 관리합니다.", [
@@ -346,6 +346,15 @@ function options(field) {
           .map((x) => [x.image, [x.image, x.alt || x.title]]),
       ).values(),
     ];
+  // 회원의 참여 종목: 기존 4종 + 선수등록 폼 목록 + 회원이 직접 입력해 둔 종목까지 보여줍니다.
+  if (field.source === "memberSports")
+    return [
+      ...new Set([
+        ...r.content("sports"),
+        ...r.content("participationSports"),
+        ...r.collection("members").flatMap((m) => m.interests || []),
+      ]),
+    ].map((x) => [x, x]);
   const values = [
     "sports",
     "regions",
