@@ -190,6 +190,26 @@
   color: var(--semantic-static-black);
 }
 
+/* Bright photographs: darken the text side so the light headline stays readable. */
+.hero-slide-scrim::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg,color-mix(in srgb,var(--semantic-static-black) 68%,transparent) 0%,color-mix(in srgb,var(--semantic-static-black) 34%,transparent) 48%,transparent 78%),
+    linear-gradient(0deg,color-mix(in srgb,var(--semantic-static-black) 46%,transparent) 0%,transparent 34%);
+}
+
+.hero-slide-scrim .hero-content {
+  z-index: calc(var(--z-base) + 1);
+}
+
+@media (max-width:800px) {
+  .hero-slide-scrim::after {
+    background: linear-gradient(180deg,color-mix(in srgb,var(--semantic-static-black) 66%,transparent) 0%,color-mix(in srgb,var(--semantic-static-black) 30%,transparent) 62%,color-mix(in srgb,var(--semantic-static-black) 52%,transparent) 100%);
+  }
+}
+
 .hero-content {
   position: relative;
   z-index: var(--z-base);

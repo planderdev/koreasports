@@ -31,9 +31,12 @@ const sportPhoto = (index, offset = 0) => { const group = sportPhotos[index % 4]
 // Hero photographs selected by the site owner, in display order.
 const heroPhotos = [
   {
-    "image": "/assets/images/hero/slide-2.webp",
-    "source": "https://plus.unsplash.com/premium_photo-1663047487227-0f3cd88ed8aa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "alt": "실내에서 매트 위에 나란히 요가 자세를 취하는 두 사람"
+    // The association's own photo of the event this slide links to (sourceMedia[0]),
+    // cropped to remove the white side margins of the original upload.
+    "image": "/assets/images/hero/slide-exam.webp",
+    "scrim": true,
+    "source": sourceMedia[0].source,
+    "alt": "요가지도자 자격 검정시험장에서 좌식 책상 앞에 앉아 시험을 준비하는 응시자들"
   },
   {
     "image": "/assets/images/hero/slide-1.webp",
@@ -47,7 +50,7 @@ const heroPhotos = [
   }
 ];
 mediaAssets.push(...heroPhotos.map((photo, i) => ({...photo, id: `hero-photo-${i + 1}`})));
-export const heroSlides = sourceMedia.slice(0,3).map((m,i)=>({id:'hero-'+(i+1),eyebrow:'KOWSC · SPORTS PEOPLE',title:i===0?'배움과 도전,\n스포츠로 이어지다.':i===1?'세계와 함께하는\n직장인 스포츠.':'함께한 순간,\n더 큰 무대로.',summary:m.title,image:heroPhotos[i].image,alt:heroPhotos[i].alt,textTone:i===0?'dark':'light',cta:'현장 소식 보기',url:'/post.php?id='+m.postId,isDemo:true,sourceUrl:heroPhotos[i].source}));
+export const heroSlides = sourceMedia.slice(0,3).map((m,i)=>({id:'hero-'+(i+1),eyebrow:'KOWSC · SPORTS PEOPLE',title:i===0?'배움과 도전,\n스포츠로 이어지다.':i===1?'세계와 함께하는\n직장인 스포츠.':'함께한 순간,\n더 큰 무대로.',summary:m.title,image:heroPhotos[i].image,alt:heroPhotos[i].alt,textTone:'light',scrim:!!heroPhotos[i].scrim,cta:'현장 소식 보기',url:'/post.php?id='+m.postId,isDemo:true,sourceUrl:heroPhotos[i].source}));
 export const quickLinks = [ ['trophy-line','대회 참가신청','/events.php'],['team-line','동호회 찾기','/clubs.php'],['book-open-line','교육 신청','/education.php'],['medal-line','자격검증','/qualification.php'],['hand-heart-line','자원봉사','/volunteers.php'],['id-card-line','모바일 회원증','/mypage.php?tab=card'] ].map(([icon,title,url],i)=>({icon,title,url,image:'/assets/images/quick-'+(i+1)+'.png'}));
 export const audienceServices = [
  {title:'개인회원',heading:'나의 일상에, 스포츠를 더하다.',summary:'대회 참가부터 배움과 새로운 만남까지. 나에게 맞는 스포츠 생활을 시작해보세요.',links:[quickLinks[0],quickLinks[1],quickLinks[2]]},
