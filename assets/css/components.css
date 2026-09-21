@@ -669,6 +669,60 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
   padding-top: var(--space-24);
 }
 
+.sport-field {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.sport-field legend {
+  padding: 0;
+  margin-bottom: var(--space-8);
+  font-size: var(--type-body-1-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--type-body-1-line);
+  letter-spacing: var(--type-body-1-tracking);
+}
+
+.sport-field legend small {
+  margin-left: var(--space-6);
+  color: var(--semantic-label-alternative);
+  font-weight: var(--font-weight-regular);
+}
+
+.sport-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(128px,1fr));
+  gap: var(--space-8);
+}
+
+.field .sport-options label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  min-height: var(--control-height-md);
+  padding: var(--space-8) var(--space-12);
+  border: var(--border-thin) solid var(--semantic-line-normal-neutral);
+  border-radius: var(--radius-10);
+  font-size: var(--type-label-1-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--type-label-1-line);
+  letter-spacing: var(--type-label-1-tracking);
+  transition: border-color var(--duration-normal),background var(--duration-normal);
+}
+
+.field .sport-options label:hover {
+  border-color: var(--semantic-line-primary-normal);
+}
+
+.field .sport-options label:has(input:checked) {
+  border-color: var(--semantic-primary-normal);
+  background: var(--semantic-brand-subtle);
+  color: var(--semantic-primary-normal);
+  font-weight: var(--font-weight-semibold);
+}
+
 .check-label {
   display: flex;
   align-items: center;

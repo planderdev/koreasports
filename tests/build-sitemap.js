@@ -15,7 +15,7 @@ md+=`
 |---|---|
 | 통합검색 | /search.php |
 | 로그인 | /login.php |
-| 회원가입 | /join.php |
+| 선수등록 | /join.php |
 | 마이페이지 | /mypage.php |
 | 모바일 회원증 | /mypage.php?tab=card |
 | 전체메뉴 | 헤더 모달 · 모바일 아코디언 |

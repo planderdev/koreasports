@@ -18,6 +18,8 @@ export const navigation = [
 ];
 export const sports = ['골프','펜싱','승마','풋살'];
 export const regions = ['서울','경기','인천','부산'];
+// 선수등록 폼의 참여 종목(복수 선택). 마지막에 '직접입력' 항목이 자동으로 붙습니다.
+export const participationSports = ['축구','족구','농구','야구','볼링','골프','마라톤','등산','태권도','워킹','댄스스포츠','당구','테니스','자전거','복싱','피트니스','파크골프','모터스포츠','수상스키','배드민턴','e-sports','뉴스포츠'];
 export const associations = sports.map((sport,i)=>({id:`assoc-${i+1}`,name:`${sport} 종목협회`,slug:['golf','fencing','equestrian','futsal'][i],theme:'fairway',logo:null,sport,navigation:['events','clubs','education'],layoutVariant:'C',enabledModules:['events','clubs','education'],isDemo:true}));
 export const mediaAssets = [
  {id:'golf',image:'/assets/images/golf.webp',alt:'호수와 산을 배경으로 펼쳐진 초록빛 골프 코스',author:'Robert Ruggiero',source:'https://unsplash.com/photos/qsOlzJgdCeY',isDemo:true},

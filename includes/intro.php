@@ -2,6 +2,7 @@
 // 인트로 현황 카드: [수치, 설명]. 한 줄 추가하면 카드가 하나 늘고, 순서대로 하나씩 나타납니다(최대 6개).
 $introStats = [
     ['69.1만', '가입 회원 수(2023.8)'],
+    ['약 1500만명', '생활체육 직장인 (26.01 기준)'],
 ];
 ?>
 <section id="site-intro" class="site-intro" aria-labelledby="site-intro-title" data-lenis-prevent>
@@ -24,11 +25,11 @@ $introStats = [
     <h3 data-intro-member-title><b>대한직장인체육회</b>의<br>다양한 서비스를 경험해보세요.</h3>
     <a class="button accent large site-intro-card-enter" href="/index.php" data-intro-enter>홈페이지 접속<i class="ri-arrow-right-line" aria-hidden="true"></i></a>
     <a class="button large site-intro-login" href="/login.php" data-intro-leave data-intro-login><i class="ri-login-box-line" aria-hidden="true"></i><span>로그인</span></a>
-    <p class="site-intro-card-links"><span>아직 회원이 아니신가요?</span><a href="/join.php" data-intro-leave>회원가입</a></p>
+    <p class="site-intro-card-links"><span>아직 등록하지 않으셨나요?</span><a href="/join.php" data-intro-leave>선수등록</a></p>
    </div>
    <a class="site-intro-card site-intro-link-card" href="/join.php" data-intro-leave data-intro-join>
     <span class="site-intro-card-icon"><i class="ri-user-add-line" aria-hidden="true"></i></span>
-    <span class="site-intro-card-text"><strong>회원가입</strong><span>개인·기업·동호회 회원으로 가입하고 대회와 교육을 신청하세요.</span></span>
+    <span class="site-intro-card-text"><strong>선수등록</strong><span>개인·기업·동호회로 등록하고 대회와 교육을 신청하세요.</span></span>
     <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
    </a>
   </div>
