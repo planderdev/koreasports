@@ -6,7 +6,11 @@ test('community board menus use registered categories and preserve member visibi
   r.resetDemo();
   try {
     const community = r.content('navigation').find(group => group.title === '커뮤니티');
-    for (const category of ['Q&A', '자료실', '안전개선제안', '회원전용']) {
+    // Q&A 게시판과 기사제보 페이지는 사이트 소유자 요청으로 제거되었습니다.
+    assert.ok(!community.items.some(item => item.title === 'Q&A'));
+    assert.ok(!r.content('boards').includes('Q&A'));
+    assert.equal(r.content('pageContents')['press-tip'], undefined);
+    for (const category of ['자료실', '안전개선제안', '회원전용']) {
       const menu = community.items.find(item => item.title === category);
       assert.equal(new URL(menu.url, 'https://example.test').searchParams.get('category'), category);
       assert.ok(r.content('boards').includes(category));

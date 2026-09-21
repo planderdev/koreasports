@@ -13,7 +13,7 @@ export const navigation = [
  {title:'체육회소개',english:'ABOUT US',items:[page('회장인사말','greeting'),{...page('Vision','vision'),children:[page('Vision 1','vision-1'),page('Vision 2','vision-2')]},page('설립목적','purpose'),page('조직기구표','organization'),page('시·도 체육회장','regional'),page('임원 & 위원회','committee'),page('연혁','history'),page('체육회 CI','ci'),page('정관','articles'),page('오시는길','directions')]},
  {title:'체육회사업',english:'OUR BUSINESS',items:[page('주요사업','business'),page('개혁과제','reform'),{...link('대회·행사','/events.php'),children:[page('대회운영','operations'),link('대회참가신청','/events.php?status=접수중'),link('대회소식/공지','/board.php?category=대회공고'),link('현장갤러리','/board.php?category=포토·영상')]},{...link('교육사업','/education.php'),children:[link('레슨 & 안전교육','/education.php?category=레슨'),link('보수교육','/education.php?category=보수교육')]},{...link('자격검증','/qualification.php'),children:[link('자격검증신청','/qualification.php?tab=programs'),link('합격조회·발급','/qualification.php?tab=results'),link('재발급신청','/qualification.php?tab=reissue'),page('인재매칭(인력풀)','talent')]},page('안전관리','safety'),page('문화예술 육성사업','culture'),{...link('동호회 가입','/clubs.php'),children:[page('복지정책','welfare'),link('클럽/동호회 등록','/join.php?type=club')]}]},
  {title:'알림마당',english:'NEWS & STORIES',items:['공지사항','대회공고','대회공모','언론·보도','포토·영상'].map(t=>link(t,`/board.php?category=${t}`))},
- {title:'커뮤니티',english:'COMMUNITY',items:[link('Club Matching','/clubs.php'),link('우리 동호회 자랑','/board.php?category=동호회 소식'),link('이달의 우수동호회','/clubs.php?featured=1'),page('자주묻는질문','faq'),link('Q&A','/board.php?category=Q%26A'),link('자료실','/board.php?category=자료실'),link('안전개선제안','/board.php?category=안전개선제안'),link('회원전용','/board.php?category=회원전용')]},
+ {title:'커뮤니티',english:'COMMUNITY',items:[link('Club Matching','/clubs.php'),link('우리 동호회 자랑','/board.php?category=동호회 소식'),link('이달의 우수동호회','/clubs.php?featured=1'),page('자주묻는질문','faq'),link('자료실','/board.php?category=자료실'),link('안전개선제안','/board.php?category=안전개선제안'),link('회원전용','/board.php?category=회원전용')]},
  {title:'후원참여',english:'TOGETHER',items:[link('후원금집행내역','/support.php?tab=reports'),link('기업파트너십','/support.php?tab=partnership'),link('모집안내/권리','/support.php?tab=rights'),link('후원하기','/support.php?tab=donate'),link('후원사현황','/support.php?tab=sponsors'),link('자원봉사 신청','/volunteers.php')]}
 ];
 export const sports = ['골프','펜싱','승마','풋살'];
@@ -96,7 +96,7 @@ export const audienceServices = [
 ];
 const base = (id,title,category='')=>({id,slug:id,title,category,summary:'스포츠가 있는 건강한 일상을 함께 만듭니다.',createdAt:'2026-09-01',updatedAt:'2026-09-17',status:'published',isDemo:true});
 export const events = Array.from({length:16},(_,i)=>({...base(`event-${i+1}`,['2026 직장인 그린컵 골프대회','퇴근 후, 펜싱 챌린지','가을 승마 페스티벌','직장인 풋살 리그'][i%4]+(i>=4?` · ${Math.floor(i/4)+1}차`:''),sports[i%4]),sport:sports[i%4],region:regions[Math.floor(i/4)],venue:['그린필드 골프클럽','시민 펜싱센터','숲길 승마파크','리버사이드 풋살장'][i%4]+' (가상)',startsAt:`2026-${i<8?'10':'11'}-${String(10+i%8*2).padStart(2,'0')}T09:00:00+09:00`,endsAt:`2026-${i<8?'10':'11'}-${String(10+i%8*2).padStart(2,'0')}T18:00:00+09:00`,registrationStartsAt:i%6===4?'2026-10-01T09:00:00+09:00':'2026-09-01T09:00:00+09:00',registrationEndsAt:i%6===5?'2026-09-10T18:00:00+09:00':'2026-10-05T18:00:00+09:00',capacity:80,participantCount:i===9?80:24+i,eligibility:'스포츠를 사랑하는 직장인 및 동호회 회원',applicationType:['individual','team'],associationId:`assoc-${i%4+1}`,image:sportPhoto(i,0).image,alt:sportPhoto(i,0).alt,summary:['초록빛 필드 위에서 함께하는 기분 좋은 도전.','처음이어도 괜찮아요. 펜싱의 매력을 만나보세요.','자연과 호흡하며 즐기는 특별한 하루.','동료와 함께 뛰며 만드는 우리 팀의 순간.'][i%4]}));
-export const boards = ['공지사항','대회공고','대회공모','언론·보도','포토·영상','동호회 소식','우수동호회','자료실','Q&A','안전개선제안','회원전용'];
+export const boards = ['공지사항','대회공고','대회공모','언론·보도','포토·영상','동호회 소식','우수동호회','자료실','안전개선제안','회원전용'];
 const postTitles = ['2026 하반기 직장인 생활체육 프로그램 안내','가을 시즌 대회 참가자를 모집합니다','함께 만드는 안전한 스포츠 문화','새로운 동료를 만나는 동호회 활동','직장인 스포츠 참여 안내서','우리의 열정이 빛났던 순간'];
 export const posts = sourcePosts;
 export const clubs = Array.from({length:16},(_,i)=>({...base(`club-${i+1}`,['그린메이트 골프클럽','퇴근길 펜싱크루','위켄드 승마클럽','오후 여섯시 FC'][i%4]+(i>=4?` ${regions[Math.floor(i/4)]}`:''),sports[i%4]),sport:sports[i%4],region:regions[Math.floor(i/4)],recruiting:i%5!==4,featured:i<4,memberCount:12+i*2,meeting:['격주 토요일 오전','매주 수요일 저녁','매월 둘째 주 일요일','매주 금요일 저녁'][i%4],organizationId:i%2===0?'org-1':null,associationId:`assoc-${i%4+1}`,image:sportPhoto(i,1).image,alt:sportPhoto(i,1).alt,summary:['스코어보다 함께하는 즐거움, 주말 라운딩 친구를 만나요.','퇴근 후 한 시간, 새로운 취미를 함께 배워요.','도시를 벗어나 말과 교감하는 여유로운 주말.','승패보다 팀워크! 함께 땀 흘릴 동료를 기다려요.'][i%4]}));
@@ -144,14 +144,13 @@ const copy = {
  culture:['스포츠와 문화가 만나는 순간','문화예술 육성사업','직장인의 문화 참여를 위한 사업 소개 템플릿입니다. 세부 사업은 공식 검토 후 확정합니다.'],
  welfare:['건강한 일상을 위한 작은 변화','직장인 복지정책 안내','정책 대상과 적용 조건은 공식 사업 지침 수령 후 확정합니다.'],
  faq:['궁금한 점을 빠르게 확인하세요','자주묻는질문','회원, 대회, 동호회 및 교육 이용 방법을 안내합니다.'],
- 'press-tip':['스포츠 현장의 이야기를 들려주세요','기획취재 및 기사제보','취재가 필요한 현장과 기사로 소개하고 싶은 소식을 제보해주세요.'],
  'safety-proposal':['여러분의 제안이 더 안전한 현장을 만듭니다','안전개선제안','장소, 상황과 개선 의견을 남겨주세요. 긴급 신고 접수 기능은 아닙니다.'],
  'members-only':['회원과 함께 나누는 이야기','회원 전용 자료','개인회원으로 전환하여 전용 자료와 참여 이력을 확인하세요.'],
  terms:['서비스 이용약관','검토 필요 원고','이 페이지는 법률 검토와 운영 정책 확정 전의 화면 양식입니다. 실제 서비스 약관 동의로 사용하지 않습니다.'],
  privacy:['개인정보처리방침','검토 필요 원고','개인정보처리방침을 확인해주세요.'],
  associations:['다양한 종목, 하나의 연결','산하 종목협회','협회명은 확장 구조를 보여주는 예시이며 공식 명단이 아닙니다.']
 };
-export const pageContents = {...Object.fromEntries(Object.entries(copy).map(([id,[headline,subtitle,body]])=>[id,{id,title:navigation.flatMap(n=>n.items.flatMap(x=>[x,...(x.children||[])])).find(x=>x.id===id)?.title||(id==='press-tip'?'기획취재 및 기사제보':headline),headline,subtitle,body,isDemo:true}])),...Object.fromEntries(Object.entries(sourcePages).map(([id,value])=>[id,{id,...value,isDemo:true}]))};
+export const pageContents = {...Object.fromEntries(Object.entries(copy).map(([id,[headline,subtitle,body]])=>[id,{id,title:navigation.flatMap(n=>n.items.flatMap(x=>[x,...(x.children||[])])).find(x=>x.id===id)?.title||headline,headline,subtitle,body,isDemo:true}])),...Object.fromEntries(Object.entries(sourcePages).map(([id,value])=>[id,{id,...value,isDemo:true}]))};
 export const faqs = [{q:'대회에는 어떻게 참가하나요?',a:'대회·행사에서 접수중인 대회를 선택하고 참가 유형과 정보를 입력한 뒤 신청을 확인하세요. 신청 내역은 마이페이지에 표시됩니다.'},{q:'기업회원과 동호회 등록은 무엇이 다른가요?',a:'기업은 소속 직장이고 동호회는 활동 모임입니다. 별도로 등록하며 동호회 등록 시 기업을 연결할 수 있습니다.'},{q:'신청 후 취소할 수 있나요?',a:'마이페이지 신청 내역에서 신청을 취소할 수 있습니다. 실제 취소·환불 정책은 후속 운영 정책으로 확정합니다.'},{q:'교육 수료는 어떻게 확인하나요?',a:'모든 학습단계 열람, 자료 필독 확인과 안전 질문의 정답 제출을 완료하면 이수가 기록됩니다.'}];
 
 export const videoAssets = [{id:'field-video',title:'함께 뛰는 저녁의 그라운드',url:'/assets/videos/field-training.mp4',poster:'/assets/images/video-poster.jpg',author:'fokus_media',source:'https://pixabay.com/videos/football-training-evening-sport-205193/',isDemo:true}];

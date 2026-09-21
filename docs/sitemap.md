@@ -44,7 +44,6 @@
 | 커뮤니티 | 우리 동호회 자랑 | /board.php?category=동호회 소식 |
 | 커뮤니티 | 이달의 우수동호회 | /clubs.php?featured=1 |
 | 커뮤니티 | 자주묻는질문 | /page.php?id=faq |
-| 커뮤니티 | Q&A | /board.php?category=Q%26A |
 | 커뮤니티 | 자료실 | /board.php?category=자료실 |
 | 커뮤니티 | 안전개선제안 | /page.php?id=safety-proposal |
 | 커뮤니티 | 회원전용 | /page.php?id=members-only |

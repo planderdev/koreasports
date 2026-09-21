@@ -9,7 +9,7 @@ export function bindIntro(){
  if(getRole()!=='guest'){
   intro.querySelector('[data-intro-member-title]').innerHTML='<b>회원님, 환영합니다.</b><br>신청 내역과 회원 서비스를 확인해보세요.';
   const login=intro.querySelector('[data-intro-login]');login.href='/mypage.php';login.querySelector('span').textContent='마이페이지';login.querySelector('i').className='ri-user-line';
-  intro.querySelector('.site-intro-card-links').hidden=true;
+  intro.querySelector('[data-intro-bubble]').hidden=true;
   const join=intro.querySelector('[data-intro-join]');join.href='/mypage.php?tab=card';join.querySelector('i').className='ri-qr-code-line';join.querySelector('strong').textContent='모바일 회원증';join.querySelector('.site-intro-card-text span').textContent='대회 현장에서 회원증을 바로 제시할 수 있습니다.';
  }
  const close=()=>{

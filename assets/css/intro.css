@@ -64,7 +64,7 @@ html.intro-leaving .site-intro {
 .site-intro-brand img {
   display: block;
   width: auto;
-  height: var(--space-48);
+  height: var(--space-80);
 }
 
 .site-intro-layout {
@@ -193,23 +193,33 @@ html.intro-leaving .site-intro {
   margin-top: var(--space-12);
 }
 
-.site-intro-card-links {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--space-12);
+/* Speech bubble under the login button: tells registered athletes to sign in. */
+.site-intro-bubble {
+  position: relative;
   margin-top: var(--space-16);
-  color: var(--semantic-label-alternative);
-  font-size: var(--type-label-2-size);
-  line-height: var(--type-label-2-line);
-}
-
-.site-intro-card-links a {
+  padding: var(--space-10) var(--space-16);
+  border-radius: var(--radius-12);
+  background: var(--semantic-brand-subtle);
   color: var(--semantic-primary-normal);
+  font-size: var(--type-label-2-size);
   font-weight: var(--font-weight-semibold);
+  line-height: var(--type-label-2-line);
+  text-align: center;
+  word-break: keep-all;
 }
 
-.site-intro-card-links a:hover {
-  text-decoration: underline;
+.site-intro-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border: var(--space-8) solid transparent;
+  border-bottom-color: var(--semantic-brand-subtle);
+  transform: translateX(-50%);
+}
+
+.site-intro-bubble[hidden] {
+  display: none;
 }
 
 .site-intro-link-card {
@@ -283,7 +293,7 @@ html.intro-leaving .site-intro {
   }
 
   .site-intro-brand img {
-    height: var(--space-40);
+    height: var(--space-56);
   }
 
   .site-intro-layout {
@@ -324,6 +334,15 @@ html.intro-leaving .site-intro {
   .site-intro-card {
     padding: var(--space-24);
     border-radius: var(--radius-20);
+  }
+
+  .site-intro-link-card {
+    gap: var(--space-12);
+  }
+
+  .site-intro-card-text strong {
+    font-size: var(--type-label-1-size);
+    line-height: var(--type-label-1-line);
   }
 
   .site-intro-card-icon {
