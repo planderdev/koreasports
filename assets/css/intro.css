@@ -7,8 +7,8 @@
   display: flex;
   overflow-y: auto;
   overscroll-behavior: contain;
-  background: var(--brand-primary-heavy);
-  color: var(--semantic-static-white);
+  background: var(--semantic-background-normal-normal);
+  color: var(--semantic-label-normal);
   transition: opacity var(--duration-slow) var(--easing-exit),transform var(--duration-slow) var(--easing-exit),visibility 0s linear var(--duration-slow);
 }
 
@@ -41,8 +41,8 @@ html.intro-leaving .site-intro {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(100deg,color-mix(in srgb,var(--brand-primary-heavy) 94%,transparent) 0%,color-mix(in srgb,var(--brand-primary-strong) 78%,transparent) 46%,color-mix(in srgb,var(--brand-primary-heavy) 40%,transparent) 100%),
-    linear-gradient(0deg,color-mix(in srgb,var(--semantic-static-black) 38%,transparent),transparent 45%);
+    linear-gradient(100deg,var(--semantic-static-white) 0%,color-mix(in srgb,var(--semantic-static-white) 94%,transparent) 42%,color-mix(in srgb,var(--semantic-static-white) 62%,transparent) 100%),
+    linear-gradient(0deg,color-mix(in srgb,var(--semantic-primary-normal) 14%,transparent),transparent 55%);
 }
 
 .site-intro-inner {
@@ -59,9 +59,6 @@ html.intro-leaving .site-intro {
 
 .site-intro-brand {
   align-self: flex-start;
-  padding: var(--space-10) var(--space-20);
-  border-radius: var(--radius-16);
-  background: var(--semantic-static-white);
 }
 
 .site-intro-brand img {
@@ -79,22 +76,18 @@ html.intro-leaving .site-intro {
 }
 
 .site-intro h2 {
-  color: var(--semantic-static-white);
-  font-size: clamp(var(--type-title-1-size),5.2vw,72px);
-  line-height: 1.18;
-  letter-spacing: -0.03em;
-  font-weight: var(--font-weight-bold);
-  word-break: keep-all;
+  line-height: 0;
 }
 
-.site-intro h2 em {
-  color: var(--semantic-brand-accent-inverse);
-  font-style: normal;
+.site-intro h2 img {
+  display: block;
+  width: min(100%,680px);
+  height: auto;
 }
 
 .site-intro-summary {
-  margin-top: var(--space-24);
-  color: color-mix(in srgb,var(--semantic-static-white) 84%,transparent);
+  margin-top: var(--space-32);
+  color: var(--semantic-label-neutral);
   font-size: var(--type-body-1-size);
   line-height: var(--type-body-1-line);
   word-break: keep-all;
@@ -112,6 +105,7 @@ html.intro-leaving .site-intro {
   display: grid;
   gap: var(--space-6);
   padding: var(--space-20) var(--space-24);
+  border: var(--border-thin) solid var(--semantic-line-normal-alternative);
   border-left: var(--space-8) solid var(--semantic-brand-accent);
   border-radius: var(--radius-16);
   background: var(--semantic-static-white);
@@ -171,6 +165,7 @@ html.intro-leaving .site-intro {
 .site-intro-card {
   padding: var(--space-32);
   border-radius: var(--radius-24);
+  border: var(--border-thin) solid var(--semantic-line-normal-alternative);
   background: var(--semantic-static-white);
   color: var(--semantic-label-normal);
   box-shadow: var(--semantic-elevation-shadow-normal-xlarge);
@@ -265,7 +260,7 @@ html.intro-leaving .site-intro {
 }
 
 .site-intro :focus-visible {
-  outline: var(--space-2) solid var(--semantic-static-white);
+  outline: var(--space-2) solid var(--semantic-primary-normal);
   outline-offset: var(--space-2);
 }
 

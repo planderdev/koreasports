@@ -10,7 +10,7 @@ $introStats = [
  <div class="site-intro-brand"><img src="/assets/images/kowsc/logo-w.svg" alt="대한직장인체육회" width="374.73" height="120.87"></div>
  <div class="site-intro-layout">
   <div class="site-intro-copy">
-   <h2 id="site-intro-title">K-직장인<br><em>스포츠 플랫폼</em></h2>
+   <h2 id="site-intro-title"><img src="/assets/images/kowsc/k-platform-wordmark.webp" alt="K-직장인 스포츠 플랫폼" width="2000" height="176"></h2>
    <p class="site-intro-summary">대회·행사부터 동호회, 교육, 자격검증까지.<br>직장인의 건강한 일상을 대한직장인체육회가 함께합니다.</p>
    <ul class="site-intro-stats" aria-label="주요 현황">
 <?php foreach ($introStats as [$value, $label]): ?>
