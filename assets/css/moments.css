@@ -20,7 +20,7 @@
 }
 
 .moments-heading .eyebrow {
-  color: var(--semantic-brand-accent);
+  color: var(--semantic-brand-accent-inverse);
 }
 
 .moments-heading p {
@@ -43,7 +43,7 @@
 
 .moments-controls em {
   font-style: normal;
-  color: var(--semantic-brand-accent);
+  color: var(--semantic-brand-accent-inverse);
 }
 
 .moments-controls .icon-button {

@@ -22,7 +22,7 @@ export function bindIntro(){
   intro.addEventListener('transitionend',e=>{if(e.target===intro)done();},{once:true});
   setTimeout(done,700);
  };
- intro.querySelector('[data-intro-enter]').addEventListener('click',e=>{e.preventDefault();close();});
+ intro.querySelectorAll('[data-intro-enter]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();close();}));
  intro.querySelectorAll('[data-intro-leave]').forEach(a=>a.addEventListener('click',remember));
  intro.addEventListener('keydown',e=>{if(e.key==='Escape')close();});
 }

@@ -104,7 +104,7 @@ button, a {
 
 ::selection {
   background: var(--semantic-brand-accent);
-  color: var(--semantic-primary-heavy);
+  color: var(--semantic-brand-accent-on);
 }
 
 [hidden] {

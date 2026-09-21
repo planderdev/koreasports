@@ -4,7 +4,7 @@
 
 ## 원본과 빌드
 
-assets/design-system/tokens.json이 단일 원본이다. 9개 그룹, 410개 토큰은 정리 결과이며 개수 자체는 품질 기준이 아니다.
+assets/design-system/tokens.json이 단일 원본이다. 9개 그룹, 414개 토큰은 정리 결과이며 개수 자체는 품질 기준이 아니다.
 
 - Primitive: 공식 팔레트·최소 13px 프로젝트 타이포그래피과 프로젝트 geometry/motion. 브랜드는 별도 그룹.
 - Semantic: 텍스트·배경·경계·상태·상호작용·elevation.
@@ -34,6 +34,6 @@ includes/head.php에서 외부 Remix/Swiper/AOS 다음 tokens → base → layou
 
 ## 프로젝트 차이
 
-명시적 브리프의 페어웨이 그린 브랜드와 사용자 지정 surface #f7f7f9를 유지한다. 나머지 중립색과 shadow는 공식 기준에 맞춘다. 한국어 Pretendard Variable, Remix normal, 포커스 아웃라인 제거, Chip hover=active는 프로젝트 요구에 따른 차이다.
+공식 로고(assets/images/kowsc/logo.svg)에서 가져온 네이비 #003b83(primary)·레드 #e60012(accent) 브랜드와 사용자 지정 surface #f7f7f9를 유지한다. 나머지 중립색과 shadow는 공식 기준에 맞춘다. 한국어 Pretendard Variable, Remix normal, 포커스 아웃라인 제거, Chip hover=active는 프로젝트 요구에 따른 차이다.
 
 Components 53개, Utilities 31개 문서는 PHP/Vanilla 대응 예제다. Montage React 패키지 API나 모든 화면의 픽셀 동등성을 보장하는 복제본은 아니다. 직접 확인한 공식 문서·화면 검증·남은 예외는 리팩터링 기록을 참조한다.

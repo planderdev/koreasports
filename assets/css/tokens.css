@@ -168,10 +168,12 @@
   --atomic-redOrange-95: #feeee5;
   --atomic-redOrange-99: #fffaf7;
   /* Primitive · Project brand */
-  --brand-primary: #176b45;
-  --brand-primary-strong: #115638;
-  --brand-primary-heavy: #0b402b;
-  --brand-accent: #cce584;
+  --brand-primary: #003b83;
+  --brand-primary-strong: #002f6b;
+  --brand-primary-heavy: #00224f;
+  --brand-accent: #e60012;
+  --brand-accent-on: #ffffff;
+  --brand-accent-inverse: #ff7a82;
   --project-surface-light: #f7f7f9;
   /* Semantic · Roles and project brand mapping */
   --semantic-static-white: #fff;
@@ -238,6 +240,8 @@
   --semantic-material-dimmer: #17171985;
   --semantic-brand-subtle: color-mix(in srgb, var(--semantic-primary-normal) 8%, var(--semantic-background-normal-normal));
   --semantic-brand-accent: var(--brand-accent);
+  --semantic-brand-accent-on: var(--brand-accent-on);
+  --semantic-brand-accent-inverse: var(--brand-accent-inverse);
   --semantic-status-info: var(--semantic-accent-foreground-blue);
   --semantic-surface-lime: color-mix(in srgb, var(--semantic-accent-foreground-lime) 8%, var(--semantic-background-normal-normal));
   --semantic-surface-cyan: color-mix(in srgb, var(--semantic-accent-foreground-cyan) 8%, var(--semantic-background-normal-normal));
@@ -505,9 +509,9 @@
 [data-ds-theme="dark"] {
   color-scheme: dark;
   color: var(--semantic-label-normal);
-  --semantic-primary-normal: var(--atomic-green-80);
-  --semantic-primary-strong: var(--atomic-green-70);
-  --semantic-primary-heavy: var(--atomic-green-60);
+  --semantic-primary-normal: var(--atomic-blue-80);
+  --semantic-primary-strong: var(--atomic-blue-70);
+  --semantic-primary-heavy: var(--atomic-blue-60);
   --semantic-label-normal: #f7f7f8;
   --semantic-label-strong: #fff;
   --semantic-label-neutral: #c2c4c8e0;

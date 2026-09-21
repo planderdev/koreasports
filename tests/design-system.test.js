@@ -19,7 +19,7 @@ test('all token references resolve without cycles in both themes',()=>{
  for(const t of tokens)for(const dark of [false,true])assert.ok(!resolve(t.name,dark).includes('var('));
 });
 test('brand mapping, official neutral and button sizes resolve in both themes',()=>{
- assert.equal(resolve('--semantic-primary-normal').toLowerCase(),'#176b45');
+ assert.equal(resolve('--semantic-primary-normal').toLowerCase(),'#003b83');
  assert.equal(resolve('--semantic-label-normal').toLowerCase(),'#171719');
  assert.equal(resolve('--control-height-md'),'40px');
  assert.notEqual(resolve('--control-bg'),resolve('--control-bg',true));

@@ -842,20 +842,31 @@ export const tokenGroups = [
     "tokens": [
       {
         "name": "--brand-primary",
-        "value": "#176b45",
-        "description": "Fairway green explicitly requested in the original brief; exact existing mapping retained."
+        "value": "#003b83",
+        "description": "Navy blue taken from the official KOWSC logo (assets/images/kowsc/logo.svg)."
       },
       {
         "name": "--brand-primary-strong",
-        "value": "#115638"
+        "value": "#002f6b"
       },
       {
         "name": "--brand-primary-heavy",
-        "value": "#0b402b"
+        "value": "#00224f"
       },
       {
         "name": "--brand-accent",
-        "value": "#cce584"
+        "value": "#e60012",
+        "description": "Point red taken from the official KOWSC logo. Pair with --brand-accent-on."
+      },
+      {
+        "name": "--brand-accent-on",
+        "value": "#ffffff",
+        "description": "Text and icons placed on --brand-accent (4.8:1)."
+      },
+      {
+        "name": "--brand-accent-inverse",
+        "value": "#ff7a82",
+        "description": "Lightened logo red for accent text on dark brand surfaces (6.2:1 on --brand-primary-heavy)."
       },
       {
         "name": "--project-surface-light",
@@ -882,19 +893,19 @@ export const tokenGroups = [
         "name": "--semantic-primary-normal",
         "value": "var(--brand-primary)",
         "source": "Project brand mapping",
-        "dark": "var(--atomic-green-80)"
+        "dark": "var(--atomic-blue-80)"
       },
       {
         "name": "--semantic-primary-strong",
         "value": "var(--brand-primary-strong)",
         "source": "Project brand mapping",
-        "dark": "var(--atomic-green-70)"
+        "dark": "var(--atomic-blue-70)"
       },
       {
         "name": "--semantic-primary-heavy",
         "value": "var(--brand-primary-heavy)",
         "source": "Project brand mapping",
-        "dark": "var(--atomic-green-60)"
+        "dark": "var(--atomic-blue-60)"
       },
       {
         "name": "--semantic-label-normal",
@@ -1245,6 +1256,14 @@ export const tokenGroups = [
       {
         "name": "--semantic-brand-accent",
         "value": "var(--brand-accent)"
+      },
+      {
+        "name": "--semantic-brand-accent-on",
+        "value": "var(--brand-accent-on)"
+      },
+      {
+        "name": "--semantic-brand-accent-inverse",
+        "value": "var(--brand-accent-inverse)"
       },
       {
         "name": "--semantic-status-info",
