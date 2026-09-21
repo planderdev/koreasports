@@ -834,17 +834,30 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
   letter-spacing: var(--type-title-3-tracking);
 }
 
-.consent-all {
-  padding: var(--space-16);
+.consent-box {
+  overflow: hidden;
   border: var(--border-thin) solid var(--semantic-line-normal-neutral);
   border-radius: var(--radius-12);
+}
+
+/* One shared inline padding keeps every checkbox on the same vertical line. */
+.consent-box .consent-all,.consent-box .consent-list li {
+  padding: var(--space-4) var(--space-16);
+}
+
+.consent-box .consent-all {
+  padding-block: var(--space-12);
+}
+
+.consent-all {
+  border-bottom: var(--border-thin) solid var(--semantic-line-normal-neutral);
   background: var(--semantic-background-normal-alternative);
 }
 
 .consent-list {
   display: grid;
-  margin: var(--space-8) 0 0;
-  padding: 0 var(--space-16);
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -853,6 +866,7 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-12);
+  margin: 0;
   border-bottom: var(--border-thin) solid var(--semantic-line-normal-alternative);
 }
 
