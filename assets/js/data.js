@@ -18,8 +18,18 @@ export const navigation = [
 ];
 export const sports = ['골프','펜싱','승마','풋살'];
 export const regions = ['서울','경기','인천','부산'];
+// 선수등록비 유형(연간). 금액·혜택은 체육회 제공 회비 기준표 원문입니다.
+export const registrationPlans = [
+ {id:'basic',title:'기본형',price:'50,000원',unit:'연',benefits:['필수 스포츠상해보험 자동 가입','체육회 주관 대회 참가비 10~20% 할인','모바일 선수증 발급']},
+ {id:'premium',title:'프리미엄형',price:'100,000원',unit:'연',benefits:['보장 범위가 확대된 프리미엄 상해보험','주관 대회 참가비 우대 할인','제휴 스포츠 용품 할인 쿠폰북 제공','모바일 선수증 발급']}
+];
+export const registrationPlanNote = '회원 및 선수등록자에게는 시중 온라인몰 금액보다 10% 저렴한 대한직장인체육회 복지몰 이용권한을 제공합니다.';
+// 선수등록 폼의 소재지: 대한민국 17개 시·도(행정구역 공식 명칭).
+export const provinces = ['서울특별시','부산광역시','대구광역시','인천광역시','광주광역시','대전광역시','울산광역시','세종특별자치시','경기도','강원특별자치도','충청북도','충청남도','전북특별자치도','전라남도','경상북도','경상남도','제주특별자치도'];
 // 선수등록 폼의 참여 종목(복수 선택). 마지막에 '직접입력' 항목이 자동으로 붙습니다.
 export const participationSports = ['축구','족구','농구','야구','볼링','골프','마라톤','등산','태권도','워킹','댄스스포츠','당구','테니스','자전거','복싱','피트니스','파크골프','모터스포츠','수상스키','배드민턴','e-sports','뉴스포츠'];
+// 종목명 → assets/images/sport-icons.svg 의 symbol id. 목록에 없는 종목은 'custom' 아이콘을 씁니다.
+export const participationSportIcons = {'축구':'soccer','족구':'jokgu','농구':'basketball','야구':'baseball','볼링':'bowling','골프':'golf','마라톤':'marathon','등산':'hiking','태권도':'taekwondo','워킹':'walking','댄스스포츠':'dance','당구':'billiards','테니스':'tennis','자전거':'cycling','복싱':'boxing','피트니스':'fitness','파크골프':'parkgolf','모터스포츠':'motorsports','수상스키':'waterski','배드민턴':'badminton','e-sports':'esports','뉴스포츠':'newsports','직접입력':'custom'};
 export const associations = sports.map((sport,i)=>({id:`assoc-${i+1}`,name:`${sport} 종목협회`,slug:['golf','fencing','equestrian','futsal'][i],theme:'fairway',logo:null,sport,navigation:['events','clubs','education'],layoutVariant:'C',enabledModules:['events','clubs','education'],isDemo:true}));
 export const mediaAssets = [
  {id:'golf',image:'/assets/images/golf.webp',alt:'호수와 산을 배경으로 펼쳐진 초록빛 골프 코스',author:'Robert Ruggiero',source:'https://unsplash.com/photos/qsOlzJgdCeY',isDemo:true},

@@ -639,6 +639,7 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
 
 .field {
   display: grid;
+  align-content: start;
   gap: var(--space-8);
 }
 
@@ -669,6 +670,172 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
   padding-top: var(--space-24);
 }
 
+.plan-field {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.plan-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+}
+
+.plan-card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: var(--space-16);
+  padding: var(--space-20);
+  border: var(--border-thin) solid var(--semantic-line-normal-neutral);
+  border-radius: var(--radius-16);
+  transition: border-color var(--duration-normal),background var(--duration-normal),box-shadow var(--duration-normal);
+}
+
+.plan-card input[type=radio] {
+  position: absolute;
+  top: var(--space-20);
+  right: var(--space-20);
+}
+
+.plan-card:hover {
+  border-color: var(--semantic-line-primary-normal);
+}
+
+.plan-card:has(input:checked) {
+  border-color: var(--semantic-primary-normal);
+  background: var(--semantic-brand-subtle);
+  box-shadow: 0 0 0 var(--border-thin) var(--semantic-primary-normal);
+}
+
+.plan-card:has(input:focus-visible) {
+  outline: var(--space-2) solid var(--semantic-primary-normal);
+  outline-offset: var(--space-2);
+}
+
+.plan-head {
+  display: grid;
+  gap: var(--space-4);
+  padding-right: var(--space-32);
+}
+
+.plan-head strong {
+  font-size: var(--type-headline-1-size);
+  line-height: var(--type-headline-1-line);
+}
+
+.plan-price {
+  color: var(--semantic-label-alternative);
+  font-size: var(--type-label-2-size);
+  line-height: var(--type-label-2-line);
+}
+
+.plan-price b {
+  color: var(--semantic-primary-normal);
+  font-size: var(--type-heading-1-size);
+  line-height: var(--type-heading-1-line);
+  font-weight: var(--font-weight-bold);
+}
+
+.plan-card ul {
+  display: grid;
+  gap: var(--space-8);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plan-card li {
+  display: flex;
+  gap: var(--space-8);
+  color: var(--semantic-label-neutral);
+  font-size: var(--type-label-2-size);
+  line-height: var(--type-label-2-line);
+  word-break: keep-all;
+}
+
+.plan-card li i {
+  flex: none;
+  color: var(--semantic-primary-normal);
+}
+
+.plan-note {
+  margin-top: var(--space-12);
+  color: var(--semantic-label-alternative);
+  font-size: var(--type-label-2-size);
+  line-height: var(--type-label-2-line);
+  word-break: keep-all;
+}
+
+.choice-field {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.choice-field legend {
+  padding: 0;
+  margin-bottom: var(--space-8);
+  font-size: var(--type-body-1-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--type-body-1-line);
+  letter-spacing: var(--type-body-1-tracking);
+}
+
+.choice-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+}
+
+.field .choice-options label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  min-height: var(--input-height);
+  border: var(--border-thin) solid var(--semantic-line-normal-neutral);
+  border-radius: var(--radius-10);
+  font-size: var(--type-label-1-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--type-label-1-line);
+  letter-spacing: var(--type-label-1-tracking);
+  transition: border-color var(--duration-normal),background var(--duration-normal);
+}
+
+.field .choice-options label:has(input:checked) {
+  border-color: var(--semantic-primary-normal);
+  background: var(--semantic-brand-subtle);
+  color: var(--semantic-primary-normal);
+  font-weight: var(--font-weight-semibold);
+}
+
+.field .choice-options label:has(input:focus-visible) {
+  outline: var(--space-2) solid var(--semantic-primary-normal);
+  outline-offset: var(--space-2);
+}
+
+.rrn-inputs {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr);
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.field label small {
+  margin-left: var(--space-4);
+  color: var(--semantic-label-alternative);
+  font-weight: var(--font-weight-regular);
+}
+
+.field > small {
+  color: var(--semantic-label-alternative);
+  word-break: keep-all;
+}
+
 .sport-field {
   min-width: 0;
   margin: 0;
@@ -693,11 +860,12 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
 
 .sport-options {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(128px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
   gap: var(--space-8);
 }
 
 .field .sport-options label {
+  position: relative;
   display: flex;
   align-items: center;
   gap: var(--space-8);
@@ -710,6 +878,54 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
   line-height: var(--type-label-1-line);
   letter-spacing: var(--type-label-1-tracking);
   transition: border-color var(--duration-normal),background var(--duration-normal);
+}
+
+.sport-options label span {
+  white-space: nowrap;
+}
+
+/* The card itself shows the state, so the native box is kept for keyboard and screen readers only. */
+.sport-options input[type=checkbox] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.sport-icon {
+  flex: none;
+  width: var(--space-24);
+  height: var(--space-24);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  color: var(--semantic-label-alternative);
+  transition: color var(--duration-normal);
+}
+
+.field .sport-options label::after {
+  content: "\eb7b";
+  margin-left: auto;
+  font-family: remixicon;
+  font-size: var(--type-body-1-size);
+  line-height: 1;
+  opacity: 0;
+}
+
+.field .sport-options label:has(input:checked)::after {
+  opacity: 1;
+}
+
+.field .sport-options label:has(input:checked) .sport-icon {
+  color: var(--semantic-primary-normal);
+}
+
+.field .sport-options label:has(input:focus-visible) {
+  outline: var(--space-2) solid var(--semantic-primary-normal);
+  outline-offset: var(--space-2);
 }
 
 .field .sport-options label:hover {
@@ -1021,6 +1237,10 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
 
 .field.full {
     grid-column: auto;
+  }
+
+  .plan-options {
+    grid-template-columns: 1fr;
   }
 
   .filters {
