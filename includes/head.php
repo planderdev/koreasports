@@ -13,8 +13,9 @@ if ($pageType === 'admin') {
     $styles = array_merge($styles, ['design-system', 'design-system-docs']);
 } else {
     $styles = array_merge($styles, ['prose', 'pages', 'header', 'footer']);
-    if ($pageType === 'home') $styles[] = 'moments';
+    if ($pageType === 'home') array_push($styles, 'moments', 'intro');
 }
 foreach ($styles as $css): ?><link rel="stylesheet" href="/assets/css/<?=$css?>.css"><?php endforeach; ?>
+<?php if ($pageType === 'home'): ?><script src="/assets/js/intro-gate.js"></script><?php endif; ?>
 </head>
 
