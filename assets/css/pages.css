@@ -3157,3 +3157,52 @@
   line-height: var(--type-label-1-line);
   word-break: keep-all;
 }
+
+/* 주요사업 분야 카드의 개요 표(대회명칭·기간 등)와 보충 설명 */
+.business-page .business-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-12) var(--space-24);
+  margin: var(--space-20) 0;
+  padding: var(--space-20) var(--space-24);
+  border-radius: var(--radius-12);
+  background: var(--semantic-background-normal-alternative);
+}
+
+.business-page .business-facts > div {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.business-page .business-facts dt {
+  color: var(--semantic-label-alternative);
+  font-size: var(--type-caption-1-size);
+  line-height: var(--type-caption-1-line);
+  font-weight: var(--font-weight-semibold);
+}
+
+.business-page .business-facts dd {
+  margin: 0;
+  color: var(--semantic-label-normal);
+  font-size: var(--type-label-1-size);
+  line-height: var(--type-label-1-line);
+  font-weight: var(--font-weight-medium);
+  word-break: keep-all;
+}
+
+.business-page .business-notes {
+  display: grid;
+  gap: var(--space-8);
+  margin: var(--space-16) 0 0;
+  padding-left: var(--space-20);
+  color: var(--semantic-label-alternative);
+  font-size: var(--type-label-2-size);
+  line-height: var(--type-label-2-line);
+  word-break: keep-all;
+}
+
+@media (max-width: 640px) {
+  .business-page .business-facts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
