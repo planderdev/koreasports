@@ -188,7 +188,7 @@
   font-size: var(--type-title-3-size);
 }
 
-.header-signup {
+.header-account,.header-signup {
   font-size: var(--type-label-2-size);
   color: var(--semantic-label-alternative);
   padding: var(--space-12) 0;

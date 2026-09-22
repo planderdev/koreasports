@@ -18,7 +18,7 @@ export function setupShell(){if(['admin','design-system'].includes(document.body
   link.classList.toggle('active',active);
   if(active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');
  });
- document.documentElement.classList.toggle('reduce-motion',!!r.state().reducedMotion);if(r.getCurrentMember()){const l=document.getElementById('login-link');l.innerHTML=icon('user-line')+'<span class="sr-only">마이페이지</span>';l.setAttribute('aria-label','마이페이지');l.href='/mypage.php';const logout=document.createElement('button');logout.textContent='로그아웃';logout.className='logout-button';logout.onclick=()=>{r.setRole('guest');location.href='/index.php';};l.after(logout);}
+ document.documentElement.classList.toggle('reduce-motion',!!r.state().reducedMotion);if(r.getCurrentMember()){const l=document.getElementById('login-link');l.textContent='마이페이지';l.href='/mypage.php';const logout=document.createElement('button');logout.textContent='로그아웃';logout.className='logout-button';logout.onclick=()=>{r.setRole('guest');location.href='/index.php';};l.after(logout);}
  document.getElementById('family-site').onchange=e=>{const value=e.target.value;if(!value)return;if(r.content('familySites').some(site=>site.url===value))window.open(value,'_blank','noopener,noreferrer');e.target.value='';};
 
  document.querySelectorAll('[data-menu]').forEach(b=>b.onclick=()=>{
