@@ -3,6 +3,8 @@ import {setupHeaderNavigation} from './header-navigation.js';
 import {setupWorkspace} from './workspace.js';
 import * as r from './services/repository.js';
 import {esc,icon,modal,toast,image} from './renderers.js';
+/* 헤더 우측 계정 영역을 로그인 상태에 맞춥니다. 페이지 로드 때와, 선수등록 완료처럼 새로고침 없이 로그인 상태가 바뀐 직후에 호출합니다. */
+export function syncHeaderAccount(){const l=document.getElementById('login-link');if(!l||!r.getCurrentMember()||l.dataset.member)return;l.dataset.member='1';l.textContent='마이페이지';l.href='/mypage.php';/* 로그인한 뒤에는 '선수등록'이 의미가 없으므로 숨깁니다. */document.querySelector('.header-signup')?.setAttribute('hidden','');const logout=document.createElement('button');logout.textContent='로그아웃';logout.className='logout-button';logout.onclick=()=>{r.setRole('guest');location.href='/index.php';};l.after(logout);}
 export function setupShell(){if(['admin','design-system'].includes(document.body.dataset.page)){setupWorkspace();return;}const nav=r.content('navigation');setupHeaderNavigation(nav);
  document.getElementById('site-footer').innerHTML=`<div class="container footer-shell">
  <div class="footer-content"><div class="footer-information">
@@ -18,7 +20,7 @@ export function setupShell(){if(['admin','design-system'].includes(document.body
   link.classList.toggle('active',active);
   if(active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');
  });
- document.documentElement.classList.toggle('reduce-motion',!!r.state().reducedMotion);if(r.getCurrentMember()){const l=document.getElementById('login-link');l.textContent='마이페이지';l.href='/mypage.php';/* 로그인한 뒤에는 '선수등록'이 의미가 없으므로 숨깁니다. */document.querySelector('.header-signup')?.setAttribute('hidden','');const logout=document.createElement('button');logout.textContent='로그아웃';logout.className='logout-button';logout.onclick=()=>{r.setRole('guest');location.href='/index.php';};l.after(logout);}
+ document.documentElement.classList.toggle('reduce-motion',!!r.state().reducedMotion);syncHeaderAccount();
  document.getElementById('family-site').onchange=e=>{const value=e.target.value;if(!value)return;if(r.content('familySites').some(site=>site.url===value))window.open(value,'_blank','noopener,noreferrer');e.target.value='';};
 
  document.querySelectorAll('[data-menu]').forEach(b=>b.onclick=()=>{
