@@ -63,7 +63,7 @@ export const businessContent = {
         "links": [
           {
             "label": "후원 · 협력 문의",
-            "menu": "후원문의"
+            "menu": "후원사업안내"
           }
         ]
       },
@@ -98,7 +98,7 @@ export const businessContent = {
           },
           {
             "label": "유치 · 협력 문의",
-            "menu": "후원문의"
+            "menu": "후원사업안내"
           }
         ]
       }
