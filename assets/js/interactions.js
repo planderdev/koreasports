@@ -18,7 +18,7 @@ export function setupShell(){if(['admin','design-system'].includes(document.body
   link.classList.toggle('active',active);
   if(active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');
  });
- document.documentElement.classList.toggle('reduce-motion',!!r.state().reducedMotion);if(r.getCurrentMember()){const l=document.getElementById('login-link');l.textContent='마이페이지';l.href='/mypage.php';const logout=document.createElement('button');logout.textContent='로그아웃';logout.className='logout-button';logout.onclick=()=>{r.setRole('guest');location.href='/index.php';};l.after(logout);}
+ document.documentElement.classList.toggle('reduce-motion',!!r.state().reducedMotion);if(r.getCurrentMember()){const l=document.getElementById('login-link');l.textContent='마이페이지';l.href='/mypage.php';/* 로그인한 뒤에는 '선수등록'이 의미가 없으므로 숨깁니다. */document.querySelector('.header-signup')?.setAttribute('hidden','');const logout=document.createElement('button');logout.textContent='로그아웃';logout.className='logout-button';logout.onclick=()=>{r.setRole('guest');location.href='/index.php';};l.after(logout);}
  document.getElementById('family-site').onchange=e=>{const value=e.target.value;if(!value)return;if(r.content('familySites').some(site=>site.url===value))window.open(value,'_blank','noopener,noreferrer');e.target.value='';};
 
  document.querySelectorAll('[data-menu]').forEach(b=>b.onclick=()=>{
