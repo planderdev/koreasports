@@ -13,25 +13,25 @@
 | 소개 | 시·도 체육회장 | /page.php?id=regional |
 | 소개 | 체육회 CI | /page.php?id=ci |
 | 소개 | 오시는길 | /page.php?id=directions |
-| 체육회사업 | 주요사업 | /page.php?id=business |
-| 체육회사업 | 대회·행사 | /events.php |
-| 체육회사업 | └ 대회운영 | /page.php?id=operations |
-| 체육회사업 | └ 대회참가신청 | /events.php?status=접수중 |
-| 체육회사업 | └ 대회소식/공지 | /board.php?category=대회공고 |
-| 체육회사업 | └ 현장갤러리 | /board.php?category=포토·영상 |
-| 체육회사업 | 교육사업 | /education.php |
-| 체육회사업 | └ 레슨 & 안전교육 | /education.php?category=레슨 |
-| 체육회사업 | └ 보수교육 | /education.php?category=보수교육 |
-| 체육회사업 | 자격검증 | /qualification.php |
-| 체육회사업 | └ 자격검증신청 | /qualification.php?tab=programs |
-| 체육회사업 | └ 합격조회·발급 | /qualification.php?tab=results |
-| 체육회사업 | └ 재발급신청 | /qualification.php?tab=reissue |
-| 체육회사업 | └ 인재매칭(인력풀) | /page.php?id=talent |
-| 체육회사업 | 안전관리 | /page.php?id=safety |
-| 체육회사업 | 문화예술 육성사업 | /page.php?id=culture |
-| 체육회사업 | 동호회 가입 | /clubs.php |
-| 체육회사업 | └ 복지정책 | /page.php?id=welfare |
-| 체육회사업 | └ 클럽/동호회 등록 | /join.php?type=club |
+| 주요사업 | 주요사업 | /page.php?id=business |
+| 주요사업 | 대회·행사 | /events.php |
+| 주요사업 | └ 대회운영 | /page.php?id=operations |
+| 주요사업 | └ 대회참가신청 | /events.php?status=접수중 |
+| 주요사업 | └ 대회소식/공지 | /board.php?category=대회공고 |
+| 주요사업 | └ 현장갤러리 | /board.php?category=포토·영상 |
+| 주요사업 | 교육사업 | /education.php |
+| 주요사업 | └ 레슨 & 안전교육 | /education.php?category=레슨 |
+| 주요사업 | └ 보수교육 | /education.php?category=보수교육 |
+| 주요사업 | 자격검증 | /qualification.php |
+| 주요사업 | └ 자격검증신청 | /qualification.php?tab=programs |
+| 주요사업 | └ 합격조회·발급 | /qualification.php?tab=results |
+| 주요사업 | └ 재발급신청 | /qualification.php?tab=reissue |
+| 주요사업 | └ 인재매칭(인력풀) | /page.php?id=talent |
+| 주요사업 | 안전관리 | /page.php?id=safety |
+| 주요사업 | 문화예술 육성사업 | /page.php?id=culture |
+| 주요사업 | 동호회 가입 | /clubs.php |
+| 주요사업 | └ 복지정책 | /page.php?id=welfare |
+| 주요사업 | └ 클럽/동호회 등록 | /join.php?type=club |
 | 알림마당 | 공지사항 | /board.php?category=공지사항 |
 | 알림마당 | 대회공고 | /board.php?category=대회공고 |
 | 알림마당 | 대회공모 | /board.php?category=대회공모 |

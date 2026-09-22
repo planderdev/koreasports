@@ -26,5 +26,5 @@ export function businessPage(id, page) {
   } else {
     content = `<section class="business-fields" aria-labelledby="business-fields-title"><h2 id="business-fields-title">주요 개최 분야</h2><div class="business-columns">${data.fields.map((item, index) => `<article>${columnImage(item)}${number(index)}<h3>${esc(item.title)}</h3><p>${esc(item.body)}</p></article>`).join('')}</div></section><section class="business-gallery"><h2>${esc(data.galleryTitle)}</h2><p>${esc(data.galleryIntro)}</p><div class="business-photo-grid">${data.photos.map(item => `<figure><div class="business-photo-frame"><img src="${esc(item.src)}" alt="${esc(item.alt)}" width="${item.width}" height="${item.height}" loading="lazy" decoding="async"></div><figcaption><h3>${esc(item.title)}</h3><p>${esc(item.body)}</p></figcaption></figure>`).join('')}</div></section><section class="business-guidance"><div><h2>${esc(data.guidance.title)}</h2><p>${esc(data.guidance.body)}</p></div><div class="business-links">${links(data.guidance.links)}</div></section>`;
   }
-  return `${heading(page.title, '', '체육회사업')}<article class="container content-section business-page">${businessIntro(id)}${content}</article>`;
+  return `${heading(page.title, '', '주요사업')}<article class="container content-section business-page">${businessIntro(id)}${content}</article>`;
 }
