@@ -146,15 +146,18 @@ html.intro-leaving .site-intro {
   }
 }
 
-.site-intro-enter {
-  margin-top: var(--space-40);
+.site-intro-stat-note {
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  color: var(--semantic-label-alternative);
+  white-space: nowrap;
 }
 
-.site-intro-enter i,.site-intro-card-enter i {
+.site-intro-card-enter i {
   transition: transform var(--duration-normal) var(--easing-standard);
 }
 
-.site-intro-enter:hover i,.site-intro-card-enter:hover i {
+.site-intro-card-enter:hover i {
   transform: translateX(var(--space-4));
 }
 
@@ -326,9 +329,8 @@ html.intro-leaving .site-intro {
     line-height: var(--type-caption-2-line);
   }
 
-  .site-intro-enter {
-    width: 100%;
-    margin-top: var(--space-28);
+  .site-intro-stat-note {
+    display: block;
   }
 
   .site-intro-card {
@@ -353,7 +355,7 @@ html.intro-leaving .site-intro {
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .site-intro,.site-intro-enter i,.site-intro-card-enter i,.site-intro-link-card {
+  .site-intro,.site-intro-card-enter i,.site-intro-link-card {
     transition: none;
   }
 

@@ -1,8 +1,9 @@
 <?php
-// 인트로 현황 카드: [수치, 설명]. 한 줄 추가하면 카드가 하나 늘고, 순서대로 하나씩 나타납니다(최대 6개).
+// 인트로 현황 카드: [수치, 설명, 기준]. 한 줄 추가하면 카드가 하나 늘고, 순서대로 하나씩 나타납니다(최대 6개).
+// '기준'은 모바일에서 둘째 줄로 내려가 카드 높이가 맞춰집니다.
 $introStats = [
-    ['약 1500만명', '생활체육 직장인 (26.01 기준)'],
-    ['69.1만', '가입 회원 수(2023.8)'],
+    ['약 1500만명', '생활체육 직장인', '(26.01 기준)'],
+    ['69.1만', '가입 회원 수', '(2023.8)'],
 ];
 ?>
 <section id="site-intro" class="site-intro" aria-labelledby="site-intro-title" data-lenis-prevent>
@@ -14,11 +15,10 @@ $introStats = [
    <h2 id="site-intro-title"><img src="/assets/images/kowsc/k-platform-wordmark.webp" alt="K-직장인 스포츠 플랫폼" width="2000" height="176"></h2>
    <p class="site-intro-summary">대회·행사부터 동호회, 교육, 자격검증까지.<br>직장인의 건강한 일상을 대한직장인체육회가 함께합니다.</p>
    <ul class="site-intro-stats" aria-label="주요 현황">
-<?php foreach ($introStats as [$value, $label]): ?>
-    <li><strong><?=htmlspecialchars($value, ENT_QUOTES, 'UTF-8')?></strong><span><?=htmlspecialchars($label, ENT_QUOTES, 'UTF-8')?></span></li>
+<?php foreach ($introStats as [$value, $label, $note]): ?>
+    <li><strong><?=htmlspecialchars($value, ENT_QUOTES, 'UTF-8')?></strong><span><?=htmlspecialchars($label, ENT_QUOTES, 'UTF-8')?> <em class="site-intro-stat-note"><?=htmlspecialchars($note, ENT_QUOTES, 'UTF-8')?></em></span></li>
 <?php endforeach; ?>
    </ul>
-   <a class="button accent large site-intro-enter" href="/index.php" data-intro-enter>홈페이지 접속<i class="ri-arrow-right-line" aria-hidden="true"></i></a>
   </div>
   <div class="site-intro-cards">
    <div class="site-intro-card">
