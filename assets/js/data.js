@@ -10,8 +10,8 @@ export const siteConfig = {name:'대한직장인체육회',englishName:'KOREA Wo
 const page = (title,id) => ({title,url:`/page.php?id=${id}`,id});
 const link = (title,url) => ({title,url});
 export const navigation = [
- {title:'체육회소개',english:'ABOUT US',items:[page('회장인사말','greeting'),{...page('Vision','vision'),children:[page('Vision 1','vision-1'),page('Vision 2','vision-2')]},page('설립목적','purpose'),page('조직기구표','organization'),page('시·도 체육회장','regional'),page('임원 & 위원회','committee'),page('연혁','history'),page('체육회 CI','ci'),page('정관','articles'),page('오시는길','directions')]},
- {title:'체육회사업',english:'OUR BUSINESS',items:[page('주요사업','business'),page('개혁과제','reform'),{...link('대회·행사','/events.php'),children:[page('대회운영','operations'),link('대회참가신청','/events.php?status=접수중'),link('대회소식/공지','/board.php?category=대회공고'),link('현장갤러리','/board.php?category=포토·영상')]},{...link('교육사업','/education.php'),children:[link('레슨 & 안전교육','/education.php?category=레슨'),link('보수교육','/education.php?category=보수교육')]},{...link('자격검증','/qualification.php'),children:[link('자격검증신청','/qualification.php?tab=programs'),link('합격조회·발급','/qualification.php?tab=results'),link('재발급신청','/qualification.php?tab=reissue'),page('인재매칭(인력풀)','talent')]},page('안전관리','safety'),page('문화예술 육성사업','culture'),{...link('동호회 가입','/clubs.php'),children:[page('복지정책','welfare'),link('클럽/동호회 등록','/join.php?type=club')]}]},
+ {title:'소개',english:'ABOUT US',items:[page('회장인사말','greeting'),page('연혁','history'),{...page('Vision','vision'),children:[page('개혁과제','reform')]},page('설립목적','purpose'),page('조직구성회','organization'),page('시·도 체육회장','regional'),page('체육회 CI','ci'),page('오시는길','directions')]},
+ {title:'체육회사업',english:'OUR BUSINESS',items:[page('주요사업','business'),{...link('대회·행사','/events.php'),children:[page('대회운영','operations'),link('대회참가신청','/events.php?status=접수중'),link('대회소식/공지','/board.php?category=대회공고'),link('현장갤러리','/board.php?category=포토·영상')]},{...link('교육사업','/education.php'),children:[link('레슨 & 안전교육','/education.php?category=레슨'),link('보수교육','/education.php?category=보수교육')]},{...link('자격검증','/qualification.php'),children:[link('자격검증신청','/qualification.php?tab=programs'),link('합격조회·발급','/qualification.php?tab=results'),link('재발급신청','/qualification.php?tab=reissue'),page('인재매칭(인력풀)','talent')]},page('안전관리','safety'),page('문화예술 육성사업','culture'),{...link('동호회 가입','/clubs.php'),children:[page('복지정책','welfare'),link('클럽/동호회 등록','/join.php?type=club')]}]},
  {title:'알림마당',english:'NEWS & STORIES',items:['공지사항','대회공고','대회공모','언론·보도','포토·영상'].map(t=>link(t,`/board.php?category=${t}`))},
  {title:'커뮤니티',english:'COMMUNITY',items:[link('Club Matching','/clubs.php'),link('우리 동호회 자랑','/board.php?category=동호회 소식'),link('이달의 우수동호회','/clubs.php?featured=1'),page('자주묻는질문','faq'),link('자료실','/board.php?category=자료실'),link('안전개선제안','/board.php?category=안전개선제안'),link('회원전용','/board.php?category=회원전용')]},
  {title:'후원참여',english:'TOGETHER',items:[link('후원금집행내역','/support.php?tab=reports'),link('기업파트너십','/support.php?tab=partnership'),link('모집안내/권리','/support.php?tab=rights'),link('후원하기','/support.php?tab=donate'),link('후원사현황','/support.php?tab=sponsors'),link('자원봉사 신청','/volunteers.php')]}
@@ -127,8 +127,6 @@ export const notificationLogs = [];
 const copy = {
  greeting:['스포츠가 일상이 되는 세상.','일하는 사람들의 건강한 일상과 즐거운 도전을 응원합니다.','회장 인사말 원고와 성명은 공식 자료 수령 후 교체합니다.'],
  'vision':[aboutContent.vision.headline,'',aboutContent.vision.body],
- 'vision-1':[aboutContent.vision.areas[0].title,'',aboutContent.vision.areas[0].body],
- 'vision-2':[aboutContent.vision.areas[1].title,'',aboutContent.vision.areas[1].body],
  'purpose':[aboutContent.purpose.headline,'',aboutContent.purpose.body],
  organization:['함께 움직이는 체육회','총회 → 이사회 → 사무국 → 종목협회','아래 조직 구조는 교체 가능한 예시이며 확정 조직도가 아닙니다.'],
  committee:['전문성과 현장의 경험을 연결합니다','임원 및 위원회 소개','성명, 직위, 임기는 공식 명단 수령 후 등록합니다.'],

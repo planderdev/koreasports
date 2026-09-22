@@ -2193,36 +2193,24 @@
   font-weight: 600;
 }
 
-.about-page .about-paths {
+.about-page .about-area {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-24);
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: var(--space-40) var(--space-64);
+  align-items: center;
 }
 
-.about-page .about-paths a {
+.about-page .about-area:nth-of-type(even) .about-area-photo {
+  order: -1;
+}
+
+.about-page .about-area-text {
   display: grid;
   gap: var(--space-16);
-  padding: var(--space-32);
-  background: var(--semantic-background-normal-alternative);
-  border-radius: var(--radius-16);
 }
 
-.about-page .about-paths a:hover {
-  background: var(--semantic-brand-subtle);
-}
-
-.about-page .about-path-label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--semantic-primary-normal);
-  font-size: var(--type-label-1-size);
-  line-height: var(--type-label-1-line);
-}
-
-.about-page .about-path-label i {
-  font-size: var(--type-headline-1-size);
-  font-weight: normal;
+.about-page .about-area-text .about-keywords {
+  margin-top: var(--space-8);
 }
 
 .about-page :is(.about-directions, .about-values, .about-activities, .about-keywords) {
@@ -2381,7 +2369,6 @@
 }
 
 .about-page .about-area-photo {
-  margin-top: var(--space-48);
   width: 100%;
 }
 
@@ -2423,7 +2410,7 @@
     letter-spacing: var(--type-title-2-tracking);
   }
 
-  .about-page :is(.about-paths, .about-directions, .about-values, .about-photos) {
+  .about-page :is(.about-area, .about-directions, .about-values, .about-photos) {
     grid-template-columns: 1fr;
   }
 
@@ -2436,8 +2423,8 @@
     gap: var(--space-20);
   }
 
-  .about-page .about-paths a {
-    padding: var(--space-24);
+  .about-page .about-area:nth-of-type(even) .about-area-photo {
+    order: 0;
   }
 
   .about-page .about-section,

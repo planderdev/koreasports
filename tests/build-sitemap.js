@@ -2,12 +2,12 @@ import {navigation} from '../assets/js/data.js';
 import fs from 'node:fs';
 let md=`# 전체 메뉴 및 URL 매핑
 
-첨부 지시서의 원문 항목을 기준으로 정규화했습니다. HWPX 원본은 미제공입니다. 우수동호히 → 우수동호회, 기업파트너쉽 → 기업파트너십으로 교정했습니다. Vision 1/2, 대회운영, 교육사업, 자격검증의 하위 항목은 별도 URL 또는 탭으로 연결합니다.
+첨부 지시서의 원문 항목을 기준으로 정규화했습니다. HWPX 원본은 미제공입니다. 우수동호히 → 우수동호회, 기업파트너쉽 → 기업파트너십으로 교정했습니다. 대회운영, 교육사업, 자격검증 등의 하위 항목(└)은 별도 URL 또는 탭으로 연결합니다.
 
 | 대메뉴 | 원문 / 최종 항목 | URL |
 |---|---|---|
 `;
-for(const n of navigation)for(const i of n.items)md+=`| ${n.title} | ${i.title} | ${i.url} |\n`;
+for(const n of navigation)for(const i of n.items){md+=`| ${n.title} | ${i.title} | ${i.url} |\n`;for(const c of i.children||[])md+=`| ${n.title} | └ ${c.title} | ${c.url} |\n`;}
 md+=`
 ## 공통 유틸리티
 
