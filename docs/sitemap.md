@@ -35,9 +35,11 @@
 | 커뮤니티 | 자주묻는질문 | /page.php?id=faq |
 | 커뮤니티 | Q&A | /board.php?category=Q%26A |
 | 커뮤니티 | 자료실 | /board.php?category=자료실 |
-| 커뮤니티 | └ 정관 | /page.php?id=articles |
-| 후원 | 후원하기 | http://www.kstma.com/ (새 창) |
-| 후원 | 자원봉사 | /volunteers.php |
+| 후원 | 후원사업안내 | /support.php?tab=business |
+| 후원 | 후원방법 | /support.php?tab=method |
+| 후원 | 후원안내 | /support.php?tab=guide |
+| 후원 | 후원회원예우 | /support.php?tab=benefits |
+| 후원 | 후원문의 | /support.php?tab=contact |
 
 ## 숨김 항목 (메뉴에 표시하지 않음, 주소는 유지)
 
@@ -47,11 +49,14 @@
 | 주요사업 | 문화예술 육성사업 | /page.php?id=culture |
 | 주요사업 | 동호회 가입 | /clubs.php |
 | 커뮤니티 | 대회공모 | /board.php?category=대회공모 |
+| 커뮤니티 | 정관 | /page.php?id=articles |
 | 커뮤니티 | Club Matching | /clubs.php |
 | 커뮤니티 | 우리 동호회 자랑 | /board.php?category=동호회 소식 |
 | 커뮤니티 | 이달의 우수동호회 | /clubs.php?featured=1 |
 | 커뮤니티 | 안전개선제안 | /board.php?category=안전개선제안 |
 | 커뮤니티 | 회원전용 | /board.php?category=회원전용 |
+| 후원 | 자원봉사 | /volunteers.php |
+| 후원 | 후원하기(KSTMA 참고) | http://www.kstma.com/ |
 | 후원 | 후원 참여 문의 | /support.php?tab=donate |
 | 후원 | 후원금집행내역 | /support.php?tab=reports |
 | 후원 | 기업파트너십 | /support.php?tab=partnership |

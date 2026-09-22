@@ -2986,3 +2986,174 @@
     grid-column: auto;
   }
 }
+
+/* 후원 페이지(후원사업안내·후원방법·후원안내·후원회원예우·후원문의) */
+.support-page .support-lead {
+  max-width: 760px;
+  margin-bottom: var(--space-48);
+}
+
+.support-page .support-lead h2 {
+  margin-top: var(--space-8);
+  font-size: var(--type-title-2-size);
+  line-height: var(--type-title-2-line);
+  letter-spacing: var(--type-title-2-tracking);
+  word-break: keep-all;
+}
+
+.support-page .support-lead p {
+  margin-top: var(--space-16);
+  color: var(--semantic-label-neutral);
+  font-size: var(--type-body-1-size);
+  line-height: var(--type-body-1-reading-line);
+  word-break: keep-all;
+}
+
+.support-page .support-section {
+  margin-top: var(--space-56);
+}
+
+.support-page .support-section > h2 {
+  margin-bottom: var(--space-24);
+  font-size: var(--type-title-3-size);
+  line-height: var(--type-title-3-line);
+  letter-spacing: var(--type-title-3-tracking);
+}
+
+.support-page .support-section > h3 {
+  margin: var(--space-32) 0 var(--space-12);
+}
+
+.support-page .support-section > p {
+  max-width: 760px;
+  color: var(--semantic-label-neutral);
+  word-break: keep-all;
+}
+
+.support-page .support-section > .button {
+  margin-top: var(--space-24);
+}
+
+.support-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-16);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.support-projects li {
+  padding: var(--space-24);
+  border: var(--border-thin) solid var(--semantic-line-solid-normal);
+  border-radius: var(--radius-12);
+}
+
+.support-projects .about-number {
+  display: block;
+  margin-bottom: var(--space-12);
+  color: var(--semantic-primary-normal);
+  font-weight: var(--font-weight-semibold);
+}
+
+.support-projects h3 {
+  margin-bottom: var(--space-8);
+}
+
+.support-projects p,.support-kinds p,.support-benefits p {
+  color: var(--semantic-label-alternative);
+  font-size: var(--type-label-1-size);
+  line-height: var(--type-label-1-line);
+  word-break: keep-all;
+}
+
+.support-kinds,.support-benefits,.support-contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-16);
+}
+
+.support-kind-label {
+  display: block;
+  margin-bottom: var(--space-8);
+  color: var(--semantic-primary-normal);
+  font-size: var(--type-caption-1-size);
+  line-height: var(--type-caption-1-line);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.08em;
+}
+
+.support-kinds ul {
+  display: grid;
+  gap: var(--space-6);
+  margin: var(--space-16) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.support-kinds li {
+  display: flex;
+  gap: var(--space-8);
+  font-size: var(--type-label-1-size);
+  line-height: var(--type-label-1-line);
+}
+
+.support-kinds li i {
+  flex: none;
+  color: var(--semantic-primary-normal);
+}
+
+.support-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-12);
+  margin-top: var(--space-32);
+}
+
+.support-notes {
+  display: grid;
+  gap: var(--space-8);
+  margin: 0;
+  padding-left: var(--space-20);
+  color: var(--semantic-label-neutral);
+  word-break: keep-all;
+}
+
+.support-closing {
+  max-width: 760px;
+  margin-top: var(--space-56);
+  padding-top: var(--space-32);
+  border-top: var(--border-thin) solid var(--semantic-line-solid-normal);
+  color: var(--semantic-label-neutral);
+  font-size: var(--type-body-1-size);
+  line-height: var(--type-body-1-reading-line);
+  word-break: keep-all;
+}
+
+.support-contact-icon {
+  display: grid;
+  place-items: center;
+  width: var(--space-48);
+  height: var(--space-48);
+  margin-bottom: var(--space-16);
+  border-radius: var(--radius-full);
+  background: var(--semantic-brand-subtle);
+  color: var(--semantic-primary-normal);
+  font-size: var(--type-heading-1-size);
+}
+
+.support-contact-link {
+  display: block;
+  margin-bottom: var(--space-8);
+  color: var(--semantic-label-normal);
+  font-size: var(--type-headline-1-size);
+  line-height: var(--type-headline-1-line);
+  font-weight: var(--font-weight-semibold);
+}
+
+.support-contact-cards p {
+  color: var(--semantic-label-alternative);
+  font-size: var(--type-label-1-size);
+  line-height: var(--type-label-1-line);
+  word-break: keep-all;
+}
