@@ -1,4 +1,4 @@
-import {navigation} from '../assets/js/data.js';
+import {navigation,navigationAll} from '../assets/js/data.js';
 import fs from 'node:fs';
 let md=`# 전체 메뉴 및 URL 매핑
 
@@ -8,6 +8,13 @@ let md=`# 전체 메뉴 및 URL 매핑
 |---|---|---|
 `;
 for(const n of navigation)for(const i of n.items){md+=`| ${n.title} | ${i.title} | ${i.url} |\n`;for(const c of i.children||[])md+=`| ${n.title} | └ ${c.title} | ${c.url} |\n`;}
+const hiddenRows=navigationAll.flatMap(n=>n.items.flatMap(i=>[i,...(i.children||[])]).filter(i=>i.hidden).map(i=>`| ${n.title} | ${i.title} | ${i.url} |\n`));
+if(hiddenRows.length)md+=`
+## 숨김 항목 (메뉴에 표시하지 않음, 주소는 유지)
+
+| 대메뉴 | 항목 | URL |
+|---|---|---|
+${hiddenRows.join('')}`;
 md+=`
 ## 공통 유틸리티
 

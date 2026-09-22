@@ -6225,7 +6225,7 @@ export const sourcePages = {
     "contentHash": "ccc8fe4241efcbe03ac24631169fbe3e3e2166f3c0d8ad443746abe4e502644d"
   },
   "organization": {
-    "title": "조직기구표",
+    "title": "조직구성회",
     "subtitle": "",
     "groups": [
       {

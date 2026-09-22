@@ -51,6 +51,13 @@
 | 후원참여 | 후원사현황 | /support.php?tab=sponsors |
 | 후원참여 | 자원봉사 신청 | /volunteers.php |
 
+## 숨김 항목 (메뉴에 표시하지 않음, 주소는 유지)
+
+| 대메뉴 | 항목 | URL |
+|---|---|---|
+| 소개 | 임원 & 위원회 | /page.php?id=committee |
+| 소개 | 정관 | /page.php?id=articles |
+
 ## 공통 유틸리티
 
 | 기능 | 목적지 |

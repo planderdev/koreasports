@@ -9,13 +9,17 @@ export {sourceMedia};
 export const siteConfig = {name:'대한직장인체육회',englishName:'KOREA Workers Sports Committee',president:'어명수',address:'06927 서울특별시 동작구 노량진로6길 6-13, 2층',phone:null,email:'kowsc@naver.com',logo:'/assets/images/kowsc/logo-w.svg',version:1,isDemo:true};
 const page = (title,id) => ({title,url:`/page.php?id=${id}`,id});
 const link = (title,url) => ({title,url});
-export const navigation = [
- {title:'소개',english:'ABOUT US',items:[page('회장인사말','greeting'),page('연혁','history'),{...page('Vision','vision'),children:[page('개혁과제','reform')]},page('설립목적','purpose'),page('조직구성회','organization'),page('시·도 체육회장','regional'),page('체육회 CI','ci'),page('오시는길','directions')]},
+// 메뉴에서 감춘 항목은 hidden:true 로 표시합니다. 페이지·주소는 그대로 살아 있고, 표시할 때는 hidden 을 지우면 됩니다.
+const hidden = item => ({...item, hidden:true});
+export const navigationAll = [
+ {title:'소개',english:'ABOUT US',items:[page('회장인사말','greeting'),page('연혁','history'),{...page('Vision','vision'),children:[page('개혁과제','reform')]},page('설립목적','purpose'),page('조직구성회','organization'),page('시·도 체육회장','regional'),hidden(page('임원 & 위원회','committee')),page('체육회 CI','ci'),hidden(page('정관','articles')),page('오시는길','directions')]},
  {title:'체육회사업',english:'OUR BUSINESS',items:[page('주요사업','business'),{...link('대회·행사','/events.php'),children:[page('대회운영','operations'),link('대회참가신청','/events.php?status=접수중'),link('대회소식/공지','/board.php?category=대회공고'),link('현장갤러리','/board.php?category=포토·영상')]},{...link('교육사업','/education.php'),children:[link('레슨 & 안전교육','/education.php?category=레슨'),link('보수교육','/education.php?category=보수교육')]},{...link('자격검증','/qualification.php'),children:[link('자격검증신청','/qualification.php?tab=programs'),link('합격조회·발급','/qualification.php?tab=results'),link('재발급신청','/qualification.php?tab=reissue'),page('인재매칭(인력풀)','talent')]},page('안전관리','safety'),page('문화예술 육성사업','culture'),{...link('동호회 가입','/clubs.php'),children:[page('복지정책','welfare'),link('클럽/동호회 등록','/join.php?type=club')]}]},
  {title:'알림마당',english:'NEWS & STORIES',items:['공지사항','대회공고','대회공모','언론·보도','포토·영상'].map(t=>link(t,`/board.php?category=${t}`))},
  {title:'커뮤니티',english:'COMMUNITY',items:[link('Club Matching','/clubs.php'),link('우리 동호회 자랑','/board.php?category=동호회 소식'),link('이달의 우수동호회','/clubs.php?featured=1'),page('자주묻는질문','faq'),link('자료실','/board.php?category=자료실'),link('안전개선제안','/board.php?category=안전개선제안'),link('회원전용','/board.php?category=회원전용')]},
  {title:'후원참여',english:'TOGETHER',items:[link('후원금집행내역','/support.php?tab=reports'),link('기업파트너십','/support.php?tab=partnership'),link('모집안내/권리','/support.php?tab=rights'),link('후원하기','/support.php?tab=donate'),link('후원사현황','/support.php?tab=sponsors'),link('자원봉사 신청','/volunteers.php')]}
 ];
+// 화면·사이트맵에 쓰는 메뉴: 숨김 항목을 뺀 트리. 브레드크럼처럼 숨김 페이지의 소속을 알아야 할 때만 navigationAll 을 씁니다.
+export const navigation = navigationAll.map(group => ({...group, items: group.items.filter(item => !item.hidden).map(item => item.children ? {...item, children: item.children.filter(child => !child.hidden)} : item)}));
 export const sports = ['골프','펜싱','승마','풋살'];
 export const regions = ['서울','경기','인천','부산'];
 // 선수등록비 유형(연간). 금액·혜택은 체육회 제공 회비 기준표 원문입니다.
