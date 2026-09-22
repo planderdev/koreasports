@@ -1,8 +1,8 @@
 <?php
 // 인트로 현황 카드: [수치, 설명]. 한 줄 추가하면 카드가 하나 늘고, 순서대로 하나씩 나타납니다(최대 6개).
 $introStats = [
-    ['69.1만', '가입 회원 수(2023.8)'],
     ['약 1500만명', '생활체육 직장인 (26.01 기준)'],
+    ['69.1만', '가입 회원 수(2023.8)'],
 ];
 ?>
 <section id="site-intro" class="site-intro" aria-labelledby="site-intro-title" data-lenis-prevent>
