@@ -96,10 +96,22 @@ mediaAssets.push(...heroPhotos.map((photo, i) => ({...photo, id: `hero-photo-${i
 export const heroSlides = sourceMedia.slice(0,3).map((m,i)=>({id:'hero-'+(i+1),eyebrow:'KOWSC · SPORTS PEOPLE',title:i===0?'배움과 도전,\n스포츠로 이어지다.':i===1?'세계와 함께하는\n직장인 스포츠.':'함께한 순간,\n더 큰 무대로.',summary:m.title,image:heroPhotos[i].image,alt:heroPhotos[i].alt,textTone:'light',scrim:!!heroPhotos[i].scrim,cta:'현장 소식 보기',url:'/post.php?id='+m.postId,isDemo:true,sourceUrl:heroPhotos[i].source}));
 export const quickLinks = [ ['trophy-line','대회 참가신청','/events.php'],['team-line','동호회 찾기','/clubs.php'],['book-open-line','교육 신청','/education.php'],['medal-line','자격검증','/qualification.php'],['hand-heart-line','자원봉사','/volunteers.php'],['id-card-line','모바일 회원증','/mypage.php?tab=card'] ].map(([icon,title,url],i)=>({icon,title,url,image:'/assets/images/quick-'+(i+1)+'.png'}));
 export const audienceServices = [
- {title:'개인회원',heading:'나의 일상에, 스포츠를 더하다.',summary:'대회 참가부터 배움과 새로운 만남까지. 나에게 맞는 스포츠 생활을 시작해보세요.',links:[quickLinks[0],quickLinks[1],quickLinks[2]]},
- {title:'기업·동호회',heading:'함께하는 팀의 가능성을 넓히세요.',summary:'기업과 동호회를 각각 등록하고, 구성원들과 스포츠로 연결됩니다.',links:[{icon:'building-line',title:'기업회원 등록',url:'/join.php?type=organization'},{icon:'team-line',title:'동호회 등록',url:'/join.php?type=club'},quickLinks[0]]},
- {title:'지도자·전문인력',heading:'경험을 나누고, 전문성을 키우다.',summary:'인력풀 등록과 보수교육, 자격검증을 한곳에서 만나보세요.',links:[{icon:'user-star-line',title:'인력풀 등록',url:'/page.php?id=talent'},quickLinks[3],{icon:'book-read-line',title:'보수교육',url:'/education.php?category=보수교육'}]},
- {title:'자원봉사자',heading:'가장 가까이에서, 함께 만드는 대회.',summary:'현장 운영에 참여하고 필수 안전교육을 통해 든든하게 준비하세요.',links:[quickLinks[4],{icon:'shield-check-line',title:'안전교육',url:'/education.php?category=안전교육'},{icon:'file-list-3-line',title:'나의 참여내역',url:'/mypage.php?tab=volunteers'}]}
+ {title:'개인회원',heading:'나의 일상에, 스포츠를 더하다.',summary:'선수등록부터 대회 참가와 배움까지. 나에게 맞는 스포츠 생활을 시작해보세요.',links:[
+  {icon:'user-add-line',title:'선수등록',url:'/join.php'},
+  {icon:'trophy-line',title:'대회 참가신청',url:'/events.php?status=접수중',image:'/assets/images/quick-1.png'},
+  {icon:'book-open-line',title:'교육 신청',url:'/education.php',image:'/assets/images/quick-3.png'}]},
+ {title:'후원회원',heading:'함께하는 참여가 스포츠의 기반이 됩니다.',summary:'후원으로 운영되는 활동과 참여 방법, 후원회원 혜택을 확인해보세요.',links:[
+  {icon:'hand-heart-line',title:'후원사업안내',url:'/support.php?tab=business'},
+  {icon:'wallet-line',title:'후원방법',url:'/support.php?tab=method'},
+  {icon:'gift-line',title:'후원회원예우',url:'/support.php?tab=benefits'}]},
+ {title:'지도자·전문인력',heading:'경험을 나누고, 전문성을 키우다.',summary:'인력풀 등록과 보수교육, 자격검증을 한곳에서 만나보세요.',links:[
+  {icon:'user-star-line',title:'인재매칭(인력풀)',url:'/page.php?id=talent'},
+  {icon:'medal-line',title:'자격검증',url:'/qualification.php',image:'/assets/images/quick-4.png'},
+  {icon:'book-read-line',title:'보수교육',url:'/education.php?category=보수교육'}]},
+ {title:'자원봉사자',heading:'가장 가까이에서, 함께 만드는 대회.',summary:'현장 운영에 참여하고 필수 안전교육을 통해 든든하게 준비하세요.',links:[
+  {icon:'hand-heart-line',title:'자원봉사 참여하기',url:'/volunteers.php',image:'/assets/images/quick-5.png'},
+  {icon:'shield-check-line',title:'레슨 & 안전교육',url:'/education.php?category=레슨'},
+  {icon:'file-list-3-line',title:'나의 참여내역',url:'/mypage.php?tab=volunteers'}]}
 ];
 const base = (id,title,category='')=>({id,slug:id,title,category,summary:'스포츠가 있는 건강한 일상을 함께 만듭니다.',createdAt:'2026-09-01',updatedAt:'2026-09-17',status:'published',isDemo:true});
 export const events = Array.from({length:16},(_,i)=>({...base(`event-${i+1}`,['2026 직장인 그린컵 골프대회','퇴근 후, 펜싱 챌린지','가을 승마 페스티벌','직장인 풋살 리그'][i%4]+(i>=4?` · ${Math.floor(i/4)+1}차`:''),sports[i%4]),sport:sports[i%4],region:regions[Math.floor(i/4)],venue:['그린필드 골프클럽','시민 펜싱센터','숲길 승마파크','리버사이드 풋살장'][i%4]+' (가상)',startsAt:`2026-${i<8?'10':'11'}-${String(10+i%8*2).padStart(2,'0')}T09:00:00+09:00`,endsAt:`2026-${i<8?'10':'11'}-${String(10+i%8*2).padStart(2,'0')}T18:00:00+09:00`,registrationStartsAt:i%6===4?'2026-10-01T09:00:00+09:00':'2026-09-01T09:00:00+09:00',registrationEndsAt:i%6===5?'2026-09-10T18:00:00+09:00':'2026-10-05T18:00:00+09:00',capacity:80,participantCount:i===9?80:24+i,eligibility:'스포츠를 사랑하는 직장인 및 동호회 회원',applicationType:['individual','team'],associationId:`assoc-${i%4+1}`,image:sportPhoto(i,0).image,alt:sportPhoto(i,0).alt,summary:['초록빛 필드 위에서 함께하는 기분 좋은 도전.','처음이어도 괜찮아요. 펜싱의 매력을 만나보세요.','자연과 호흡하며 즐기는 특별한 하루.','동료와 함께 뛰며 만드는 우리 팀의 순간.'][i%4]}));
