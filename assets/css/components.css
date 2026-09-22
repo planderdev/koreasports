@@ -979,6 +979,38 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
   padding-left: var(--space-20);
 }
 
+.address-field {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.address-field legend {
+  padding: 0;
+  margin-bottom: var(--space-8);
+  font-size: var(--type-body-1-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--type-body-1-line);
+  letter-spacing: var(--type-body-1-tracking);
+}
+
+.address-field legend small {
+  margin-left: var(--space-6);
+  color: var(--semantic-label-alternative);
+  font-weight: var(--font-weight-regular);
+}
+
+.address-selects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-12);
+}
+
+.address-selects select:disabled {
+  color: var(--semantic-label-assistive);
+}
+
 .field-label-row {
   display: flex;
   align-items: center;
@@ -1430,6 +1462,10 @@ label:has(input[type=checkbox]), label:has(input[type=radio]) {
 
   .plan-options {
     grid-template-columns: 1fr;
+  }
+
+  .address-selects {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .filters {
