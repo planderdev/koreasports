@@ -98,7 +98,8 @@ const heroPhotos = [
 ];
 mediaAssets.push(...heroPhotos.map((photo, i) => ({...photo, id: `hero-photo-${i + 1}`})));
 export const heroSlides = sourceMedia.slice(0,3).map((m,i)=>({id:'hero-'+(i+1),eyebrow:'KOWSC · SPORTS PEOPLE',title:i===0?'배움과 도전,\n스포츠로 이어지다.':i===1?'세계와 함께하는\n직장인 스포츠.':'함께한 순간,\n더 큰 무대로.',summary:m.title,image:heroPhotos[i].image,alt:heroPhotos[i].alt,textTone:'light',scrim:!!heroPhotos[i].scrim,cta:'현장 소식 보기',url:'/post.php?id='+m.postId,isDemo:true,sourceUrl:heroPhotos[i].source}));
-export const quickLinks = [ ['trophy-line','대회 참가신청','/events.php'],['team-line','동호회 찾기','/clubs.php'],['book-open-line','교육 신청','/education.php'],['medal-line','자격검증','/qualification.php'],['hand-heart-line','자원봉사','/volunteers.php'],['id-card-line','모바일 회원증','/mypage.php?tab=card'] ].map(([icon,title,url],i)=>({icon,title,url,image:'/assets/images/quick-'+(i+1)+'.png'}));
+// 홈 상단 바로가기. 마지막 값은 아이콘 이미지 번호(quick-N.png) — 항목을 빼도 이미지가 밀리지 않게 명시합니다.
+export const quickLinks = [ ['trophy-line','대회 참가신청','/events.php',1],['book-open-line','교육 신청','/education.php',3],['medal-line','자격검증','/qualification.php',4],['hand-heart-line','자원봉사','/volunteers.php',5],['id-card-line','모바일 회원증','/mypage.php?tab=card',6] ].map(([icon,title,url,img])=>({icon,title,url,image:'/assets/images/quick-'+img+'.png'}));
 export const audienceServices = [
  {title:'개인회원',heading:'나의 일상에, 스포츠를 더하다.',summary:'선수등록부터 대회 참가와 배움까지. 나에게 맞는 스포츠 생활을 시작해보세요.',links:[
   {icon:'user-add-line',title:'선수등록',url:'/join.php'},
