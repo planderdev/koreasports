@@ -7,7 +7,8 @@ let md=`# 전체 메뉴 및 URL 매핑
 | 대메뉴 | 원문 / 최종 항목 | URL |
 |---|---|---|
 `;
-for(const n of navigation)for(const i of n.items){md+=`| ${n.title} | ${i.title} | ${i.url} |\n`;for(const c of i.children||[])md+=`| ${n.title} | └ ${c.title} | ${c.url} |\n`;}
+const url=i=>i.external?`${i.url} (새 창)`:i.url;
+for(const n of navigation)for(const i of n.items){md+=`| ${n.title} | ${i.title} | ${url(i)} |\n`;for(const c of i.children||[])md+=`| ${n.title} | └ ${c.title} | ${url(c)} |\n`;}
 const hiddenRows=navigationAll.flatMap(n=>n.items.flatMap(i=>[i,...(i.children||[])]).filter(i=>i.hidden).map(i=>`| ${n.title} | ${i.title} | ${i.url} |\n`));
 if(hiddenRows.length)md+=`
 ## 숨김 항목 (메뉴에 표시하지 않음, 주소는 유지)
