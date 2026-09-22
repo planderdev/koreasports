@@ -25,7 +25,7 @@ $introStats = [
     <h3 data-intro-member-title><b>대한직장인체육회</b>의<br>다양한 서비스를 경험해보세요.</h3>
     <a class="button accent large site-intro-card-enter" href="/index.php" data-intro-enter>홈페이지 접속<i class="ri-arrow-right-line" aria-hidden="true"></i></a>
     <a class="button large site-intro-login" href="/login.php" data-intro-leave data-intro-login><i class="ri-login-box-line" aria-hidden="true"></i><span>로그인</span></a>
-    <p class="site-intro-bubble" data-intro-bubble>선수등록을 마치신 분은 로그인해주세요.</p>
+    <p class="site-intro-bubble" data-intro-bubble>선수등록 승인을 완료하신 분은 로그인해주세요.</p>
    </div>
    <a class="site-intro-card site-intro-link-card" href="/join.php" data-intro-leave data-intro-join>
     <span class="site-intro-card-icon"><i class="ri-user-add-line" aria-hidden="true"></i></span>
