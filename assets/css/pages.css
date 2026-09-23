@@ -1980,6 +1980,7 @@
 }
 
 .business-page .business-field {
+  scroll-margin-top: var(--space-96); /* 메뉴에서 #field-… 로 올 때 고정 헤더에 가리지 않도록 */
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: var(--space-48);

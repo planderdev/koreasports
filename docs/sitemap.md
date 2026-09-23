@@ -14,6 +14,11 @@
 | 소개 | 체육회 CI | /page.php?id=ci |
 | 소개 | 오시는길 | /page.php?id=directions |
 | 주요사업 | 주요사업 | /page.php?id=business |
+| 주요사업 | └ 2027 K-스포츠대축전 | /page.php?id=business#field-festival |
+| 주요사업 | └ 직장인 스포츠대회 | /page.php?id=business#field-competitions |
+| 주요사업 | └ 국제 스포츠교류 | /page.php?id=business#field-international |
+| 주요사업 | └ 스포츠 교육·자격 | /page.php?id=business#field-education |
+| 주요사업 | └ 스포츠 홍보·협력 | /page.php?id=business#field-promotion |
 | 주요사업 | 대회·행사 | /events.php |
 | 주요사업 | └ 대회운영 | /page.php?id=operations |
 | 주요사업 | └ 대회참가신청 | /events.php?status=접수중 |
