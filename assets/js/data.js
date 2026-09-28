@@ -1,6 +1,8 @@
 import {sportsMedia, sportsPhoto} from './sports-media.js';
 import {businessContent} from './business-content.js';
 export {businessContent};
+import {policyContent} from './policy-content.js';
+export {policyContent};
 import {aboutContent} from './about-content.js';
 import {supportContent} from './support-content.js';
 export {aboutContent, supportContent};
@@ -172,8 +174,8 @@ const copy = {
  faq:['궁금한 점을 빠르게 확인하세요','자주묻는질문','회원, 대회, 동호회 및 교육 이용 방법을 안내합니다.'],
  'safety-proposal':['여러분의 제안이 더 안전한 현장을 만듭니다','안전개선제안','장소, 상황과 개선 의견을 남겨주세요. 긴급 신고 접수 기능은 아닙니다.'],
  'members-only':['회원과 함께 나누는 이야기','회원 전용 자료','개인회원으로 전환하여 전용 자료와 참여 이력을 확인하세요.'],
- terms:['서비스 이용약관','검토 필요 원고','이 페이지는 법률 검토와 운영 정책 확정 전의 화면 양식입니다. 실제 서비스 약관 동의로 사용하지 않습니다.'],
- privacy:['개인정보처리방침','검토 필요 원고','개인정보처리방침을 확인해주세요.'],
+ terms:['이용약관','참가자 신청 약관과 보험·마케팅·초상권 동의','대한직장인체육회 홈페이지와 대회 참가 신청에 적용되는 이용약관입니다.'],
+ privacy:['개인정보처리방침','개인정보 처리 절차와 기준','대한직장인체육회가 개인정보를 어떻게 수집·이용·보관·파기하는지 안내합니다.'],
  associations:['다양한 종목, 하나의 연결','산하 종목협회','협회명은 확장 구조를 보여주는 예시이며 공식 명단이 아닙니다.']
 };
 export const pageContents = {...Object.fromEntries(Object.entries(copy).map(([id,[headline,subtitle,body]])=>[id,{id,title:navigation.flatMap(n=>n.items.flatMap(x=>[x,...(x.children||[])])).find(x=>x.id===id)?.title||headline,headline,subtitle,body,isDemo:true}])),...Object.fromEntries(Object.entries(sourcePages).map(([id,value])=>[id,{id,...value,isDemo:true}]))};

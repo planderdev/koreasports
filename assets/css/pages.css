@@ -3207,3 +3207,96 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* 이용약관 · 개인정보처리방침 (policy-content.js) */
+.policy-page .policy-body {
+  max-width: 960px;
+  color: var(--semantic-label-normal);
+  font-size: var(--type-body-1-reading-size);
+  line-height: var(--type-body-1-reading-line);
+  letter-spacing: var(--type-body-1-reading-tracking);
+  overflow-wrap: anywhere;
+}
+.policy-page .policy-intro { margin-bottom: var(--space-32); }
+.policy-page .policy-intro .eyebrow { display: block; margin-bottom: var(--space-12); }
+.policy-page .policy-intro p { margin: 0; color: var(--semantic-label-neutral); }
+.policy-page .policy-toc {
+  margin-bottom: var(--space-48);
+  padding: var(--space-24) var(--space-28);
+  border: var(--border-thin) solid var(--semantic-line-solid-normal);
+  border-radius: var(--radius-12);
+  background: var(--semantic-background-normal-alternative);
+}
+.policy-page .policy-toc ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-8) var(--space-24);
+}
+.policy-page .policy-toc a {
+  color: var(--semantic-label-normal);
+  font-size: var(--type-body-2-size);
+  line-height: var(--type-body-2-line);
+  letter-spacing: var(--type-body-2-tracking);
+  text-decoration: none;
+}
+.policy-page .policy-toc a:hover { color: var(--semantic-primary-normal); text-decoration: underline; text-underline-offset: .2em; }
+.policy-page .policy-section {
+  padding-top: var(--space-32);
+  margin-top: var(--space-32);
+  border-top: var(--border-thin) solid var(--semantic-line-solid-normal);
+  scroll-margin-top: var(--space-96);
+}
+.policy-page .policy-section:first-of-type { margin-top: 0; }
+.policy-page .policy-section h2 {
+  margin: 0 0 var(--space-20);
+  font-size: var(--type-title-3-size);
+  line-height: var(--type-title-3-line);
+  letter-spacing: var(--type-title-3-tracking);
+  font-weight: var(--font-weight-bold);
+}
+.policy-page .policy-section h3 {
+  margin: var(--space-28) 0 var(--space-12);
+  font-size: var(--type-heading-2-size);
+  line-height: var(--type-heading-2-line);
+  letter-spacing: var(--type-heading-2-tracking);
+  font-weight: var(--font-weight-bold);
+}
+.policy-page .policy-section h4 {
+  margin: var(--space-20) 0 var(--space-8);
+  font-size: var(--type-body-1-size);
+  line-height: var(--type-body-1-line);
+  letter-spacing: var(--type-body-1-tracking);
+  font-weight: var(--font-weight-semibold);
+}
+.policy-page .policy-section :where(p, ul, ol, dl, .data-table-wrap) { margin: 0 0 var(--space-16); }
+.policy-page .policy-section :where(ul, ol) { padding-inline-start: var(--space-24); }
+.policy-page .policy-section ul { list-style: disc; }
+.policy-page .policy-section ol { list-style: decimal; }
+.policy-page .policy-section li { margin-block: var(--space-6); }
+.policy-page .policy-lead {
+  font-weight: var(--font-weight-semibold);
+  color: var(--semantic-primary-normal);
+}
+.policy-page .policy-note {
+  padding: var(--space-16) var(--space-20);
+  border-radius: var(--radius-8);
+  background: var(--semantic-background-normal-alternative);
+  color: var(--semantic-label-neutral);
+  font-size: var(--type-body-2-reading-size);
+  line-height: var(--type-body-2-reading-line);
+  letter-spacing: var(--type-body-2-reading-tracking);
+}
+.policy-page .policy-glossary div, .policy-page .policy-contact div { display: grid; gap: var(--space-4); margin-bottom: var(--space-12); }
+.policy-page .policy-glossary dt { font-weight: var(--font-weight-semibold); }
+.policy-page .policy-glossary dd, .policy-page .policy-contact dd { margin: 0; }
+.policy-page .policy-contact div { grid-template-columns: 120px minmax(0, 1fr); margin-bottom: var(--space-6); }
+.policy-page .policy-contact dt { color: var(--semantic-label-alternative); }
+.policy-page .policy-table th, .policy-page .policy-table td { vertical-align: top; }
+@media (max-width: 640px) {
+  .policy-page .policy-toc { padding: var(--space-20); }
+  .policy-page .policy-toc ol { grid-template-columns: minmax(0, 1fr); }
+  .policy-page .policy-contact div { grid-template-columns: minmax(0, 1fr); }
+}
