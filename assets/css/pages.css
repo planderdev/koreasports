@@ -3295,7 +3295,14 @@
 .policy-page .policy-contact div { grid-template-columns: 120px minmax(0, 1fr); margin-bottom: var(--space-6); }
 .policy-page .policy-contact dt { color: var(--semantic-label-alternative); }
 .policy-page .policy-table th, .policy-page .policy-table td { vertical-align: top; }
+/* 모바일: 표를 가로 스크롤 대신 행마다 '항목명: 값'으로 세로 쌓기 (td의 data-label 사용) */
 @media (max-width: 640px) {
+  .policy-page .policy-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .policy-page .policy-table, .policy-page .policy-table tbody, .policy-page .policy-table tr, .policy-page .policy-table td { display: block; width: 100%; }
+  .policy-page .policy-table tr { padding: var(--space-12) 0; border-bottom: var(--border-thin) solid var(--semantic-line-solid-normal); }
+  .policy-page .policy-table td { padding: var(--space-4) 0; border: 0; min-width: 0; font-size: var(--type-body-2-size); line-height: var(--type-body-2-line); letter-spacing: var(--type-body-2-tracking); }
+  .policy-page .policy-table td::before { content: attr(data-label); display: block; margin-bottom: var(--space-2); font-size: var(--type-label-2-size); line-height: var(--type-label-2-line); letter-spacing: var(--type-label-2-tracking); color: var(--semantic-label-alternative); }
+  .policy-page .policy-table td:empty { display: none; }
   .policy-page .policy-toc { padding: var(--space-20); }
   .policy-page .policy-toc ol { grid-template-columns: minmax(0, 1fr); }
   .policy-page .policy-contact div { grid-template-columns: minmax(0, 1fr); }
