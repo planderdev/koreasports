@@ -9,7 +9,7 @@
 | 소개 | Vision | /page.php?id=vision |
 | 소개 | └ 개혁과제 | /page.php?id=reform |
 | 소개 | 설립목적 | /page.php?id=purpose |
-| 소개 | 조직구성회 | /page.php?id=organization |
+| 소개 | 조직구성 | /page.php?id=organization |
 | 소개 | 시·도 체육회장 | /page.php?id=regional |
 | 소개 | 체육회 CI | /page.php?id=ci |
 | 소개 | 오시는길 | /page.php?id=directions |
