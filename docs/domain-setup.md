@@ -61,5 +61,6 @@ vercel domains inspect kowsc.or.kr --scope planderdevs-projects
 
 ## 5. 진행 상태 (2026-10-01)
 - kowsc.or.kr: 가비아에서 네임서버를 Vercel로 변경 완료(.kr 레지스트리 반영). Vercel DNS 존 활성화, Let's Encrypt 인증서 발급(만료 2026-12-30, 자동 갱신). `https://kowsc.or.kr` 200, `www`·`http`는 308로 메인에 연결. Cloudflare·Google·LG U+·SK 리졸버는 새 IP, KT(168.126.63.1)는 옛 IP 캐시가 남아 있어 TTL 만료까지 대기.
-- 대한직장인체육회.kr: 레지스트리 네임서버가 아직 카페24. Vercel 쪽 존은 미리 켜 둠 → 가비아에서 네임서버만 바꾸면 됨.
+- 대한직장인체육회.kr: 2026-10-01 가비아에서 네임서버를 Vercel로 변경 완료(.kr 레지스트리 반영), 인증서 자동 발급, `https://대한직장인체육회.kr` → `https://kowsc.or.kr` 308 확인.
+- KT DNS(168.126.63.1/2)는 두 도메인 모두 옛 카페24 위임을 캐시 중(카페24 네임서버가 아직 옛 존을 응답). .kr 위임 TTL(최대 1일)이 지나면 자동으로 풀림.
 - 메일: Vercel 존에 MX 없음. `@kowsc.or.kr` 메일을 쓰려면 MX·SPF 추가 필요.
