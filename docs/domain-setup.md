@@ -33,6 +33,16 @@
 
 변경 후에는 A/CNAME을 따로 넣을 필요가 없습니다(Vercel이 관리).
 
+**주의(2026-10-01 실제 겪은 문제):** 프로젝트에 도메인을 추가하는 것만으로는 Vercel DNS 존이 생기지 않습니다(`zone: false`). 이 상태에서 네임서버를 Vercel로 바꾸면 Vercel 네임서버가 질의를 거부(REFUSED)해 사이트가 열리지 않습니다. 네임서버를 바꾸기 **전에** 존을 켜 두어야 합니다:
+
+```bash
+vercel api /v3/domains/<도메인> -X PATCH -f op=update -F zone=true --scope planderdevs-projects
+vercel dns ls <도메인> --scope planderdevs-projects   # ALIAS·CAA 기본 레코드가 보이면 정상
+vercel certs issue kowsc.or.kr www.kowsc.or.kr --scope planderdevs-projects   # 인증서가 바로 안 붙으면
+```
+
+대시보드에서는 Domains → 해당 도메인 → "Enable Vercel DNS"에 해당합니다.
+
 ### 이메일 주의
 현재 두 도메인에 카페24 메일 MX(`mw-002.cafe24.com`, `uws64-047.cafe24.com`)와 SPF가 걸려 있습니다. `@kowsc.or.kr` 메일을 실제로 쓰고 있다면 B안 진행 시 Vercel DNS에 같은 MX·TXT를 다시 넣어야 합니다(사이트는 kowsc@naver.com만 안내하고 있어 사용 여부 확인 필요).
 
@@ -48,3 +58,8 @@ vercel domains inspect kowsc.or.kr --scope planderdevs-projects
 
 ## 4. 알고 있어야 할 것
 - 커뮤니티 게시글 일부(`source-content.js`)에 옛 사이트 이미지 주소 `http://kowsc.or.kr/data/file/...` 36건이 남아 있습니다. 이 파일들은 이관 시점(2026-09-17)에도 카페24 서버가 HTML만 돌려줘 받지 못했고(`docs/research/kowsc/full-content-manifest.json`의 `unavailableAssets`), 지금도 만료 페이지로 리다이렉트되므로 **도메인 이전과 무관하게 이미 깨진 상태**입니다. 체육회에서 원본 사진을 받으면 교체합니다.
+
+## 5. 진행 상태 (2026-10-01)
+- kowsc.or.kr: 가비아에서 네임서버를 Vercel로 변경 완료(.kr 레지스트리 반영). Vercel DNS 존 활성화, Let's Encrypt 인증서 발급(만료 2026-12-30, 자동 갱신). `https://kowsc.or.kr` 200, `www`·`http`는 308로 메인에 연결. Cloudflare·Google·LG U+·SK 리졸버는 새 IP, KT(168.126.63.1)는 옛 IP 캐시가 남아 있어 TTL 만료까지 대기.
+- 대한직장인체육회.kr: 레지스트리 네임서버가 아직 카페24. Vercel 쪽 존은 미리 켜 둠 → 가비아에서 네임서버만 바꾸면 됨.
+- 메일: Vercel 존에 MX 없음. `@kowsc.or.kr` 메일을 쓰려면 MX·SPF 추가 필요.

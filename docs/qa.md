@@ -302,3 +302,4 @@
 
 ## 도메인 연결 준비 (2026-09-30)
 - Vercel 프로젝트에 kowsc.or.kr(메인), www.kowsc.or.kr·대한직장인체육회.kr(→ 메인 308) 추가. DNS 변경 절차·이메일 주의·확인 방법은 `docs/domain-setup.md`. 카페24 호스팅 만료 확인, 옛 이미지 36건은 이관 때부터 받을 수 없던 파일임을 기록.
+- 2026-10-01: kowsc.or.kr 네임서버 변경 확인. Vercel DNS 존이 꺼져 있어 REFUSED가 나던 것을 존 활성화로 해결, 인증서 발급, https 정상. 상세는 `docs/domain-setup.md` 5절.
